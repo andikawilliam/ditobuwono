@@ -2,7 +2,7 @@
   <div class="flex items-center px-8 lg:px-24 lg:py-40">
     <div class="lg:w-2/3 text-black-onyx mx-auto">
       <HeadingPortfolio portfolio="About" />
-      <div class="about-text font-light opacity-25">
+      <div class="about-text font-light opacity-0">
         <p>
           In the course of his creative process, Dito always raises the theme of
           <span class="font-medium">the meaning of honesty</span>
@@ -45,9 +45,10 @@ export default Vue.extend({
         scrollTrigger: {
           id: "about-text",
           trigger: ".about-text",
-          start: "top center",
-          end: "center 40%",
+          start: "top 40%",
+          end: "30% 30%",
           scrub: 1
+          // markers: true
         },
         opacity: 1,
         y: -20
