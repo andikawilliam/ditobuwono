@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gray-ivory">
+  <div id="app">
     <TheNav />
     <PageMain />
     <PageAbout class="about-section" />
@@ -41,14 +41,20 @@ export default Vue.extend({
   },
   methods: {
     mainScroll() {
-      gsap.to("#app", {
+      gsap.fromTo("#app",
+        {
+          backgroundColor: "#F7F7F2"
+        },
+        {
         scrollTrigger: {
           trigger: ".about-section",
           start: "80% 60%",
-          end: "80% center",
-          toggleActions: "play none reverse reverse"
+          end: "bottom center",
+          // toggleActions: "play none reverse reverse",
+          scrub: true,
+          // markers: true
         },
-        "background-color": "#0f0f0f"
+        backgroundColor: "#0f0f0f"
       });
     }
   }

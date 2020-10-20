@@ -48,12 +48,14 @@ export default Vue.extend({
           scrollTrigger: {
             id: "about-text",
             trigger: ".about-text",
-            start: "top 40%",
+            start: "top 65%",
             end: "20% 30%",
-            scrub: 1
+            scrub: true,
           },
+          y: -30,
+          z: 10,
           autoAlpha: 1,
-          y: -30
+          rotation: 0.01,
         }
       );
     }

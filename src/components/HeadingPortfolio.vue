@@ -31,9 +31,9 @@ export default Vue.extend({
         scrollTrigger: {
           id: this.headerId,
           trigger: this.headerId,
-          start: "top 30%",
-          end: "bottom 20%",
-          scrub: 1
+          start: "top 40%",
+          end: "bottom 10%",
+          scrub: 0.5
         },
         y: "25vw",
         autoAlpha: 0,
@@ -46,6 +46,6 @@ export default Vue.extend({
 
 <style scoped>
 .heading-text {
-  font-size: 12vw;
+  font-size: 8vw;
 }
 </style>
