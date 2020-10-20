@@ -51,7 +51,7 @@ export default Vue.extend({
           start: "80% 60%",
           end: "bottom 40%",
           // toggleActions: "play none reverse reverse",
-          scrub: true,
+          scrub: 1,
           // markers: true
         },
         backgroundColor: "#0f0f0f"
