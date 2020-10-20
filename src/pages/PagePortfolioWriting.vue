@@ -1,9 +1,9 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
     <HeadingPortfolio :portfolio="title" :key="title" />
-    <div class="lg:flex lg:w-2/3 mx-auto gap-24">
+    <div class="lg:grid lg:grid-cols-2 lg:w-2/3 mx-auto gap-24">
       <div
-        class="lg:w-1/2 mb-24"
+        class="lg:row-span-1 lg:col-span-1 mb-24"
         v-for="publication in publications"
         :key="publication.id"
       >

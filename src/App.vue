@@ -60,11 +60,10 @@ export default Vue.extend({
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
 }
 
 .grayscale {
-  -webkit-filter: grayscale(30%);
-  filter: grayscale(30%);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(100%);
 }
 </style>
