@@ -44,9 +44,9 @@ export default Vue.extend({
       gsap.to("#app", {
         scrollTrigger: {
           trigger: ".about-section",
-          start: "80% center",
-          end: "bottom 40%",
-          scrub: 1
+          start: "80% 60%",
+          end: "80% center",
+          toggleActions: "play none reverse reverse"
         },
         "background-color": "#0f0f0f"
       });
@@ -63,7 +63,7 @@ export default Vue.extend({
 }
 
 .grayscale {
-  -webkit-filter: grayscale(90%);
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 </style>

@@ -35,8 +35,9 @@ export default Vue.extend({
           end: "bottom 20%",
           scrub: 1
         },
-        y: "150%",
-        opacity: 0
+        y: "25vw",
+        autoAlpha: 0,
+        rotation: 0.01
       });
     }
   }

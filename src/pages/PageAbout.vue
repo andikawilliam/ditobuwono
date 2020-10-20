@@ -41,17 +41,21 @@ export default Vue.extend({
   },
   methods: {
     aboutScroll() {
-      gsap.to(".about-text", {
-        scrollTrigger: {
-          id: "about-text",
-          trigger: ".about-text",
-          start: "top 40%",
-          end: "20% 30%",
-          scrub: 1
-        },
-        opacity: 1,
-        y: -30
-      });
+      gsap.fromTo(
+        ".about-text",
+        { autoAlpha: 0 },
+        {
+          scrollTrigger: {
+            id: "about-text",
+            trigger: ".about-text",
+            start: "top 40%",
+            end: "20% 30%",
+            scrub: 1
+          },
+          autoAlpha: 1,
+          y: -30
+        }
+      );
     }
   }
 });
