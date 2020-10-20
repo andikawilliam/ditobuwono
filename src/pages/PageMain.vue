@@ -2,7 +2,7 @@
   <div class="pb-32 lg:pb-40">
     <div class="flex justify-center">
       <div
-        class="portfolios-main text-black-onyx font-semibold lg:font-medium leading-snug"
+        class="portfolios-main text-black-onyx font-semibold lg:font-medium lg:leading-snug"
       >
         <p>FILM.</p>
         <p>MUSIC.</p>

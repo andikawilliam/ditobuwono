@@ -49,7 +49,7 @@ export default Vue.extend({
         scrollTrigger: {
           trigger: ".about-section",
           start: "80% 60%",
-          end: "bottom center",
+          end: "bottom 40%",
           // toggleActions: "play none reverse reverse",
           scrub: true,
           // markers: true

@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center px-8 lg:px-24 lg:py-40">
     <div class="lg:w-2/3 text-black-onyx mx-auto">
-      <HeadingPortfolio portfolio="About" />
+      <HeadingPortfolio portfolio="ABOUT" />
       <div class="about-text font-light">
         <p>
           In the course of his creative process, Dito always raises the theme of
