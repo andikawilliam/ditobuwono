@@ -29,11 +29,11 @@ export default Vue.extend({
     headerTranslate() {
       gsap.to(this.headerId, {
         scrollTrigger: {
+          id: this.headerId,
           trigger: this.headerId,
           start: "top 30%",
           end: "bottom 20%",
           scrub: 1
-          // markers: true
         },
         y: "150%",
         opacity: 0

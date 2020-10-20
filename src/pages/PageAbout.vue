@@ -2,7 +2,7 @@
   <div class="flex items-center px-8 lg:px-24 lg:py-40">
     <div class="lg:w-2/3 text-black-onyx mx-auto">
       <HeadingPortfolio portfolio="About" />
-      <div class="about-text font-light main opacity-0">
+      <div class="about-text font-light opacity-0">
         <p>
           In the course of his creative process, Dito always raises the theme of
           <span class="font-medium">the meaning of honesty</span>
@@ -34,20 +34,20 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default Vue.extend({
-  name: "PageMain",
+  name: "PageAbout",
   components: { HeadingPortfolio },
   mounted: function() {
-    this.mainScroll();
+    this.aboutScroll();
   },
   methods: {
-    mainScroll() {
-      gsap.to(".main", {
+    aboutScroll() {
+      gsap.to(".about-text", {
         scrollTrigger: {
-          trigger: ".main",
-          start: " 60%",
+          id: "about-text",
+          trigger: ".about-text",
+          start: "top center",
           end: "center 40%",
           scrub: 1
-          // markers: true
         },
         opacity: 1,
         y: -20
