@@ -2,7 +2,7 @@
   <div class="lg:w-2/3 mx-auto pb-16 lg:pb-32">
     <div class="overflow-x-auto whitespace-no-wrap text-center pb-1">
       <span
-        class="accolade-text mr-4" 
+        class="accolade-text mr-4"
         v-for="accolade in accolades"
         :key="accolade"
       >
@@ -89,6 +89,4 @@ export default Vue.extend({
     font-size: 2vw;
   }
 }
-
-
 </style>

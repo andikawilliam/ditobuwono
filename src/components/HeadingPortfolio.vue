@@ -1,5 +1,8 @@
 <template>
-  <h1 :id="portfolio" class="heading-text text-center font-medium pb-6 lg:pb-12">
+  <h1
+    :id="portfolio"
+    class="heading-text text-center font-medium pb-6 lg:pb-12"
+  >
     {{ portfolio }}
   </h1>
 </template>
@@ -33,7 +36,7 @@ export default Vue.extend({
           // markers: true
         },
         y: "150%",
-        opacity: 0,
+        opacity: 0
       });
     }
   }

@@ -7,12 +7,20 @@
           <div class="font-light">BUWONO</div>
         </h1>
       </div>
-      <div class="flex gap-4">
+      <div class="flex">
         <a href="https://www.instagram.com/ditobuwono/">
-          <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />
+          <font-awesome-icon
+            class="mx-1"
+            :icon="['fab', 'instagram']"
+            size="lg"
+          />
         </a>
         <a href="https://www.linkedin.com/in/hanindito-buwono-98437a179/">
-          <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
+          <font-awesome-icon
+            class="mx-1"
+            :icon="['fab', 'linkedin']"
+            size="lg"
+          />
         </a>
       </div>
     </div>

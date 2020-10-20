@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center lg:px-24 lg:py-40">
-    <div class="w-2/3 text-black-onyx mx-auto">
+  <div class="flex items-center px-8 lg:px-24 lg:py-40">
+    <div class="lg:w-2/3 text-black-onyx mx-auto">
       <HeadingPortfolio portfolio="About" />
       <div class="about-text font-light main opacity-0">
         <p>
@@ -63,7 +63,7 @@ export default Vue.extend({
 }
 @media screen and (max-width: 1204px) {
   .about-text {
-    font-size: 4.2vw;
+    font-size: 5.5vw;
   }
 }
 </style>
