@@ -63,34 +63,34 @@ export default Vue.extend({
       films: [
         {
           id: 1,
-          // image: CoverTerbelenggu,
-          title: "Terbelenggu (2014)",
-          type: "Short Fiction Film",
-          role: "Role: Actor, Music Director",
-          accolades: ["Winner 8Schoolastic SMAN 8 Jakarta Film Festival"],
-          embed: "https://www.youtube-nocookie.com/embed/_Q2Xg5CHHf8"
-        },
-        {
-          id: 2,
-          // image: CoverMenyusulmu,
-          title: "Menyusulmu Bisa Menunggu (2015)",
-          type: "Short Fiction Film",
-          role: "Actor, Producer",
-          accolades: ["Winner Global Jaya Film Festival"],
-          embed: "https://www.youtube-nocookie.com/embed/BMIpvCrxou4"
-        },
-        {
-          id: 3,
           // image: CoverBelrusak,
           title: "Belrusak (2020)",
           type: "Short Documentary Film",
-          role: "Roles: Director",
+          role: "Role: Director",
           accolades: [
             "Out Of Competition Viddsee Juree Awards Indonesia 2020",
             "Official Selection Lift-Off Global Network Lift-Off Sessions 2020",
             "Official Selection Lift-Off Global Network First-Time Filmmaker Sessions 2020"
           ],
           embed: "https://www.viddsee.com/player/ywxkh"
+        },
+        {
+          id: 2,
+          // image: CoverMenyusulmu,
+          title: "Menyusulmu Bisa Menunggu (2015)",
+          type: "Short Fiction Film",
+          role: "Roles: Actor, Producer",
+          accolades: ["Winner Global Jaya Film Festival"],
+          embed: "https://www.youtube-nocookie.com/embed/BMIpvCrxou4"
+        },
+        {
+          id: 3,
+          // image: CoverTerbelenggu,
+          title: "Terbelenggu (2014)",
+          type: "Short Fiction Film",
+          role: "Roles: Actor, Music Director",
+          accolades: ["Winner 8Schoolastic SMAN 8 Jakarta Film Festival"],
+          embed: "https://www.youtube-nocookie.com/embed/_Q2Xg5CHHf8"
         }
       ]
     };

@@ -50,12 +50,12 @@ export default Vue.extend({
             trigger: ".about-text",
             start: "top 65%",
             end: "20% 30%",
-            scrub: true,
+            scrub: true
           },
           y: -30,
           z: 10,
           autoAlpha: 1,
-          rotation: 0.01,
+          rotation: 0.01
         }
       );
     }

@@ -4,7 +4,7 @@
     <div class="relative lg:w-2/3 mx-auto">
       <div class="grid auto-rows-fr grid-flow-row gap-4">
         <div
-          class="row-span-1 col-span-5 lg:row-span-2 lg:col-span-3 grayscale"
+          class="row-span-1 col-span-5 lg:row-span-3 lg:col-span-2 grayscale"
         >
           <iframe
             width="100%"
@@ -17,7 +17,7 @@
           </iframe>
         </div>
         <div
-          class="row-span-1 col-span-5 lg:row-span-2 lg:col-span-2 grayscale"
+          class="row-span-1 col-span-5 lg:row-span-2 lg:col-span-3 grayscale"
         >
           <iframe
             width="100%"
@@ -29,20 +29,22 @@
           >
           </iframe>
         </div>
-        <div class="row-span-2 col-span-5 grayscale">
+        <div
+          class="row-span-1 col-span-5 lg:row-span-1 lg:col-span-3 grayscale"
+        >
           <iframe
             width="100%"
             height="100%"
-            src="https://www.mixcloud.com/widget/iframe/?feed=%2Fbuvv%2Ftjakrawala-mixtape-awal-tahun%2F"
+            src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FSuddenlyKaget%2Fsuddenlykaget-mixtape-maharddhika%2F"
             frameborder="0"
           >
           </iframe>
         </div>
-        <div class="row-span-1 col-span-5 grayscale">
+        <div class="row-span-1 col-span-5 lg:row-span-2 grayscale">
           <iframe
             width="100%"
             height="100%"
-            src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fbuvv%2Finfidelity-in-suburbia-mixtape-awal-tahun-2019%2F"
+            src="https://www.mixcloud.com/widget/iframe/?feed=%2Fbuvv%2F"
             frameborder="0"
           >
           </iframe>

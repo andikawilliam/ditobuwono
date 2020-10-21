@@ -78,7 +78,7 @@ export default Vue.extend({
   font-size: 2vw;
 }
 .accolade-text {
-  font-size: 1vw;
+  font-size: 1.1vw;
 }
 
 @media screen and (max-width: 1204px) {

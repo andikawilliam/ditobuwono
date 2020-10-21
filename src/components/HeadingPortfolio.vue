@@ -29,15 +29,16 @@ export default Vue.extend({
     headerTranslate() {
       gsap.to(this.headerId, {
         scrollTrigger: {
-          id: this.headerId,
           trigger: this.headerId,
           start: "top 40%",
           end: "bottom 10%",
+          // markers: true,
           scrub: 0.5
         },
         y: "25vw",
         autoAlpha: 0,
-        rotation: 0.01
+        rotation: 0.01,
+        onComplete: () => ScrollTrigger.refresh()
       });
     }
   }
@@ -46,6 +47,6 @@ export default Vue.extend({
 
 <style scoped>
 .heading-text {
-  font-size: 8vw;
+  font-size: 10vw;
 }
 </style>

@@ -7,14 +7,16 @@
         v-for="publication in publications"
         :key="publication.id"
       >
-        <div id="publication-cover" class="grayscale">
-          <img :src="publication.cover" class="mx-auto" />
-        </div>
+        <a :href="publication.src">
+          <div class="px-6 grayscale">
+            <img :src="publication.cover" class="mx-auto publication-cover" />
+          </div>
+        </a>
         <div class="pt-6">
           <p class="text-2xl text-center font-medium pb-2">
             {{ publication.title }}
           </p>
-          <p class="text-lg text-gray-200 italic pt-2">
+          <p class="text-lg lg:text-xl text-gray-200 italic pt-2">
             {{ publication.description }}
           </p>
         </div>
@@ -40,6 +42,8 @@ export default Vue.extend({
       publications: [
         {
           id: 1,
+          src:
+            "https://issuu.com/matilampu/docs/mati_lampu_vol4_7f301e70bf19a9",
           cover: CoverToleransi,
           title: "Mati Lampu Vol.4: Toleransi",
           description: `
@@ -51,6 +55,7 @@ export default Vue.extend({
         },
         {
           id: 2,
+          src: "https://issuu.com/haninditobuwono9413/docs/kaput_rev",
           cover: CoverKaput,
           title: "Kaput",
           description: `
@@ -65,3 +70,13 @@ export default Vue.extend({
   }
 });
 </script>
+
+<style scoped>
+.publication-cover {
+  transition: transform 0.5s;
+  box-shadow: 0px -2px 10px 2px rgba(15, 15, 15, 0.8);
+}
+.publication-cover:hover {
+  transform: scale(1.03);
+}
+</style>

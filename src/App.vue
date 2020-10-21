@@ -7,6 +7,7 @@
     <PagePortfolioMusic />
     <PagePortfolioPodcast />
     <PagePortfolioWriting />
+    <PageContact />
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import PagePortfolioFilm from "./pages/PagePortfolioFilm.vue";
 import PagePortfolioMusic from "./pages/PagePortfolioMusic.vue";
 import PagePortfolioPodcast from "./pages/PagePortfolioPodcast.vue";
 import PagePortfolioWriting from "./pages/PagePortfolioWriting.vue";
+import PageContact from "./pages/PageContact.vue";
 
 export default Vue.extend({
   name: "App",
@@ -34,28 +36,31 @@ export default Vue.extend({
     PagePortfolioFilm,
     PagePortfolioMusic,
     PagePortfolioPodcast,
-    PagePortfolioWriting
+    PagePortfolioWriting,
+    PageContact
   },
   mounted: function() {
     this.mainScroll();
   },
   methods: {
     mainScroll() {
-      gsap.fromTo("#app",
+      gsap.fromTo(
+        "#app",
         {
           backgroundColor: "#F7F7F2"
         },
         {
-        scrollTrigger: {
-          trigger: ".about-section",
-          start: "80% 60%",
-          end: "bottom 40%",
-          // toggleActions: "play none reverse reverse",
-          scrub: 1,
-          // markers: true
-        },
-        backgroundColor: "#0f0f0f"
-      });
+          scrollTrigger: {
+            trigger: ".about-section",
+            start: "80% 60%",
+            end: "bottom 40%",
+            // toggleActions: "play none reverse reverse",
+            scrub: 1
+            // markers: true
+          },
+          backgroundColor: "#0f0f0f"
+        }
+      );
     }
   }
 });
@@ -69,7 +74,7 @@ export default Vue.extend({
 }
 
 .grayscale {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(40%);
+  filter: grayscale(40%);
 }
 </style>
