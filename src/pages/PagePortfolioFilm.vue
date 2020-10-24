@@ -1,6 +1,6 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <PortfolioDescription :description="description" :key="description" />
+    <PortfolioDescription :portfolio="title" :description="description" />
     <PortfolioHeading :portfolio="title" :key="title" />
     <!-- <div id="switch-work" class="absolute w-full flex justify-between items-center px-20">
       <font-awesome-icon
@@ -62,12 +62,14 @@ export default Vue.extend({
     return {
       description: `
         Dito's passion for cinema has existed since early childhood influenced  
-        by his father. He started by making short films with his friends when 
+        by his father.
+        He started by making short films with his friends when 
         he was in high school. 
         <span class="font-semibold"> Terbelenggu (2014) </span>
         and 
         <span class="font-semibold"> Menyusulmu Bisa Menunggu (2015) </span>
-        are short films that he has starred in. In 2020, Belrusak will be 
+        are short films that he has starred in. In 2020, 
+        <span class="font-semibold">Belrusak</span> will be 
         Dito's directorial debut in the form of a short documentary.
       `,
       title: "FILMOGRAPHY",

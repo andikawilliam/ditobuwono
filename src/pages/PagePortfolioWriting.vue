@@ -1,6 +1,6 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <PortfolioDescription :description="description" :key="description" />
+    <PortfolioDescription :portfolio="title" :description="description" />
     <PortfolioHeading :portfolio="title" :key="title" />
     <div class="lg:grid lg:grid-cols-2 lg:w-2/3 mx-auto gap-24">
       <div

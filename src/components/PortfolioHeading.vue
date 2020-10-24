@@ -37,7 +37,7 @@ export default Vue.extend({
         },
         y: "25vw",
         autoAlpha: 0,
-        rotation: 0.01,
+        // rotation: 0.01,
         onComplete: () => ScrollTrigger.refresh()
       });
     }

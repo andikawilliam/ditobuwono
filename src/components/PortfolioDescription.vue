@@ -1,60 +1,72 @@
 <template>
   <div class="h-screen flex items-center justify-center lg:w-2/3 lg:mx-auto">
-    <h3
-      class="description-text pl-4 font-thin italic tracking-wide"
-      v-html="description"
-    ></h3>
+    <div class="border-container">
+      <h3
+        v-bind:id="'desc-' + portfolio"
+        class="description-text pl-6 font-thin italic tracking-wide"
+        v-html="description"
+      ></h3>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-// import { gsap } from "gsap";
-// import ScrollTrigger from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 export default Vue.extend({
   name: "PortfolioDescription",
-  props: ["description"]
-  // data() {
-  //   return {
-  //     headerId: "#" + this.portfolio
-  //   };
-  // },
-  // mounted: function() {
-  //   this.headerTranslate();
-  // },
-  // methods: {
-  //   headerTranslate() {
-  //     gsap.to(this.headerId, {
-  //       scrollTrigger: {
-  //         trigger: this.headerId,
-  //         start: "top 40%",
-  //         end: "bottom 10%",
-  //         // markers: true,
-  //         scrub: 0.5
-  //       },
-  //       y: "25vw",
-  //       autoAlpha: 0,
-  //       rotation: 0.01,
-  //       onComplete: () => ScrollTrigger.refresh()
-  //     });
-  //   }
-  // }
+  props: ["portfolio", "description"],
+  data() {
+    return {
+      descriptionId: "#desc-" + this.portfolio
+    };
+  },
+  mounted: function() {
+    this.descriptionTranslate();
+  },
+  methods: {
+    descriptionTranslate() {
+      gsap.fromTo(
+        this.descriptionId,
+        { opacity: 0, y: "3vw" },
+        {
+          scrollTrigger: {
+            trigger: this.descriptionId,
+            start: "top 70%",
+            toggleActions: "play none none reverse"
+          },
+          opacity: 1,
+          y: 0
+        }
+      );
+    }
+  }
 });
 </script>
 
 <style scoped>
 .description-text {
+  position: relative;
   font-size: 2vw;
-  border-left: 4px solid;
+}
+
+.border-container {
+  left: 0px;
+  top: 0%;
+  border-left: 5px solid;
+  transition: transform 250ms ease-in-out;
 }
 
 @media screen and (max-width: 1204px) {
   .description-text {
-    font-size: 5.5vw;
-    border-left: 2px solid;
+    font-size: 4.8vw;
+  }
+  .border-container {
+    border-left: 3px solid;
   }
 }
 </style>
