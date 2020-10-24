@@ -53,6 +53,7 @@ export default Vue.extend({
           scrollTrigger: {
             trigger: ".about-section",
             start: "80% 60%",
+            end: "80% 60%",
             toggleActions: "play none reverse reverse",
           },
           backgroundColor: "#0f0f0f"
