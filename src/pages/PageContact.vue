@@ -1,6 +1,6 @@
 <template>
   <div class="text-center text-lg italic pb-24 text-gray-ivory">
-    Contact me through hanindito.arief@gmail.com
+    hanindito.arief@gmail.com
   </div>
 </template>
 

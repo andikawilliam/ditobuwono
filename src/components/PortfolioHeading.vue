@@ -15,7 +15,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default Vue.extend({
-  name: "Heading",
+  name: "PortfolioHeading",
   props: ["portfolio"],
   data() {
     return {
@@ -48,5 +48,11 @@ export default Vue.extend({
 <style scoped>
 .heading-text {
   font-size: 10vw;
+}
+
+@media screen and (max-width: 1204px) {
+  .heading-text {
+    font-size: 12vw;
+  }
 }
 </style>

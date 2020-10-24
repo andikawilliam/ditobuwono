@@ -1,6 +1,7 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <HeadingPortfolio :portfolio="title" :key="title" />
+    <PortfolioDescription :description="description" :key="description" />
+    <PortfolioHeading :portfolio="title" :key="title" />
     <div class="relative lg:w-2/3 mx-auto">
       <div class="grid auto-rows-fr grid-flow-row gap-4">
         <div
@@ -56,16 +57,24 @@
 
 <script lang="ts">
 import Vue from "vue";
-import HeadingPortfolio from "../components/HeadingPortfolio.vue";
+import PortfolioHeading from "../components/PortfolioHeading.vue";
+import PortfolioDescription from "../components/PortfolioDescription.vue";
 
 export default Vue.extend({
   name: "PortfolioMusic",
   components: {
-    HeadingPortfolio
+    PortfolioHeading,
+    PortfolioDescription
   },
   data: function() {
     return {
-      title: "MIXTAPES"
+      title: "MIXTAPES",
+      description: `
+        Being a part-time DJ from 2019, Dito always offers various perspectives.
+        Dito has performed several times with his collective and as a solo. 
+        Currently, Dito likes to explore and experiment from various music 
+        genres through his mixtape choices.
+      `
     };
   }
 });

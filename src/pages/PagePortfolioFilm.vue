@@ -1,6 +1,7 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <HeadingPortfolio :portfolio="title" :key="title" />
+    <PortfolioDescription :description="description" :key="description" />
+    <PortfolioHeading :portfolio="title" :key="title" />
     <!-- <div id="switch-work" class="absolute w-full flex justify-between items-center px-20">
       <font-awesome-icon
         :icon="['fas', 'chevron-left']"
@@ -43,7 +44,8 @@
 
 <script lang="ts">
 import Vue from "vue";
-import HeadingPortfolio from "../components/HeadingPortfolio.vue";
+import PortfolioHeading from "../components/PortfolioHeading.vue";
+import PortfolioDescription from "../components/PortfolioDescription.vue";
 import FilmWork from "../components/FilmWork.vue";
 // import CoverTerbelenggu from "../assets/ss-terbelenggu.png";
 // import CoverMenyusulmu from "../assets/ss-menyusulmu.png";
@@ -52,11 +54,22 @@ import FilmWork from "../components/FilmWork.vue";
 export default Vue.extend({
   name: "PortfolioFilm",
   components: {
-    HeadingPortfolio,
+    PortfolioHeading,
+    PortfolioDescription,
     FilmWork
   },
   data: function() {
     return {
+      description: `
+        Dito's passion for cinema has existed since early childhood influenced  
+        by his father. He started by making short films with his friends when 
+        he was in high school. 
+        <span class="font-semibold"> Terbelenggu (2014) </span>
+        and 
+        <span class="font-semibold"> Menyusulmu Bisa Menunggu (2015) </span>
+        are short films that he has starred in. In 2020, Belrusak will be 
+        Dito's directorial debut in the form of a short documentary.
+      `,
       title: "FILMOGRAPHY",
       activeFilm: 0,
       slider: "slide-left",
@@ -68,7 +81,7 @@ export default Vue.extend({
           type: "Short Documentary Film",
           role: "Role: Director",
           accolades: [
-            "Out Of Competition Viddsee Juree Awards Indonesia 2020",
+            "Official Selection Viddsee Juree Awards 2020",
             "Official Selection Lift-Off Global Network Lift-Off Sessions 2020",
             "Official Selection Lift-Off Global Network First-Time Filmmaker Sessions 2020"
           ],

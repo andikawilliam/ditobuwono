@@ -1,13 +1,15 @@
 <template>
   <div class="lg:w-2/3 mx-auto pb-16 lg:pb-32">
     <div class="overflow-x-auto whitespace-no-wrap text-center pb-1">
-      <span
-        class="accolade-text mr-4"
-        v-for="accolade in accolades"
-        :key="accolade"
-      >
-        {{ accolade }}
-      </span>
+      <p class="accolade-text">
+        <span
+          class="mr-4"
+          v-for="accolade in accolades"
+          :key="accolade"
+        >
+          {{ accolade }}
+        </span>
+      </p>
     </div>
 
     <div class="video-container" v-on:click="showText = false">

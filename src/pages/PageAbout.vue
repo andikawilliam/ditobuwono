@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center px-8 lg:px-24 lg:py-40">
     <div class="lg:w-2/3 text-black-onyx mx-auto">
-      <HeadingPortfolio portfolio="ABOUT" />
+      <PortfolioHeading :portfolio="title" :key="title" />
       <div class="about-text font-light">
         <p>
           In the course of his creative process, Dito always raises the theme of
@@ -26,7 +26,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import HeadingPortfolio from "../components/HeadingPortfolio.vue";
+import PortfolioHeading from "../components/PortfolioHeading.vue";
 
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -35,7 +35,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default Vue.extend({
   name: "PageAbout",
-  components: { HeadingPortfolio },
+  components: { PortfolioHeading },
+  data() {
+    return {
+      title: "ABOUT"
+    };
+  },
   mounted: function() {
     this.aboutScroll();
   },

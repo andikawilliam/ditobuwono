@@ -1,11 +1,12 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <HeadingPortfolio :portfolio="title" :key="title" />
+    <PortfolioDescription :description="description" :key="description" />
+    <PortfolioHeading :portfolio="title" :key="title" />
     <div class="lg:w-2/3 mx-auto">
-      <div class="grid grid-cols-1">
+      <div class="w-full">
         <transition-group name="podcast-complete">
           <div
-            class="podcast-grid col-span-2 grayscale my-4"
+            class="podcast-grid my-4 grayscale"
             v-for="podcast in podcastsShown"
             :key="podcast.id"
           >
@@ -26,7 +27,7 @@
         class="bg-gray-ivory text-black-onyx my-4 py-1 px-6 rounded-xl"
         v-on:click="addMorePodcast"
       >
-        more
+        more podcast
       </button>
     </div>
   </div>
@@ -38,17 +39,25 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-import HeadingPortfolio from "../components/HeadingPortfolio.vue";
+import PortfolioHeading from "../components/PortfolioHeading.vue";
+import PortfolioDescription from "../components/PortfolioDescription.vue";
 
 export default Vue.extend({
   name: "PortfolioPodcast",
   components: {
-    HeadingPortfolio
+    PortfolioHeading,
+    PortfolioDescription
   },
   data: function() {
     return {
+      description: `
+        Dito started his own podcast at Loka Bersua, with his friends as a guest
+        star in 2018. Then he was entrusted to manage the EksotisMerauke podcast
+        in 2019, where the podcast tells about the experiences when he and his 
+        college friends participated in social services in Merauke, Papua.
+      `,
       title: "TALKS",
-      limit: 4,
+      limit: 3,
       podcasts: [
         {
           id: 1,
@@ -119,19 +128,21 @@ export default Vue.extend({
 
 <style scoped>
 .podcast-grid {
-  transition: transform 0.5s;
+  transition: all 0.5s;
+  margin-top: 5px;
 }
 .podcast-grid:hover {
   transform: scale(1.02);
 }
-.podcast-complete-item {
-  transition: all 1s;
+.podcast-complete-move {
+  transition: transform 1s;
 }
 .podcast-complete-enter,
 .podcast-complete-leave-to {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateY(30px);
 }
+
 .podcast-complete-leave-active {
   position: absolute;
 }

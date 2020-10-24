@@ -17,7 +17,7 @@
         </a>
         <a href="https://www.linkedin.com/in/hanindito-buwono-98437a179/">
           <font-awesome-icon
-            class="mx-1"
+            class="mx-2"
             :icon="['fab', 'linkedin']"
             size="lg"
           />
