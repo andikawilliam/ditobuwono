@@ -1,8 +1,8 @@
 <template>
   <div class="flex items-center px-8 lg:px-24 lg:py-40">
-    <div class="lg:w-2/3 text-black-onyx mx-auto">
+    <div class="text-black-onyx">
       <PortfolioHeading :portfolio="title" :key="title" />
-      <div class="about-text font-light">
+      <div class="lg:w-2/3 mx-auto about-text font-light">
         <p>
           In the course of his creative process, Dito always raises the theme of
           <span class="font-medium">the meaning of honesty</span>
@@ -38,7 +38,7 @@ export default Vue.extend({
   components: { PortfolioHeading },
   data() {
     return {
-      title: "ABOUT"
+      title: "DITOBUWONO"
     };
   },
   mounted: function() {

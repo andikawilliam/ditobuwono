@@ -3,7 +3,7 @@
     <div class="border-container">
       <h3
         v-bind:id="'desc-' + portfolio"
-        class="description-text pl-6 font-thin italic tracking-wide"
+        class="description-text pl-6 font-light italic tracking-wide"
         v-html="description"
       ></h3>
     </div>
@@ -32,7 +32,7 @@ export default Vue.extend({
     descriptionTranslate() {
       gsap.fromTo(
         this.descriptionId,
-        { opacity: 0, y: "3vw" },
+        { opacity: 0, x: "-3vw" },
         {
           scrollTrigger: {
             trigger: this.descriptionId,
@@ -40,7 +40,7 @@ export default Vue.extend({
             toggleActions: "play none none reverse"
           },
           opacity: 1,
-          y: 0
+          x: 0
         }
       );
     }

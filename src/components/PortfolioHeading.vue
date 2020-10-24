@@ -1,8 +1,5 @@
 <template>
-  <h1
-    :id="portfolio"
-    class="heading-text text-center font-medium pb-6 lg:pb-12"
-  >
+  <h1 :id="portfolio" class="heading-text text-center font-light pb-6 lg:pb-12">
     {{ portfolio }}
   </h1>
 </template>
