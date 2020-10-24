@@ -54,8 +54,8 @@ export default Vue.extend({
             trigger: ".about-section",
             start: "80% 60%",
             end: "bottom 40%",
-            // toggleActions: "play none reverse reverse",
-            scrub: 1
+            toggleActions: "play none reverse reverse",
+            // scrub: 1
             // markers: true
           },
           backgroundColor: "#0f0f0f"
