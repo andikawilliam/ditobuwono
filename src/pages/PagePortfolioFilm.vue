@@ -84,7 +84,7 @@ export default Vue.extend({
           type: "Short Documentary Film",
           role: "Role: Director",
           accolades: [
-            "Official Selection Viddsee Juree Awards 2020",
+            "Official Selection Viddsee Juree Awards Indonesia 2020",
             "Official Selection Lift-Off Global Network Lift-Off Sessions 2020",
             "Official Selection Lift-Off Global Network First-Time Filmmaker Sessions 2020"
           ],

@@ -17,7 +17,7 @@
           <p class="text-2xl text-center font-medium pb-2">
             {{ publication.title }}
           </p>
-          <p class="text-lg lg:text-2xl text-gray-200 italic pt-2">
+          <p class="text-lg lg:text-xl text-gray-200 italic pt-2">
             {{ publication.description }}
           </p>
         </div>
