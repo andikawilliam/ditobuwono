@@ -1,7 +1,7 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <PortfolioDescription :portfolio="title" :description="description" />
     <PortfolioHeading :portfolio="title" :key="title" />
+    <PortfolioDescription :portfolio="title" :description="description" />
     <div class="lg:grid lg:grid-cols-2 lg:w-2/3 mx-auto gap-24">
       <div
         class="lg:row-span-1 lg:col-span-1 mb-24"
@@ -13,11 +13,11 @@
             <img :src="publication.cover" class="mx-auto publication-cover" />
           </div>
         </a>
-        <div class="pt-6">
+        <div class="px-6 pt-6">
           <p class="text-2xl text-center font-medium pb-2">
             {{ publication.title }}
           </p>
-          <p class="text-lg lg:text-xl text-gray-200 italic pt-2">
+          <p class="text-lg lg:text-2xl text-gray-200 italic pt-2">
             {{ publication.description }}
           </p>
         </div>
@@ -46,8 +46,9 @@ export default Vue.extend({
         since then he has been happy to write wherever he has free time and some
         of his writings are still not published. In 2017, Dito was invited by 
         his college friend to become a contributor for his campus independent 
-        zine, Mati Lampu. And in 2020, he began to create and design his own 
-        publications.
+        zine, 
+        <span class="font-semibold">Mati Lampu</span>. 
+        And in 2020, he began to create and design his own publications.
       `,
       title: "PUBLICATIONS",
       publications: [

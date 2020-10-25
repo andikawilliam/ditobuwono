@@ -1,7 +1,7 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <PortfolioDescription :portfolio="title" :description="description" />
     <PortfolioHeading :portfolio="title" :key="title" />
+    <PortfolioDescription :portfolio="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
       <div class="w-full">
         <transition-group name="podcast-complete">
@@ -51,10 +51,14 @@ export default Vue.extend({
   data: function() {
     return {
       description: `
-        Dito started his own podcast at Loka Bersua, with his friends as a guest
-        star in 2018. Then he was entrusted to manage the EksotisMerauke podcast
-        in 2019, where the podcast tells about the experiences when he and his 
-        college friends participated in social services in Merauke, Papua.
+        Dito started his own podcast at 
+        <span class="font-semibold">Loka Bersua</span>, 
+        with his friends as a guest star in 2018. Then he was entrusted to 
+        manage the
+        <span class="font-semibold">EksotisMerauke</span>
+        podcast in 2019, where the podcast tells about the experiences when he 
+        and his college friends participated in social services in Merauke, 
+        Papua.
       `,
       title: "TALKS",
       limit: 3,

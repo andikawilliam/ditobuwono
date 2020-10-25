@@ -1,7 +1,7 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <PortfolioDescription :portfolio="title" :description="description" />
     <PortfolioHeading :portfolio="title" :key="title" />
+    <PortfolioDescription :portfolio="title" :description="description" />
     <!-- <div id="switch-work" class="absolute w-full flex justify-between items-center px-20">
       <font-awesome-icon
         :icon="['fas', 'chevron-left']"
@@ -32,10 +32,12 @@
       <FilmWork
         v-for="film in films"
         :key="film.id"
+        v-bind:image="film.image"
         v-bind:title="film.title"
         v-bind:type="film.type"
         v-bind:role="film.role"
         v-bind:accolades="film.accolades"
+        v-bind:href="film.href"
         v-bind:embed="film.embed"
       />
     </div>
@@ -47,9 +49,9 @@ import Vue from "vue";
 import PortfolioHeading from "../components/PortfolioHeading.vue";
 import PortfolioDescription from "../components/PortfolioDescription.vue";
 import FilmWork from "../components/FilmWork.vue";
-// import CoverTerbelenggu from "../assets/ss-terbelenggu.png";
-// import CoverMenyusulmu from "../assets/ss-menyusulmu.png";
-// import CoverBelrusak from "../assets/ss-belrusak.png";
+import CoverBelrusak from "../assets/ss-belrusak.jpeg";
+import CoverMenyusulmu from "../assets/ss-menyusulmu.png";
+import CoverTerbelenggu from "../assets/ss-terbelenggu.png";
 
 export default Vue.extend({
   name: "PortfolioFilm",
@@ -74,11 +76,10 @@ export default Vue.extend({
       `,
       title: "FILMOGRAPHY",
       activeFilm: 0,
-      slider: "slide-left",
       films: [
         {
           id: 1,
-          // image: CoverBelrusak,
+          image: CoverBelrusak,
           title: "Belrusak (2020)",
           type: "Short Documentary Film",
           role: "Role: Director",
@@ -87,27 +88,31 @@ export default Vue.extend({
             "Official Selection Lift-Off Global Network Lift-Off Sessions 2020",
             "Official Selection Lift-Off Global Network First-Time Filmmaker Sessions 2020"
           ],
+          href: "https://www.viddsee.com/video/belrusak/ywxkh",
           embed: "https://www.viddsee.com/player/ywxkh"
         },
         {
           id: 2,
-          // image: CoverMenyusulmu,
+          image: CoverMenyusulmu,
           title: "Menyusulmu Bisa Menunggu (2015)",
           type: "Short Fiction Film",
           role: "Roles: Actor, Producer",
           accolades: ["Winner Global Jaya Film Festival"],
+          href: "https://youtu.be/BMIpvCrxou4",
           embed: "https://www.youtube-nocookie.com/embed/BMIpvCrxou4"
         },
         {
           id: 3,
-          // image: CoverTerbelenggu,
+          image: CoverTerbelenggu,
           title: "Terbelenggu (2014)",
           type: "Short Fiction Film",
           role: "Roles: Actor, Music Director",
           accolades: ["Winner 8Schoolastic SMAN 8 Jakarta Film Festival"],
+          href: "https://youtu.be/_Q2Xg5CHHf8",
           embed: "https://www.youtube-nocookie.com/embed/_Q2Xg5CHHf8"
         }
-      ]
+      ],
+      slider: "slide-left"
     };
   },
   methods: {

@@ -1,5 +1,5 @@
 <template>
-  <h1 :id="portfolio" class="heading-text text-center font-light pb-6 lg:pb-12">
+  <h1 :id="portfolio" class="heading-text text-center font-medium pb-2 lg:pb-4">
     {{ portfolio }}
   </h1>
 </template>
@@ -19,26 +19,26 @@ export default Vue.extend({
       headerId: "#" + this.portfolio
     };
   },
-  mounted: function() {
-    this.headerTranslate();
-  },
-  methods: {
-    headerTranslate() {
-      gsap.to(this.headerId, {
-        scrollTrigger: {
-          trigger: this.headerId,
-          start: "top 40%",
-          end: "bottom 10%",
-          // markers: true,
-          scrub: 0.5
-        },
-        y: "25vw",
-        autoAlpha: 0,
-        // rotation: 0.01,
-        onComplete: () => ScrollTrigger.refresh()
-      });
-    }
-  }
+  // mounted: function() {
+  //   this.headerTranslate();
+  // },
+  // methods: {
+  //   headerTranslate() {
+  //     gsap.to(this.headerId, {
+  //       scrollTrigger: {
+  //         trigger: this.headerId,
+  //         start: "top 40%",
+  //         end: "bottom 10%",
+  //         // markers: true,
+  //         scrub: 0.5
+  //       },
+  //       y: "25vw",
+  //       autoAlpha: 0,
+  //       // rotation: 0.01,
+  //       onComplete: () => ScrollTrigger.refresh()
+  //     });
+  //   }
+  // }
 });
 </script>
 

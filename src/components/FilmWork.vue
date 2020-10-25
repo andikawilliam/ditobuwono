@@ -1,43 +1,42 @@
 <template>
-  <div class="lg:w-2/3 mx-auto pb-16 lg:pb-32">
-    <div class="overflow-x-auto whitespace-no-wrap text-center pb-1">
-      <p class="accolade-text">
-        <span
-          class="mr-4"
-          v-for="accolade in accolades"
-          :key="accolade"
-        >
-          {{ accolade }}
-        </span>
-      </p>
-    </div>
-
-    <div class="video-container" v-on:click="showText = false">
-      <iframe
-        class="grayscale"
-        :src="embed"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        webkitAllowFullScreen
-        mozallowfullscreen
-        allowfullscreen
-      >
-      </iframe>
-    </div>
-    <div class="flex justify-center text-center pt-4">
+  <div class="lg:w-2/3 mx-auto pb-12 lg:pb-32">
+    <a :href="href" target="_blank" rel="noopener noreferrer">
+      <div class="video-container text-shadow" v-on:click="showText = false">
+        <img class="absolute rounded-md grayscale" :src="image" />
+        <div class="absolute p-2 lg:p-4">
+          <p class="title-text font-semibold px-1 lg:px-4">{{ title }}</p>
+          <p class="role-text float-left px-1 lg:px-4">{{ role }}</p>
+        </div>
+        <div class="absolute inset-0 text-center">
+          <font-awesome-icon
+            class="play-icon text-2xl lg:text-5xl"
+            :icon="['fas', 'play-circle']"
+          />
+        </div>
+        <div class="absolute text-right right-0 bottom-0">
+          <p
+            class="accolade-text float-right px-1 lg:px-4" 
+            v-for="accolade in accolades"
+            :key="accolade"
+          >
+            {{ accolade }}
+          </p>
+        </div>
+      </div>
+    </a>
+    <!-- <div class="flex justify-end text-right pt-2 lg:pt-4">
       <div>
         <p class="title-text font-semibold">{{ title }}</p>
         <p>{{ role }}</p>
-        <!-- <p
+        <p
             class="accolade-text" 
             v-for="accolade in accolades"
             :key="accolade"
           >
             {{ accolade }}
-        </p> -->
-        <!-- <p>{{ type }}</p> -->
+        </p>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -46,11 +45,12 @@ import Vue from "vue";
 export default Vue.extend({
   name: "FilmWork",
   props: {
-    // image: Object,
+    image: String,
     title: String,
     type: String,
     role: String,
     accolades: Array,
+    href: String,
     embed: String
   },
   data() {
@@ -76,19 +76,37 @@ export default Vue.extend({
   height: 100%;
 }
 
+.play-icon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .title-text {
   font-size: 2vw;
 }
+.role-text {
+  font-size: 1vw;
+}
 .accolade-text {
-  font-size: 1.1vw;
+  font-size: 1.2vw;
+  margin: 0.25rem;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 4px rgba(15, 15, 15, 0.7);
 }
 
 @media screen and (max-width: 1204px) {
   .title-text {
     font-size: 4vw;
   }
+  .role-text {
+    font-size: 2.4vw;
+  }
   .accolade-text {
-    font-size: 2vw;
+    font-size: 1.8vw;
+    margin: 0.1rem;
   }
 }
 </style>

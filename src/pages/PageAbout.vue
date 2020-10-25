@@ -1,8 +1,8 @@
 <template>
   <div class="flex items-center px-8 lg:px-24 lg:py-40">
-    <div class="text-black-onyx">
-      <PortfolioHeading :portfolio="title" :key="title" />
-      <div class="lg:w-2/3 mx-auto about-text font-light">
+    <div class="lg:w-2/3 mx-auto">
+      <hr class="about-line mx-auto my-8 lg:my-12">
+      <div class="about-text font-light text-black-onyx">
         <p>
           In the course of his creative process, Dito always raises the theme of
           <span class="font-medium">the meaning of honesty</span>
@@ -26,7 +26,6 @@
 
 <script lang="ts">
 import Vue from "vue";
-import PortfolioHeading from "../components/PortfolioHeading.vue";
 
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -35,7 +34,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default Vue.extend({
   name: "PageAbout",
-  components: { PortfolioHeading },
   data() {
     return {
       title: "DITOBUWONO"
@@ -48,7 +46,7 @@ export default Vue.extend({
     aboutScroll() {
       gsap.fromTo(
         ".about-text",
-        { autoAlpha: 0 },
+        { autoAlpha: 0, y:30 },
         {
           scrollTrigger: {
             id: "about-text",
@@ -57,7 +55,7 @@ export default Vue.extend({
             end: "20% 30%",
             scrub: true
           },
-          y: -30,
+          y: 0,
           z: 10,
           autoAlpha: 1,
           rotation: 0.01
@@ -69,12 +67,22 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+
+.about-line {
+  width: 100%;
+  transform: scaleX(0.15);
+  border-top: 10px solid #0f0f0f;
+}
+
 .about-text {
   font-size: 2.4vw;
 }
 @media screen and (max-width: 1204px) {
   .about-text {
     font-size: 5.5vw;
+  }
+  .about-line {
+    border-top: 4px solid #0f0f0f;
   }
 }
 </style>

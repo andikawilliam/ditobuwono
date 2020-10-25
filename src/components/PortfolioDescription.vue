@@ -1,9 +1,9 @@
 <template>
-  <div class="h-screen flex items-center justify-center lg:w-2/3 lg:mx-auto">
+  <div class="flex items-center justify-center mb-12 lg:mb-24 lg:w-3/4  lg:mx-auto">
     <div class="border-container">
       <h3
         v-bind:id="'desc-' + portfolio"
-        class="description-text pl-6 font-light italic tracking-wide"
+        class="description-text pt-2 lg:pt-8 font-light italic tracking-wide"
         v-html="description"
       ></h3>
     </div>
@@ -32,7 +32,7 @@ export default Vue.extend({
     descriptionTranslate() {
       gsap.fromTo(
         this.descriptionId,
-        { opacity: 0, x: "-3vw" },
+        { opacity: 0, y: "-2vw" },
         {
           scrollTrigger: {
             trigger: this.descriptionId,
@@ -40,7 +40,7 @@ export default Vue.extend({
             toggleActions: "play none none reverse"
           },
           opacity: 1,
-          x: 0
+          y: 0
         }
       );
     }
@@ -51,22 +51,22 @@ export default Vue.extend({
 <style scoped>
 .description-text {
   position: relative;
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 
 .border-container {
   left: 0px;
   top: 0%;
-  border-left: 5px solid;
+  border-top: 8px solid;
   transition: transform 250ms ease-in-out;
 }
 
 @media screen and (max-width: 1204px) {
   .description-text {
-    font-size: 4.8vw;
+    font-size: 3.6vw;
   }
   .border-container {
-    border-left: 3px solid;
+    border-top: 3px solid;
   }
 }
 </style>

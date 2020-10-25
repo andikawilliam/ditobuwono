@@ -1,7 +1,7 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <PortfolioDescription :portfolio="title" :description="description" />
     <PortfolioHeading :portfolio="title" :key="title" />
+    <PortfolioDescription :portfolio="title" :description="description" />
     <div class="relative lg:w-2/3 mx-auto">
       <div class="grid auto-rows-fr grid-flow-row gap-4">
         <div
@@ -70,8 +70,13 @@ export default Vue.extend({
     return {
       title: "MIXTAPES",
       description: `
-        Being a part-time DJ from 2019, Dito always offers various perspectives.
-        Dito has performed several times with his collective and as a solo. 
+        Being a part-time 
+        <span class="font-semibold">DJ from 2019</span>, 
+        Dito always offers various perspectives. Dito has performed several 
+        times with his 
+        <span class="font-semibold">collective</span> 
+        and as a 
+        <span class="font-semibold">solo.</span> 
         Currently, Dito likes to explore and experiment from various music 
         genres through his mixtape choices.
       `
