@@ -66,7 +66,8 @@ export default Vue.extend({
         Dito's passion for cinema has existed since early childhood influenced  
         by his father.
         He started by making short films with his friends when 
-        he was in high school. 
+        he was in high school.
+        <br><br>
         <span class="font-semibold"> Terbelenggu (2014) </span>
         and 
         <span class="font-semibold"> Menyusulmu Bisa Menunggu (2015) </span>

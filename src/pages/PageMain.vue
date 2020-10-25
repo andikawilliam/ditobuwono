@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-32 lg:pb-40">
+  <div class="pb-24 lg:pb-32">
     <div class="flex justify-center">
       <div
         class="portfolios-main text-black-onyx font-semibold lg:font-medium lg:leading-snug"

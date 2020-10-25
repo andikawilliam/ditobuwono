@@ -1,9 +1,9 @@
 <template>
-  <div class="flex items-center justify-center mb-12 lg:mb-24 lg:w-3/4  lg:mx-auto">
+  <div class="flex items-center justify-center mb-20 lg:mb-32 lg:w-3/4  lg:mx-auto">
     <div class="border-container">
       <h3
         v-bind:id="'desc-' + portfolio"
-        class="description-text pt-2 lg:pt-8 font-light italic tracking-wide"
+        class="description-text pt-4 lg:pt-8 font-light italic tracking-wide"
         v-html="description"
       ></h3>
     </div>
@@ -51,7 +51,8 @@ export default Vue.extend({
 <style scoped>
 .description-text {
   position: relative;
-  font-size: 1.8vw;
+  font-size: 2vw;
+  letter-spacing: 0.03em;
 }
 
 .border-container {
@@ -63,7 +64,7 @@ export default Vue.extend({
 
 @media screen and (max-width: 1204px) {
   .description-text {
-    font-size: 3.6vw;
+    font-size: 4.7vw;
   }
   .border-container {
     border-top: 3px solid;

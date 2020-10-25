@@ -9,15 +9,15 @@
         :key="publication.id"
       >
         <a :href="publication.src">
-          <div class="px-6 grayscale">
+          <div class="px-2 grayscale">
             <img :src="publication.cover" class="mx-auto publication-cover" />
           </div>
         </a>
-        <div class="px-6 pt-6">
-          <p class="text-2xl text-center font-medium pb-2">
+        <div class="px-2 pt-6">
+          <p class="title-text text-center font-medium pb-2">
             {{ publication.title }}
           </p>
-          <p class="text-lg lg:text-xl text-gray-200 italic pt-2">
+          <p class="description-text text-gray-200 italic pt-2">
             {{ publication.description }}
           </p>
         </div>
@@ -44,7 +44,9 @@ export default Vue.extend({
       description: `
         Dito started writing short stories from elementary school, where 
         since then he has been happy to write wherever he has free time and some
-        of his writings are still not published. In 2017, Dito was invited by 
+        of his writings are still not published. 
+        <br><br>
+        In 2017, Dito was invited by 
         his college friend to become a contributor for his campus independent 
         zine, 
         <span class="font-semibold">Mati Lampu</span>. 
@@ -90,5 +92,24 @@ export default Vue.extend({
 }
 .publication-cover:hover {
   transform: scale(1.03);
+}
+
+.title-text {
+  font-size: 1.5vw;
+}
+
+.description-text {
+  font-size: 1.5vw;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 1204px) {
+  .title-text {
+    font-size: 5vw;
+  }
+
+  .description-text {
+    font-size: 4vw;
+  }
 }
 </style>

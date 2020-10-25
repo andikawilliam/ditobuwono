@@ -70,13 +70,14 @@ export default Vue.extend({
     return {
       title: "MIXTAPES",
       description: `
-        Being a part-time 
-        <span class="font-semibold">DJ from 2019</span>, 
-        Dito always offers various perspectives. Dito has performed several 
-        times with his 
+        Being a  
+        <span class="font-semibold">part-time DJ</span>, 
+        from 2019 Dito always offers various perspectives. Dito has performed
+        several times with his 
         <span class="font-semibold">collective</span> 
         and as a 
         <span class="font-semibold">solo.</span> 
+        <br><br>
         Currently, Dito likes to explore and experiment from various music 
         genres through his mixtape choices.
       `

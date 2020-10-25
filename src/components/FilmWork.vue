@@ -1,11 +1,11 @@
 <template>
   <div class="lg:w-2/3 mx-auto pb-12 lg:pb-32">
     <a :href="href" target="_blank" rel="noopener noreferrer">
-      <div class="video-container text-shadow" v-on:click="showText = false">
+      <div class="container text-shadow" v-on:click="showText = false">
         <img class="absolute rounded-md grayscale" :src="image" />
-        <div class="absolute p-2 lg:p-4">
-          <p class="title-text font-semibold px-1 lg:px-4">{{ title }}</p>
-          <p class="role-text float-left px-1 lg:px-4">{{ role }}</p>
+        <div class="absolute px-2 py-1 lg:px-4 lg:py-2">
+          <p class="title-text font-semibold">{{ title }}</p>
+          <p class="role-text float-left">{{ role }}</p>
         </div>
         <div class="absolute inset-0 text-center">
           <font-awesome-icon
@@ -13,9 +13,9 @@
             :icon="['fas', 'play-circle']"
           />
         </div>
-        <div class="absolute text-right right-0 bottom-0">
+        <div class="absolute text-right right-0 bottom-0 px-2 py-1 lg:px-4 lg:py-2">
           <p
-            class="accolade-text float-right px-1 lg:px-4" 
+            class="accolade-text float-right" 
             v-for="accolade in accolades"
             :key="accolade"
           >
@@ -62,19 +62,19 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.video-container {
+.container {
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
 }
 
-.video-container iframe {
+/* .container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 .play-icon {
   position: relative;
@@ -90,11 +90,11 @@ export default Vue.extend({
 }
 .accolade-text {
   font-size: 1.2vw;
-  margin: 0.25rem;
+  margin: 0.1em 0.2em;
 }
 
 .text-shadow {
-  text-shadow: 1px 1px 4px rgba(15, 15, 15, 0.7);
+  text-shadow: 1px 1px 4px rgba(15, 15, 15, 0.8);
 }
 
 @media screen and (max-width: 1204px) {
@@ -105,8 +105,8 @@ export default Vue.extend({
     font-size: 2.4vw;
   }
   .accolade-text {
-    font-size: 1.8vw;
-    margin: 0.1rem;
+    font-size: 2.2vw;
+    margin: 0.06em 0.2em;
   }
 }
 </style>
