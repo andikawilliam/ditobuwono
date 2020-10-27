@@ -1,5 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" v-cloak>
+    <PageLoading />
+
     <TheNav />
     <PageMain />
     <PageAbout class="about-section" />
@@ -19,6 +21,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import TheNav from "./components/TheNav.vue";
+import PageLoading from "./pages/PageLoading.vue";
 import PageMain from "./pages/PageMain.vue";
 import PageAbout from "./pages/PageAbout.vue";
 import PagePortfolioFilm from "./pages/PagePortfolioFilm.vue";
@@ -31,6 +34,7 @@ export default Vue.extend({
   name: "App",
   components: {
     TheNav,
+    PageLoading,
     PageMain,
     PageAbout,
     PagePortfolioFilm,
@@ -54,7 +58,7 @@ export default Vue.extend({
             trigger: ".about-section",
             start: "80% 60%",
             end: "80% 60%",
-            toggleActions: "play none reverse reverse",
+            toggleActions: "play none reverse reverse"
           },
           backgroundColor: "#0f0f0f"
         }
@@ -62,6 +66,17 @@ export default Vue.extend({
     }
   }
 });
+
+function init() {
+  const vidDefer = document.getElementsByTagName("iframe");
+  for (let i = 0; i < vidDefer.length; i++) {
+    if (vidDefer[i].getAttribute("data-src")) {
+      const videoSrc: string = vidDefer[i].getAttribute("data-src") ?? "";
+      vidDefer[i].setAttribute("src", videoSrc);
+    }
+  }
+}
+window.onload = init;
 </script>
 
 <style>
@@ -70,7 +85,9 @@ export default Vue.extend({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+[v-cloak] {
+  display: none;
+}
 .grayscale {
   -webkit-filter: grayscale(40%);
   filter: grayscale(40%);

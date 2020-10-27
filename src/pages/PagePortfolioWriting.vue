@@ -34,7 +34,7 @@ import CoverKaput from "../assets/cover-kaput.png";
 export default Vue.extend({
   name: "PortfolioWriting",
   components: {
-    PortfolioHeading,
+    PortfolioHeading
   },
   data: function() {
     return {

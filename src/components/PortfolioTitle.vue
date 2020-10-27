@@ -1,7 +1,8 @@
 <template>
-  <h1 
+  <h1
     :id="titleId"
-    class="heading-text text-center font-medium uppercase pb-2 lg:pb-4">
+    class="heading-text text-center font-medium uppercase pb-2 lg:pb-4"
+  >
     {{ title }}
   </h1>
 </template>
@@ -11,7 +12,7 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "PortfolioHeading",
-  props: ["title", "titleId"],
+  props: ["title", "titleId"]
 });
 </script>
 

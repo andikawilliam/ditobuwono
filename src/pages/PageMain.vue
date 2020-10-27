@@ -4,18 +4,18 @@
       <div
         class="portfolios-main text-black-onyx font-semibold lg:font-medium lg:leading-snug"
       >
-        <a href="#filmography">
-          <p>FILM.</p>
-        </a>
-        <a href="#mixtapes">
-          <p>MUSIC.</p>
-        </a>
-        <a href="#talks">
-          <p>PODCAST.</p>
-        </a>
-        <a href="#publications">
-          <p>WRITING.</p>
-        </a>
+        <p class="cursor-pointer" v-on:click="goTo('#filmography')">
+          FILM.
+        </p>
+        <p class="cursor-pointer" v-on:click="goTo('#mixtapes')">
+          MUSIC.
+        </p>
+        <p class="cursor-pointer" v-on:click="goTo('#talks')">
+          PODCAST.
+        </p>
+        <p class="cursor-pointer" v-on:click="goTo('#publications')">
+          WRITING.
+        </p>
       </div>
     </div>
   </div>
@@ -23,9 +23,25 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { gsap } from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
 
 export default Vue.extend({
-  name: "PageMain"
+  name: "PageMain",
+  methods: {
+    goTo: function(destination: string) {
+      gsap.to(window, {
+        duration: 2,
+        scrollTo: {
+          y: destination,
+          offsetY: 50
+        },
+        ease: "power2"
+      });
+    }
+  }
 });
 </script>
 
@@ -40,6 +56,6 @@ export default Vue.extend({
 
 .portfolios-main p:hover {
   transform: translateX(2vw);
-  opacity: 0.5;
+  opacity: 0.4;
 }
 </style>

@@ -10,7 +10,8 @@
             :key="podcast.id"
           >
             <iframe
-              :src="podcast.src"
+              :data-src="podcast.src"
+              loading="lazy"
               width="100%"
               height="100%"
               frameborder="0"
@@ -43,7 +44,7 @@ import PortfolioHeading from "../components/PortfolioHeading.vue";
 export default Vue.extend({
   name: "PortfolioPodcast",
   components: {
-    PortfolioHeading,
+    PortfolioHeading
   },
   data: function() {
     return {

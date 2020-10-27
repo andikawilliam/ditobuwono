@@ -1,12 +1,10 @@
 <template>
   <div id="">
-    <PortfolioTitle :title="title" :titleId="titleId"/>
-    <div
-      class="mb-20 lg:mb-32 lg:w-3/4 lg:mx-auto"
-    >
-      <PortfolioLine :lineId="lineId"/>
-      <PortfolioDescription 
-        :description="description" 
+    <PortfolioTitle :title="title" :titleId="titleId" />
+    <div class="mb-20 lg:mb-32 lg:w-3/4 lg:mx-auto">
+      <PortfolioLine :lineId="lineId" />
+      <PortfolioDescription
+        :description="description"
         :descriptionId="descriptionId"
       />
     </div>
@@ -45,26 +43,23 @@ export default Vue.extend({
     headerAnimation() {
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: "#"+this.titleId,
+          trigger: "#" + this.titleId,
           start: "bottom 35%",
           end: "bottom 35%",
           // markers: true,
           toggleActions: "play none none none"
-        },
+        }
       });
-
       tl.fromTo(
-        "#" + this.titleId, 
+        "#" + this.titleId,
         { y: "-10vw", autoAlpha: 0 },
         { y: 0, autoAlpha: 1, rotation: 0.01, ease: "power2" }
       );
-
       tl.fromTo(
-        "#" + this.lineId, 
+        "#" + this.lineId,
         { scaleX: 0.1 },
         { scaleX: 1, ease: "power2" }
       );
-    
       tl.fromTo(
         "#" + this.descriptionId,
         { autoAlpha: 0, y: "-2vw" },
@@ -75,5 +70,4 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
