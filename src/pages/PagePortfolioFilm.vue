@@ -37,7 +37,7 @@ FilmWork
   },
   data: function() {
     return {
-      title: "FILMOGRAPHY",
+      title: "filmography",
       description: `
         Dito's passion for cinema has existed since early childhood influenced  
         by his father.

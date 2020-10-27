@@ -47,7 +47,7 @@ export default Vue.extend({
   },
   data: function() {
     return {
-      title: "TALKS",
+      title: "talks",
       description: `
         Dito started his own podcast with 
         <span class="font-semibold">Dara Dan Pemuda</span>,

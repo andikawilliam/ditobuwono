@@ -38,7 +38,7 @@ export default Vue.extend({
   },
   data: function() {
     return {
-      title: "PUBLICATIONS",
+      title: "publications",
       description: `
         Dito started writing short stories from elementary school, where 
         since then he has been happy to write wherever he has free time and some

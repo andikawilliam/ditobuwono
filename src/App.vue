@@ -3,10 +3,10 @@
     <TheNav />
     <PageMain />
     <PageAbout class="about-section" />
-    <PagePortfolioFilm />
-    <PagePortfolioMusic />
-    <PagePortfolioPodcast />
-    <PagePortfolioWriting />
+    <PagePortfolioFilm id="page-film" />
+    <PagePortfolioMusic id="page-music" />
+    <PagePortfolioPodcast id="page-podcast" />
+    <PagePortfolioWriting id="page-writing" />
     <PageContact />
   </div>
 </template>

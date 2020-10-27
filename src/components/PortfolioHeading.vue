@@ -33,7 +33,7 @@ export default Vue.extend({
   },
   data() {
     return {
-      titleId: "title-" + this.title,
+      titleId: this.title,
       lineId: "line-" + this.title,
       descriptionId: "desc-" + this.title
     };

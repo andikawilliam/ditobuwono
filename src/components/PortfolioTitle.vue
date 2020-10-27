@@ -1,5 +1,7 @@
 <template>
-  <h1 :id="titleId" class="heading-text text-center font-medium pb-2 lg:pb-4">
+  <h1 
+    :id="titleId"
+    class="heading-text text-center font-medium uppercase pb-2 lg:pb-4">
     {{ title }}
   </h1>
 </template>

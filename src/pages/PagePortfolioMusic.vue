@@ -65,7 +65,7 @@ export default Vue.extend({
   },
   data: function() {
     return {
-      title: "MIXTAPES",
+      title: "mixtapes",
       description: `
         Being a  
         <span class="font-semibold">part-time DJ</span>, 
