@@ -1,7 +1,6 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <PortfolioHeading :portfolio="title" :key="title" />
-    <PortfolioDescription :portfolio="title" :description="description" />
+    <PortfolioHeading :title="title" :description="description" />
     <div class="relative lg:w-2/3 mx-auto">
       <div class="grid auto-rows-fr grid-flow-row gap-4">
         <div
@@ -18,7 +17,7 @@
           </iframe>
         </div>
         <div
-          class="row-span-1 col-span-5 lg:row-span-2 lg:col-span-3 grayscale"
+          class="row-span-1 col-span-5 lg:row-span-3 lg:col-span-3 grayscale"
         >
           <iframe
             width="100%"
@@ -31,7 +30,7 @@
           </iframe>
         </div>
         <div
-          class="row-span-1 col-span-5 lg:row-span-1 lg:col-span-3 grayscale"
+          class="row-span-1 col-span-5 grayscale"
         >
           <iframe
             width="100%"
@@ -58,13 +57,11 @@
 <script lang="ts">
 import Vue from "vue";
 import PortfolioHeading from "../components/PortfolioHeading.vue";
-import PortfolioDescription from "../components/PortfolioDescription.vue";
 
 export default Vue.extend({
   name: "PortfolioMusic",
   components: {
     PortfolioHeading,
-    PortfolioDescription
   },
   data: function() {
     return {

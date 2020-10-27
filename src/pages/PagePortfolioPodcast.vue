@@ -1,7 +1,6 @@
 <template>
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <PortfolioHeading :portfolio="title" :key="title" />
-    <PortfolioDescription :portfolio="title" :description="description" />
+    <PortfolioHeading :title="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
       <div class="w-full">
         <transition-group name="podcast-complete">
@@ -40,16 +39,15 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 import PortfolioHeading from "../components/PortfolioHeading.vue";
-import PortfolioDescription from "../components/PortfolioDescription.vue";
 
 export default Vue.extend({
   name: "PortfolioPodcast",
   components: {
     PortfolioHeading,
-    PortfolioDescription
   },
   data: function() {
     return {
+      title: "TALKS",
       description: `
         Dito started his own podcast with 
         <span class="font-semibold">Dara Dan Pemuda</span>,
@@ -64,7 +62,6 @@ export default Vue.extend({
         podcast, where the podcast tells about the experiences when he and his 
         college friends participated in social services in Merauke, Papua.
       `,
-      title: "TALKS",
       limit: 3,
       podcasts: [
         {
@@ -140,7 +137,7 @@ export default Vue.extend({
   margin-top: 5px;
 }
 .podcast-grid:hover {
-  transform: scale(1.02);
+  transform: translateX(1vw);
 }
 .podcast-complete-move {
   transition: transform 1s;

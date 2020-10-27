@@ -1,7 +1,7 @@
 <template>
-  <div class="lg:w-2/3 mx-auto pb-12 lg:pb-32">
+  <div class="film-container pb-12 lg:pb-32">
     <a :href="href" target="_blank" rel="noopener noreferrer">
-      <div class="container text-shadow" v-on:click="showText = false">
+      <div class="film-content text-shadow" v-on:click="showText = false">
         <img class="absolute rounded-md grayscale" :src="image" />
         <div class="absolute px-2 py-1 lg:px-4 lg:py-2">
           <p class="title-text font-semibold">{{ title }}</p>
@@ -13,9 +13,11 @@
             :icon="['fas', 'play-circle']"
           />
         </div>
-        <div class="absolute text-right right-0 bottom-0 px-2 py-1 lg:px-4 lg:py-2">
+        <div
+          class="absolute text-right right-0 bottom-0 px-2 py-1 lg:px-4 lg:py-2"
+        >
           <p
-            class="accolade-text float-right" 
+            class="accolade-text float-right"
             v-for="accolade in accolades"
             :key="accolade"
           >
@@ -62,7 +64,7 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.container {
+.film-content {
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
@@ -80,6 +82,12 @@ export default Vue.extend({
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.5s ease;
+}
+
+.film-container:hover .play-icon{
+  transform: translateY(-50%) scale(1.2);
+  color: #BB0A21;
 }
 
 .title-text {

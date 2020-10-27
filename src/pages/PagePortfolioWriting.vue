@@ -1,10 +1,9 @@
 <template>
-  <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
-    <PortfolioHeading :portfolio="title" :key="title" />
-    <PortfolioDescription :portfolio="title" :description="description" />
+  <div class="relative text-gray-ivory px-8 pt-40 pb-12 lg:px-20 lg:py-40">
+    <PortfolioHeading :title="title" :description="description" />
     <div class="lg:grid lg:grid-cols-2 lg:w-2/3 mx-auto gap-24">
       <div
-        class="lg:row-span-1 lg:col-span-1 mb-24"
+        class="lg:row-span-1 lg:col-span-1 mb-12 lg:mb-24"
         v-for="publication in publications"
         :key="publication.id"
       >
@@ -17,7 +16,7 @@
           <p class="title-text text-center font-medium pb-2">
             {{ publication.title }}
           </p>
-          <p class="description-text text-gray-200 italic pt-2">
+          <p class="description-text font-light pt-2">
             {{ publication.description }}
           </p>
         </div>
@@ -29,7 +28,6 @@
 <script lang="ts">
 import Vue from "vue";
 import PortfolioHeading from "../components/PortfolioHeading.vue";
-import PortfolioDescription from "../components/PortfolioDescription.vue";
 import CoverToleransi from "../assets/cover-toleransi.png";
 import CoverKaput from "../assets/cover-kaput.png";
 
@@ -37,10 +35,10 @@ export default Vue.extend({
   name: "PortfolioWriting",
   components: {
     PortfolioHeading,
-    PortfolioDescription
   },
   data: function() {
     return {
+      title: "PUBLICATIONS",
       description: `
         Dito started writing short stories from elementary school, where 
         since then he has been happy to write wherever he has free time and some
@@ -52,7 +50,6 @@ export default Vue.extend({
         <span class="font-semibold">Mati Lampu</span>. 
         And in 2020, he began to create and design his own publications.
       `,
-      title: "PUBLICATIONS",
       publications: [
         {
           id: 1,
@@ -91,7 +88,7 @@ export default Vue.extend({
   box-shadow: 0px -2px 10px 2px rgba(15, 15, 15, 0.8);
 }
 .publication-cover:hover {
-  transform: scale(1.03);
+  transform: translateY(-1vw);
 }
 
 .title-text {
@@ -99,7 +96,7 @@ export default Vue.extend({
 }
 
 .description-text {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   letter-spacing: 0.05em;
 }
 
@@ -109,7 +106,7 @@ export default Vue.extend({
   }
 
   .description-text {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 }
 </style>

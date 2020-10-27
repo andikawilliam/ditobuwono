@@ -1,73 +1,30 @@
 <template>
-  <div class="flex items-center justify-center mb-20 lg:mb-32 lg:w-3/4  lg:mx-auto">
-    <div class="border-container">
-      <h3
-        v-bind:id="'desc-' + portfolio"
-        class="description-text pt-4 lg:pt-8 font-light italic tracking-wide"
-        v-html="description"
-      ></h3>
-    </div>
-  </div>
+  <h3
+    class="description-text pt-4 lg:pt-8 font-light italic tracking-wide"
+    :id="descriptionId"
+    v-html="description"
+  ></h3>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default Vue.extend({
   name: "PortfolioDescription",
-  props: ["portfolio", "description"],
-  data() {
-    return {
-      descriptionId: "#desc-" + this.portfolio
-    };
-  },
-  mounted: function() {
-    this.descriptionTranslate();
-  },
-  methods: {
-    descriptionTranslate() {
-      gsap.fromTo(
-        this.descriptionId,
-        { opacity: 0, y: "-2vw" },
-        {
-          scrollTrigger: {
-            trigger: this.descriptionId,
-            start: "top 70%",
-            toggleActions: "play none none reverse"
-          },
-          opacity: 1,
-          y: 0
-        }
-      );
-    }
-  }
+  props: ["description", "descriptionId"]
 });
 </script>
 
 <style scoped>
 .description-text {
   position: relative;
-  font-size: 2vw;
-  letter-spacing: 0.03em;
-}
-
-.border-container {
-  left: 0px;
-  top: 0%;
-  border-top: 8px solid;
-  transition: transform 250ms ease-in-out;
+  font-size: 1.7vw;
+  letter-spacing: 0.02em;
 }
 
 @media screen and (max-width: 1204px) {
   .description-text {
-    font-size: 4.7vw;
-  }
-  .border-container {
-    border-top: 3px solid;
+    font-size: 4.2vw;
   }
 }
 </style>

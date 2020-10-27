@@ -1,7 +1,16 @@
 <template>
-  <h1 :id="portfolio" class="heading-text text-center font-medium pb-2 lg:pb-4">
-    {{ portfolio }}
-  </h1>
+  <div id="">
+    <PortfolioTitle :title="title" :titleId="titleId"/>
+    <div
+      class="mb-20 lg:mb-32 lg:w-3/4 lg:mx-auto"
+    >
+      <PortfolioLine :lineId="lineId"/>
+      <PortfolioDescription 
+        :description="description" 
+        :descriptionId="descriptionId"
+      />
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -9,47 +18,62 @@ import Vue from "vue";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+import PortfolioTitle from "../components/PortfolioTitle.vue";
+import PortfolioLine from "../components/PortfolioLine.vue";
+import PortfolioDescription from "../components/PortfolioDescription.vue";
 
+gsap.registerPlugin(ScrollTrigger);
 export default Vue.extend({
   name: "PortfolioHeading",
-  props: ["portfolio"],
+  props: ["title", "description"],
+  components: {
+    PortfolioTitle,
+    PortfolioLine,
+    PortfolioDescription
+  },
   data() {
     return {
-      headerId: "#" + this.portfolio
+      titleId: "title-" + this.title,
+      lineId: "line-" + this.title,
+      descriptionId: "desc-" + this.title
     };
   },
-  // mounted: function() {
-  //   this.headerTranslate();
-  // },
-  // methods: {
-  //   headerTranslate() {
-  //     gsap.to(this.headerId, {
-  //       scrollTrigger: {
-  //         trigger: this.headerId,
-  //         start: "top 40%",
-  //         end: "bottom 10%",
-  //         // markers: true,
-  //         scrub: 0.5
-  //       },
-  //       y: "25vw",
-  //       autoAlpha: 0,
-  //       // rotation: 0.01,
-  //       onComplete: () => ScrollTrigger.refresh()
-  //     });
-  //   }
-  // }
+  mounted: function() {
+    this.headerAnimation();
+  },
+  methods: {
+    headerAnimation() {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#"+this.titleId,
+          start: "bottom 35%",
+          end: "bottom 35%",
+          // markers: true,
+          toggleActions: "play none none none"
+        },
+      });
+
+      tl.fromTo(
+        "#" + this.titleId, 
+        { y: "-10vw", autoAlpha: 0 },
+        { y: 0, autoAlpha: 1, rotation: 0.01, ease: "power2" }
+      );
+
+      tl.fromTo(
+        "#" + this.lineId, 
+        { scaleX: 0.1 },
+        { scaleX: 1, ease: "power2" }
+      );
+    
+      tl.fromTo(
+        "#" + this.descriptionId,
+        { autoAlpha: 0, y: "-2vw" },
+        { autoAlpha: 1, y: 0, ease: "power2" }
+      );
+    }
+  }
 });
 </script>
 
 <style scoped>
-.heading-text {
-  font-size: 10vw;
-}
-
-@media screen and (max-width: 1204px) {
-  .heading-text {
-    font-size: 12vw;
-  }
-}
 </style>
