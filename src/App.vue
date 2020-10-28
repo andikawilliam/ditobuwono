@@ -1,7 +1,6 @@
 <template>
   <div id="app" v-cloak>
     <PageLoading />
-
     <TheNav />
     <PageMain />
     <PageAbout class="about-section" />
@@ -66,17 +65,6 @@ export default Vue.extend({
     }
   }
 });
-
-function init() {
-  const vidDefer = document.getElementsByTagName("iframe");
-  for (let i = 0; i < vidDefer.length; i++) {
-    if (vidDefer[i].getAttribute("data-src")) {
-      const videoSrc: string = vidDefer[i].getAttribute("data-src") ?? "";
-      vidDefer[i].setAttribute("src", videoSrc);
-    }
-  }
-}
-window.onload = init;
 </script>
 
 <style>

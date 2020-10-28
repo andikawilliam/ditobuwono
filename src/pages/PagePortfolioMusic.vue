@@ -2,52 +2,29 @@
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div class="relative lg:w-2/3 mx-auto">
-      <div class="grid auto-rows-fr grid-flow-row gap-4">
+      <div class="w-full grid-container">
         <div
-          class="row-span-1 col-span-5 lg:row-span-3 lg:col-span-2 grayscale"
+          class="row-span-1 col-span-5 grayscale"
+          v-for="mixtape in mixtapes"
+          :key="mixtape.id"
+          v-bind:class="gridSpan(mixtape.rowGrid, mixtape.colGrid)"
         >
+          <div
+            v-show="!mixtape.show"
+            class="transition-all cursor-pointer flex items-center justify-center bg-gray-dito w-full h-full text-center text-xl lg:text-3xl font-semibold italic"
+            v-on:click="mixtape.show = true"
+          >
+            {{ mixtape.name }}
+          </div>
           <iframe
-            data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/769393264&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            v-if="mixtape.show"
+            :src="mixtape.src"
             loading="lazy"
             width="100%"
             height="100%"
             scrolling="no"
-            frameborder="no"
-            allow="autoplay"
-          >
-          </iframe>
-        </div>
-        <div
-          class="row-span-1 col-span-5 lg:row-span-3 lg:col-span-3 grayscale"
-        >
-          <iframe
-            data-src="https://www.youtube.com/embed/pvJEInkcfxI"
-            loading="lazy"
-            width="100%"
-            height="100%"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
-        <div class="row-span-1 col-span-5 grayscale">
-          <iframe
-            data-src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FSuddenlyKaget%2Fsuddenlykaget-mixtape-maharddhika%2F"
-            loading="lazy"
-            width="100%"
-            height="100%"
-            frameborder="0"
-          >
-          </iframe>
-        </div>
-        <div class="row-span-1 col-span-5 lg:row-span-2 grayscale">
-          <iframe
-            data-src="https://www.mixcloud.com/widget/iframe/?feed=%2Fbuvv%2F"
-            loading="lazy"
-            width="100%"
-            height="100%"
-            frameborder="0"
+            allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           >
           </iframe>
         </div>
@@ -79,10 +56,61 @@ export default Vue.extend({
         <br><br>
         Currently, Dito likes to explore and experiment from various music 
         genres through his mixtape choices.
-      `
+      `,
+      mixtapes: [
+        {
+          id: 1,
+          show: false,
+          rowGrid: 3,
+          colGrid: 2,
+          name: "Suddenly Kaget Mixtape: Masa, Masa",
+          src:
+            "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/769393264&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        },
+        {
+          id: 2,
+          show: false,
+          rowGrid: 3,
+          colGrid: 3,
+          name: "SUBLIMINAL MESSAGES: SWABTEST#!",
+          src: "https://www.youtube.com/embed/pvJEInkcfxI"
+        },
+        {
+          id: 3,
+          show: false,
+          rowGrid: 1,
+          colGrid: 5,
+          name: "Suddenly Kaget Mixtape: Maharddhika",
+          src:
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FSuddenlyKaget%2Fsuddenlykaget-mixtape-maharddhika%2F"
+        },
+        {
+          id: 4,
+          show: false,
+          rowGrid: 2,
+          colGrid: 5,
+          name: "Infidelity in Suburbia",
+          src: "https://www.mixcloud.com/widget/iframe/?feed=%2Fbuvv%2F"
+        }
+      ]
     };
+  },
+  methods: {
+    gridSpan: function(rowSize: number, columnSize: number) {
+      const row: string = "lg:row-span-" + rowSize;
+      const col: string = "lg:col-span-" + columnSize;
+      return row + " " + col;
+    }
   }
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows: repeat(5, 150px);
+  grid-auto-flow: row;
+  gap: 1rem;
+}
+</style>

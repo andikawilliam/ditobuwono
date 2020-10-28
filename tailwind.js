@@ -16,7 +16,7 @@ module.exports = {
         'gray-ivory': "#F7F7F2",
         'black-onyx': "#0f0f0f",
         'gray-background': '#121217',
-        'gray-dito': '#373a40',
+        'gray-dito': '#262626',
         'gray-dito-text': '#767676'
       }
     }
