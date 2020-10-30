@@ -2,7 +2,7 @@
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div class="relative lg:w-2/3 mx-auto">
-      <div class="w-full grid-container">
+      <div class="w-full music-grid-container">
         <div
           class="row-span-1 col-span-5 grayscale"
           v-for="mixtape in mixtapes"
@@ -110,7 +110,7 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.grid-container {
+.music-grid-container {
   display: grid;
   grid-template-columns: repeat(5, 2fr);
   grid-template-rows: repeat(5, 150px);
@@ -146,7 +146,7 @@ export default Vue.extend({
     font-weight: 700;
     font-size: 6vw;
   }
-  .grid-container {
+  .music-grid-container {
     grid-template-rows: repeat(4, 150px);
   }
 }
