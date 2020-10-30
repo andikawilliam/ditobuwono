@@ -12,7 +12,7 @@
           <transition name="mixtape-fade">
             <div
               v-show="!mixtape.show"
-              class="mixtape-text border-gray-dito"
+              class="mixtape-text border-gray-dito-text"
               v-on:click="mixtape.show = true"
             >
               {{ mixtape.name }}
@@ -119,6 +119,7 @@ export default Vue.extend({
 }
 
 .mixtape-text {
+  transition: all 0.5s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -132,14 +133,18 @@ export default Vue.extend({
   font-style: italic;
   font-weight: 500;
   border-radius: 0.1em;
-  border-width: 5px;
+  border-width: 4px;
+}
+
+.mixtape-text:hover {
+  color: #0f0f0f;
+  background-color: #f7f7f2;
 }
 
 @media screen and (max-width: 1204px) {
   .mixtape-text {
     font-weight: 700;
     font-size: 6vw;
-    border-width: 2px;
   }
   .grid-container {
     grid-template-rows: repeat(4, 150px);
@@ -149,7 +154,6 @@ export default Vue.extend({
 .mixtape-fade-enter-active,
 .mixtape-fade-leave-active {
   position: absolute;
-  transition: all 1.5s;
 }
 .mixtape-fade-enter,
 .mixtape-fade-leave-to {

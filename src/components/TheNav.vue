@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full px-6 lg:px-16 py-12 z-20">
+  <header class="w-full px-6 lg:px-16 py-10 lg:py-12 z-20">
     <div class="flex justify-between font-medium text-black-onyx">
       <div>
         <h1 class="flex lg:text-3xl">

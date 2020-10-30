@@ -2,15 +2,15 @@
   <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
-      <div class="w-full">
+      <div class="grid-container w-full">
         <div
-          class="podcast-grid my-6 grayscale"
+          class="podcast-grid mb-6 lg:mb-12 grayscale"
           v-for="podcast in podcastsShown"
           :key="podcast.id"
         >
           <transition name="podcast-fade">
             <div
-              class="podcast-text border-gray-dito"
+              class="podcast-text border-gray-dito-text"
               v-show="!podcast.show"
               v-on:click="podcast.show = !podcast.show"
             >
@@ -113,14 +113,15 @@ export default Vue.extend({
 
 <style scoped>
 .podcast-grid {
-  transition: all 0.5s;
   margin-top: 5px;
-  height: 150px;
+  height: 160px;
 }
-.podcast-grid:hover {
-  transform: scale(1.02);
+.podcast-text:hover {
+  color: #0f0f0f;
+  background-color: #f7f7f2;
 }
 .podcast-text {
+  transition: all 0.5s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -134,7 +135,7 @@ export default Vue.extend({
   font-style: italic;
   font-weight: 500;
   border-radius: 0.1em;
-  border-width: 5px;
+  border-width: 4px;
 }
 
 .podcast-fade-enter-active,
@@ -149,7 +150,7 @@ export default Vue.extend({
 
 @media screen and (max-width: 1204px) {
   .podcast-grid {
-    height: 120px;
+    height: 150px;
   }
   .podcast-text {
     font-size: 6vw;

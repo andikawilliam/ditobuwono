@@ -4,16 +4,16 @@
       <div
         class="portfolios-main text-black-onyx font-semibold lg:font-medium lg:leading-snug"
       >
-        <p class="cursor-pointer" v-on:click="goTo('#filmography')">
+        <p class="main-text" v-on:click="goTo('#filmography')">
           FILM.
         </p>
-        <p class="cursor-pointer" v-on:click="goTo('#mixtapes')">
+        <p class="main-text" v-on:click="goTo('#mixtapes')">
           MUSIC.
         </p>
-        <p class="cursor-pointer" v-on:click="goTo('#talks')">
+        <p class="main-text" v-on:click="goTo('#talks')">
           PODCAST.
         </p>
-        <p class="cursor-pointer" v-on:click="goTo('#publications')">
+        <p class="main-text" v-on:click="goTo('#publications')">
           WRITING.
         </p>
       </div>
@@ -30,6 +30,9 @@ gsap.registerPlugin(ScrollToPlugin);
 
 export default Vue.extend({
   name: "PageMain",
+  // mounted: function() {
+  //   this.mainTranslate();
+  // },
   methods: {
     goTo: function(destination: string) {
       gsap.to(window, {
@@ -41,6 +44,10 @@ export default Vue.extend({
         ease: "power2"
       });
     }
+    // mainTranslate: function() {
+    //   const tl = gsap.timeline();
+    //   const mainText = document.getElementsByClassName(".main-text");
+    // }
   }
 });
 </script>
@@ -49,13 +56,14 @@ export default Vue.extend({
 .portfolios-main {
   font-size: 15vw;
 }
-
 .portfolios-main p {
   transition: all 0.4s ease-in-out;
 }
-
 .portfolios-main p:hover {
   transform: translateX(2vw);
   opacity: 0.4;
+}
+.main-text {
+  cursor: pointer;
 }
 </style>

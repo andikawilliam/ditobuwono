@@ -38,31 +38,31 @@ export default Vue.extend({
     return {
       title: "DITOBUWONO"
     };
+  },
+  mounted: function() {
+    this.aboutScroll();
+  },
+  methods: {
+    aboutScroll() {
+      gsap.fromTo(
+        ".about-text",
+        { autoAlpha: 0, y:30 },
+        {
+          scrollTrigger: {
+            id: "about-text",
+            trigger: ".about-text",
+            start: "top 65%",
+            end: "20% 30%",
+            scrub: true
+          },
+          y: 0,
+          z: 10,
+          autoAlpha: 1,
+          rotation: 0.01
+        }
+      );
+    }
   }
-  // mounted: function() {
-  //   this.aboutScroll();
-  // },
-  // methods: {
-  //   aboutScroll() {
-  //     gsap.fromTo(
-  //       ".about-text",
-  //       { autoAlpha: 0, y:30 },
-  //       {
-  //         scrollTrigger: {
-  //           id: "about-text",
-  //           trigger: ".about-text",
-  //           start: "top 65%",
-  //           end: "20% 30%",
-  //           scrub: true
-  //         },
-  //         y: 0,
-  //         z: 10,
-  //         autoAlpha: 1,
-  //         rotation: 0.01
-  //       }
-  //     );
-  //   }
-  // }
 });
 </script>
 
