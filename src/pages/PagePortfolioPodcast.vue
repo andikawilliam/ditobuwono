@@ -3,33 +3,34 @@
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
       <div class="w-full">
-        <transition-group name="podcast-complete">
-          <div
-            class="podcast-grid my-4 grayscale"
-            v-for="podcast in podcastsShown"
-            :key="podcast.id"
-          >
-            <iframe
-              v-if="podcast.show"
-              :src="podcast.src"
-              loading="lazy"
-              width="100%"
-              height="100%"
-              frameborder="0"
-              scrolling="no"
-              allowtransparency="true"
-              allow="encrypted-media"
+        <div
+          class="podcast-grid my-6 grayscale"
+          v-for="podcast in podcastsShown"
+          :key="podcast.id"
+        >
+          <transition name="podcast-fade">
+            <div
+              class="podcast-text border-gray-dito"
+              v-show="!podcast.show"
+              v-on:click="podcast.show = !podcast.show"
             >
-            </iframe>
-          </div>
-        </transition-group>
+              {{ podcast.name }}
+            </div>
+          </transition>
+          <iframe
+            v-if="podcast.show"
+            :src="podcast.src[0]"
+            loading="lazy"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+            allowtransparency="true"
+            allow="encrypted-media"
+          >
+          </iframe>
+        </div>
       </div>
-      <button
-        class="bg-gray-ivory text-black-onyx my-4 py-1 px-6 rounded-xl"
-        v-on:click="addMorePodcast"
-      >
-        more podcast
-      </button>
     </div>
   </div>
 </template>
@@ -69,58 +70,35 @@ export default Vue.extend({
         {
           id: 1,
           show: false,
+          name: "Eksotis Merauke",
           type: "spotify",
-          src:
-            "https://open.spotify.com/embed-podcast/episode/4t7sqCp8WUWrBPQMxxIwn9"
+          src: [
+            "https://open.spotify.com/embed-podcast/episode/4t7sqCp8WUWrBPQMxxIwn9",
+            "https://open.spotify.com/embed-podcast/episode/0Yi88NzUtsbTtoWTAFIRCM",
+            "https://open.spotify.com/embed-podcast/episode/1EHnsS90cf8GrxbxWPtwj6",
+            "https://open.spotify.com/embed-podcast/episode/14fE8Q1JiaXRwm9LQAPuSX",
+            "https://open.spotify.com/embed-podcast/episode/28yLAnbOHFlNOq5zMIh6V7",
+            "https://open.spotify.com/embed-podcast/episode/1RUbojWjWv4wnDLESMbcq7",
+            "https://open.spotify.com/embed-podcast/episode/3mnaUMwIP0Sa3wmB71psFc"
+          ]
         },
         {
           id: 2,
           show: false,
-          type: "spotify",
-          src:
-            "https://open.spotify.com/embed-podcast/episode/0Yi88NzUtsbTtoWTAFIRCM"
+          name: "Loka Bersua",
+          type: "soundcloud",
+          src: [
+            "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/440655900&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          ]
         },
         {
           id: 3,
           show: false,
-          type: "spotify",
-          src:
-            "https://open.spotify.com/embed-podcast/episode/1EHnsS90cf8GrxbxWPtwj6"
-        },
-        {
-          id: 4,
-          show: false,
-          type: "soundcloud",
-          src:
-            "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/440655900&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-        },
-        {
-          id: 5,
-          show: false,
-          type: "spotify",
-          src:
-            "https://open.spotify.com/embed-podcast/episode/14fE8Q1JiaXRwm9LQAPuSX"
-        },
-        {
-          id: 6,
-          show: false,
-          type: "spotify",
-          src:
-            "https://open.spotify.com/embed-podcast/episode/28yLAnbOHFlNOq5zMIh6V7"
-        },
-        {
-          id: 7,
-          show: false,
-          type: "spotify",
-          src:
-            "https://open.spotify.com/embed-podcast/episode/1RUbojWjWv4wnDLESMbcq7"
-        },
-        {
-          id: 8,
-          show: false,
-          type: "spotify",
-          src:
-            "https://open.spotify.com/embed-podcast/episode/3mnaUMwIP0Sa3wmB71psFc"
+          name: "Dara dan Pemuda",
+          type: "mixcloud",
+          src: [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbuvv%2Fdara-dan-pemuda-vol1%2F"
+          ]
         }
       ]
     };
@@ -128,14 +106,6 @@ export default Vue.extend({
   computed: {
     podcastsShown: function(): object {
       return this.podcasts.slice(0, this.limit);
-    }
-  },
-  methods: {
-    addMorePodcast: function() {
-      if (this.limit < this.podcasts.length) {
-        this.limit = this.limit + 1;
-        ScrollTrigger.refresh();
-      }
     }
   }
 });
@@ -145,20 +115,44 @@ export default Vue.extend({
 .podcast-grid {
   transition: all 0.5s;
   margin-top: 5px;
+  height: 150px;
 }
 .podcast-grid:hover {
-  transform: translateX(1vw);
+  transform: scale(1.02);
 }
-.podcast-complete-move {
-  transition: transform 1s;
-}
-.podcast-complete-enter,
-.podcast-complete-leave-to {
-  opacity: 0;
-  transform: translateY(30px);
+.podcast-text {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em 1em;
+  text-align: center;
+  font-size: 2.4vw;
+  font-family: Rubik;
+  font-style: italic;
+  font-weight: 500;
+  border-radius: 0.1em;
+  border-width: 5px;
 }
 
-.podcast-complete-leave-active {
+.podcast-fade-enter-active,
+.podcast-fade-leave-active {
   position: absolute;
+  transition: all 0.5s;
+}
+.podcast-fade-enter,
+.podcast-fade-leave-to {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1204px) {
+  .podcast-grid {
+    height: 120px;
+  }
+  .podcast-text {
+    font-size: 6vw;
+  }
 }
 </style>

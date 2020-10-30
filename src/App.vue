@@ -69,7 +69,7 @@ export default Vue.extend({
 
 <style>
 #app {
-  font-family: Ubuntu, Helvetica, Arial, sans-serif;
+  font-family: Ubuntu, Rubik, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

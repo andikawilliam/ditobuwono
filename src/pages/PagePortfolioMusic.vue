@@ -9,24 +9,28 @@
           :key="mixtape.id"
           v-bind:class="gridSpan(mixtape.rowGrid, mixtape.colGrid)"
         >
-          <div
-            v-show="!mixtape.show"
-            class="transition-all cursor-pointer flex items-center justify-center bg-gray-dito w-full h-full text-center text-xl lg:text-3xl font-semibold italic"
-            v-on:click="mixtape.show = true"
-          >
-            {{ mixtape.name }}
-          </div>
-          <iframe
-            v-if="mixtape.show"
-            :src="mixtape.src"
-            loading="lazy"
-            width="100%"
-            height="100%"
-            scrolling="no"
-            frameborder="0"
-            allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          >
-          </iframe>
+          <transition name="mixtape-fade">
+            <div
+              v-show="!mixtape.show"
+              class="mixtape-text border-gray-dito"
+              v-on:click="mixtape.show = true"
+            >
+              {{ mixtape.name }}
+            </div>
+          </transition>
+          <transition appear>
+            <iframe
+              v-if="mixtape.show"
+              :src="mixtape.src"
+              loading="lazy"
+              width="100%"
+              height="100%"
+              scrolling="no"
+              frameborder="0"
+              allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            >
+            </iframe>
+          </transition>
         </div>
       </div>
     </div>
@@ -72,7 +76,7 @@ export default Vue.extend({
           show: false,
           rowGrid: 3,
           colGrid: 3,
-          name: "SUBLIMINAL MESSAGES: SWABTEST#!",
+          name: "SUBLIMINAL MESSAGES: SWABTEST#1",
           src: "https://www.youtube.com/embed/pvJEInkcfxI"
         },
         {
@@ -87,7 +91,7 @@ export default Vue.extend({
         {
           id: 4,
           show: false,
-          rowGrid: 2,
+          rowGrid: 1,
           colGrid: 5,
           name: "Infidelity in Suburbia",
           src: "https://www.mixcloud.com/widget/iframe/?feed=%2Fbuvv%2F"
@@ -112,5 +116,43 @@ export default Vue.extend({
   grid-template-rows: repeat(5, 150px);
   grid-auto-flow: row;
   gap: 1rem;
+}
+
+.mixtape-text {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em 1em;
+  text-align: center;
+  font-size: 2.4vw;
+  font-family: Rubik;
+  font-style: italic;
+  font-weight: 500;
+  border-radius: 0.1em;
+  border-width: 5px;
+}
+
+@media screen and (max-width: 1204px) {
+  .mixtape-text {
+    font-weight: 700;
+    font-size: 6vw;
+    border-width: 2px;
+  }
+  .grid-container {
+    grid-template-rows: repeat(4, 150px);
+  }
+}
+
+.mixtape-fade-enter-active,
+.mixtape-fade-leave-active {
+  position: absolute;
+  transition: all 1.5s;
+}
+.mixtape-fade-enter,
+.mixtape-fade-leave-to {
+  opacity: 0;
 }
 </style>

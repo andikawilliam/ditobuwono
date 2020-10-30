@@ -81,7 +81,7 @@ export default Vue.extend({
 @media screen and (max-width: 1204px) {
   .about-text {
     font-size: 4.7vw;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.015em;
     line-height: 1.48em;
   }
   .about-line {
