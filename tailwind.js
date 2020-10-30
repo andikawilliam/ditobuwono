@@ -14,8 +14,8 @@ module.exports = {
     // These options are passed through directly to PurgeCSS
     options: {
       whitelist: [
-        'row-span-1', 'row-span-2', 'row-span-3', 'row-span-4', 'row-span-5',
-        'col-span-1', 'col-span-2', 'col-span-3', 'col-span-4', 'col-span-5'
+        'lg:row-span-1', 'lg:row-span-2', 'lg:row-span-3', 'lg:row-span-4', 'lg:row-span-5',
+        'lg:col-span-1', 'lg:col-span-2', 'lg:col-span-3', 'lg:col-span-4', 'lg:col-span-5'
       ],
     }
   },
