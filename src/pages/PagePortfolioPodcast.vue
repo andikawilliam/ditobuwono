@@ -4,8 +4,8 @@
     <div class="lg:w-2/3 mx-auto">
       <div class="grid-container w-full">
         <div
-          class="podcast-grid mb-6 lg:mb-12 grayscale"
-          v-for="podcast in podcastsShown"
+          class="podcast-grid mb-16 grayscale"
+          v-for="podcast in podcasts"
           :key="podcast.id"
         >
           <transition name="podcast-fade">
@@ -19,7 +19,7 @@
           </transition>
           <iframe
             v-if="podcast.show"
-            :src="podcast.src[0]"
+            :src="podcast.src[podcast.active - 1]"
             loading="lazy"
             width="100%"
             height="100%"
@@ -29,6 +29,17 @@
             allow="encrypted-media"
           >
           </iframe>
+          <div class="my-2 text-center font-semibold" v-show="podcast.show">
+            <div
+              class="podcast-index"
+              v-for="(link, index) in podcast.src"
+              :key="`podcast.name-${index}`"
+              v-bind:class="{ 'podcast-active': index == podcast.active - 1 }"
+              v-on:click="podcast.active = index + 1"
+            >
+              {{ index + 1 }}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -65,12 +76,11 @@ export default Vue.extend({
         podcast, where the podcast tells about the experiences when he and his 
         college friends participated in social services in Merauke, Papua.
       `,
-      limit: 3,
       podcasts: [
         {
           id: 1,
           show: false,
-          name: "Eksotis Merauke",
+          name: "EksotisMerauke",
           type: "spotify",
           src: [
             "https://open.spotify.com/embed-podcast/episode/4t7sqCp8WUWrBPQMxxIwn9",
@@ -80,7 +90,8 @@ export default Vue.extend({
             "https://open.spotify.com/embed-podcast/episode/28yLAnbOHFlNOq5zMIh6V7",
             "https://open.spotify.com/embed-podcast/episode/1RUbojWjWv4wnDLESMbcq7",
             "https://open.spotify.com/embed-podcast/episode/3mnaUMwIP0Sa3wmB71psFc"
-          ]
+          ],
+          active: 1
         },
         {
           id: 2,
@@ -89,7 +100,8 @@ export default Vue.extend({
           type: "soundcloud",
           src: [
             "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/440655900&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-          ]
+          ],
+          active: 1
         },
         {
           id: 3,
@@ -97,16 +109,14 @@ export default Vue.extend({
           name: "Dara dan Pemuda",
           type: "mixcloud",
           src: [
-            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbuvv%2Fdara-dan-pemuda-vol1%2F"
-          ]
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbuvv%2Fdara-dan-pemuda-vol1%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbuvv%2Fdara-dan-pemuda-vol2%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbuvv%2Fdara-dan-pemuda-vol4%2F"
+          ],
+          active: 1
         }
       ]
     };
-  },
-  computed: {
-    podcastsShown: function(): object {
-      return this.podcasts.slice(0, this.limit);
-    }
   }
 });
 </script>
@@ -148,12 +158,37 @@ export default Vue.extend({
   opacity: 0;
 }
 
+.podcast-index {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 100%;
+  display: inline-block;
+  padding: 0 0.5em;
+  margin: 0 0.2em;
+  color: #404040;
+}
+
+.podcast-index:hover {
+  color: #d9d9d9;
+}
+
+.podcast-active {
+  background-color: #f7f7f2;
+  color: #262626;
+}
+
 @media screen and (max-width: 1204px) {
   .podcast-grid {
     height: 150px;
   }
   .podcast-text {
     font-size: 6vw;
+  }
+
+  .podcast-index {
+    display: inline-block;
+    padding: 0 0.5em;
+    margin: 0 0.2em;
   }
 }
 </style>
