@@ -1,7 +1,7 @@
 <template>
   <header
     class="fixed w-full px-6 lg:px-16 py-8 lg:py-12 z-20"
-    v-bind:class="[isMain ? 'header-main' : 'header-portfolio']"
+    v-bind:class="[isMain ? '' : 'header-portfolio']"
   >
     <div
       class="flex justify-between font-medium"
@@ -61,15 +61,6 @@ header {
   transition: background-color 0.5s ease-in-out;
 }
 
-.header-main {
-  background: rgb(247, 247, 242);
-  background: linear-gradient(
-    180deg,
-    rgba(247, 247, 242, 1) 0%,
-    rgba(247, 247, 242, 0.861782212885154) 69%,
-    rgba(247, 247, 242, 0) 100%
-  );
-}
 .header-portfolio {
   background: rgb(15, 15, 15);
   background: linear-gradient(

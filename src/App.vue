@@ -1,6 +1,5 @@
 <template>
   <div id="app" v-cloak>
-    <PageLoading />
     <TheNav :isMain="isMain" />
     <PageMain />
     <PageAbout class="about-section" />
@@ -20,7 +19,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import TheNav from "./components/TheNav.vue";
-import PageLoading from "./pages/PageLoading.vue";
 import PageMain from "./pages/PageMain.vue";
 import PageAbout from "./pages/PageAbout.vue";
 import PagePortfolioFilm from "./pages/PagePortfolioFilm.vue";
@@ -33,7 +31,6 @@ export default Vue.extend({
   name: "App",
   components: {
     TheNav,
-    PageLoading,
     PageMain,
     PageAbout,
     PagePortfolioFilm,
