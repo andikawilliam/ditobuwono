@@ -31,6 +31,13 @@
           </iframe>
           <div class="my-2 text-center font-semibold" v-show="podcast.show">
             <div
+              class="inline-block mr-2 text-sm lg:mx-4 cursor-pointer"
+              v-show="podcast.src.length > 1"
+              v-on:click="podcast.active = loopNext(podcast.active - 1, podcast.src.length)"
+            >
+              Prev
+            </div>
+            <div
               class="podcast-index"
               v-for="(link, index) in podcast.src"
               :key="`podcast.name-${index}`"
@@ -38,6 +45,13 @@
               v-on:click="podcast.active = index + 1"
             >
               {{ index + 1 }}
+            </div>
+            <div
+              class="inline-block ml-2 text-sm lg:mx-4 cursor-pointer"
+              v-show="podcast.src.length > 1"
+              v-on:click="podcast.active = loopNext(podcast.active + 1, podcast.src.length)"
+            >
+              Next
             </div>
           </div>
         </div>
@@ -117,6 +131,17 @@ export default Vue.extend({
         }
       ]
     };
+  },
+  methods: {
+    loopNext: function(id: number, length: number) {
+      const len = length;
+      if (id > len) {
+        id = 1;
+      } else if (id < 1) {
+        id = len;
+      }
+      return id;
+    }
   }
 });
 </script>
@@ -169,7 +194,9 @@ export default Vue.extend({
 }
 
 .podcast-index:hover {
-  color: #d9d9d9;
+  background-color: #f7f7f2;
+  color: #262626;
+  opacity: 0.5;
 }
 
 .podcast-active {
@@ -187,8 +214,8 @@ export default Vue.extend({
 
   .podcast-index {
     display: inline-block;
-    padding: 0 0.5em;
-    margin: 0 0.2em;
+    padding: 0 0.4em;
+    margin: 0 0.015em;
   }
 }
 </style>

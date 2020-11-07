@@ -2,7 +2,7 @@
   <header class="w-full px-6 lg:px-16 py-10 lg:py-12 z-20">
     <div class="flex justify-between font-medium text-black-onyx">
       <div>
-        <a href="https://hanindito.netlify.app/">
+        <a href="https://www.ditobuwono.com/">
           <h1 class="flex lg:text-3xl">
             <div class="font-bold">DITO</div>
             <div class="font-light">BUWONO</div>

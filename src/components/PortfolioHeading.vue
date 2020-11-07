@@ -44,15 +44,15 @@ export default Vue.extend({
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#" + this.titleId,
-          start: "bottom 35%",
-          end: "bottom 35%",
+          start: "bottom 60%",
+          end: "bottom 60%",
           // markers: true,
           toggleActions: "play none none none"
         }
       });
       tl.fromTo(
         "#" + this.titleId,
-        { y: "-10vw", autoAlpha: 0 },
+        { y: "10vw", autoAlpha: 0 },
         { y: 0, autoAlpha: 1, rotation: 0.01, ease: "power2" }
       );
       tl.fromTo(
