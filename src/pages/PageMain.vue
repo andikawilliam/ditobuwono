@@ -36,7 +36,7 @@ export default Vue.extend({
         duration: 2,
         scrollTo: {
           y: destination,
-          offsetY: 150
+          offsetY: 220
         },
         ease: "power2"
       });

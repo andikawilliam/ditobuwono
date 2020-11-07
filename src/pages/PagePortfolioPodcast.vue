@@ -33,7 +33,12 @@
             <div
               class="inline-block mr-2 text-sm lg:mx-4 cursor-pointer"
               v-show="podcast.src.length > 1"
-              v-on:click="podcast.active = loopNext(podcast.active - 1, podcast.src.length)"
+              v-on:click="
+                podcast.active = loopNext(
+                  podcast.active - 1,
+                  podcast.src.length
+                )
+              "
             >
               Prev
             </div>
@@ -49,7 +54,12 @@
             <div
               class="inline-block ml-2 text-sm lg:mx-4 cursor-pointer"
               v-show="podcast.src.length > 1"
-              v-on:click="podcast.active = loopNext(podcast.active + 1, podcast.src.length)"
+              v-on:click="
+                podcast.active = loopNext(
+                  podcast.active + 1,
+                  podcast.src.length
+                )
+              "
             >
               Next
             </div>
@@ -166,7 +176,6 @@ export default Vue.extend({
   padding: 0.5em 1em;
   text-align: center;
   font-size: 2.4vw;
-  font-family: Rubik;
   font-style: italic;
   font-weight: 500;
   border-radius: 0.1em;

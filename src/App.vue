@@ -62,6 +62,7 @@ export default Vue.extend({
             toggleActions: "play none reverse reverse"
           },
           backgroundColor: "#0f0f0f",
+          ease: 'power4',
           duration: 0.5
         }
       );
@@ -85,8 +86,9 @@ export default Vue.extend({
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 #app {
-  font-family: Ubuntu, Rubik, Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

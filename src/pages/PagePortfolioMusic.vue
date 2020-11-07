@@ -185,7 +185,6 @@ export default Vue.extend({
   padding: 0.5em 1em;
   text-align: center;
   font-size: 2.4vw;
-  font-family: Rubik;
   font-style: italic;
   font-weight: 500;
   border-radius: 0.1em;

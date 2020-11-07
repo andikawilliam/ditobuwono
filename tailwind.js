@@ -27,6 +27,10 @@ module.exports = {
         'gray-background': '#121217',
         'gray-dito': '#262626',
         'gray-dito-text': '#767676'
+      },
+      fontFamily: {
+        'ubuntu': ['Ubuntu', 'sans-serif'],
+        'rubik': ['Rubik', 'sans-serif']
       }
     }
   },
