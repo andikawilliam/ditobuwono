@@ -1,7 +1,7 @@
 <template>
   <div id="app" v-cloak>
     <PageLoading />
-    <TheNav />
+    <TheNav :isMain="isMain" />
     <PageMain />
     <PageAbout class="about-section" />
     <PagePortfolioFilm id="page-film" />
@@ -42,8 +42,13 @@ export default Vue.extend({
     PagePortfolioWriting,
     PageContact
   },
+  data: function() {
+    return {
+      isMain: true
+    };
+  },
   mounted: function() {
-    this.mainScroll();
+    this.mainScroll(), this.changeSection();
   },
   methods: {
     mainScroll() {
@@ -59,9 +64,24 @@ export default Vue.extend({
             end: "80% 60%",
             toggleActions: "play none reverse reverse"
           },
-          backgroundColor: "#0f0f0f"
+          backgroundColor: "#0f0f0f",
+          duration: 0.5
         }
       );
+    },
+    changeSection() {
+      ScrollTrigger.create({
+        trigger: ".about-section",
+        start: "80% 60%",
+        end: "80% 60%",
+        toggleActions: "play none reverse reverse",
+        onEnter: () => this.changeIsMain(false),
+        onLeaveBack: () => this.changeIsMain(true)
+      });
+    },
+    changeIsMain(state: boolean): void {
+      this.isMain = state;
+      console.log(this.isMain);
     }
   }
 });

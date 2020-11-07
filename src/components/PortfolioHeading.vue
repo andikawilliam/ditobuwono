@@ -44,8 +44,8 @@ export default Vue.extend({
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#" + this.titleId,
-          start: "bottom 60%",
-          end: "bottom 60%",
+          start: "bottom 80%",
+          end: "bottom 80%",
           // markers: true,
           toggleActions: "play none none none"
         }

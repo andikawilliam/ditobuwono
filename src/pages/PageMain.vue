@@ -1,6 +1,6 @@
 <template>
-  <div class="pb-24 lg:pb-32">
-    <div class="flex justify-center">
+  <div class="py-24 lg:py-32">
+    <div id="home" class="flex justify-center">
       <div
         class="portfolios-main text-black-onyx font-semibold lg:font-medium lg:leading-snug"
       >
@@ -30,24 +30,17 @@ gsap.registerPlugin(ScrollToPlugin);
 
 export default Vue.extend({
   name: "PageMain",
-  // mounted: function() {
-  //   this.mainTranslate();
-  // },
   methods: {
     goTo: function(destination: string) {
       gsap.to(window, {
         duration: 2,
         scrollTo: {
           y: destination,
-          offsetY: 300
+          offsetY: 150
         },
         ease: "power2"
       });
     }
-    // mainTranslate: function() {
-    //   const tl = gsap.timeline();
-    //   const mainText = document.getElementsByClassName(".main-text");
-    // }
   }
 });
 </script>

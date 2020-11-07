@@ -1,7 +1,8 @@
 <template>
   <a href="mailto:hanindito.arief@gmail.com?subject=Hi Dito!">
     <div class="text-center lg:text-2xl italic pb-24 text-gray-ivory">
-      hanindito.arief@gmail.com
+      <p class="font-semibold my-2">Contact Me:</p>
+      <p>hanindito.arief@gmail.com</p>
     </div>
   </a>
 </template>

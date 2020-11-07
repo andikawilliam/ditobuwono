@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center px-8 lg:px-24 lg:py-40">
     <div class="lg:w-3/4 mx-auto">
-      <hr class="about-line mx-auto my-8 lg:my-12" />
+      <hr class="about-line mx-auto my-4 lg:my-10" />
       <div class="about-text font-light text-black-onyx">
         <p>
           In the course of his creative process, Dito always raises the theme of
@@ -46,7 +46,7 @@ export default Vue.extend({
     aboutScroll() {
       gsap.fromTo(
         ".about-text",
-        { autoAlpha: 0, y:30 },
+        { autoAlpha: 0, y: 30 },
         {
           scrollTrigger: {
             id: "about-text",
@@ -85,7 +85,7 @@ export default Vue.extend({
     line-height: 1.48em;
   }
   .about-line {
-    border-top: 4px solid #0f0f0f;
+    border-top: 3.5px solid #0f0f0f;
   }
 }
 </style>
