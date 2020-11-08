@@ -16,6 +16,7 @@ export default Vue.extend({
   left: 0px;
   top: 0%;
   border-top: 8px solid;
+  color: #f7f7f2;
   /* transition: transform 250ms ease-in-out; */
 }
 

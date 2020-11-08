@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center px-8 lg:px-24 lg:py-40">
+  <div class="flex items-center px-8 py-12 lg:px-24 lg:py-48">
     <div class="lg:w-3/4 mx-auto">
       <hr class="about-line mx-auto my-4 lg:my-10" />
       <div class="about-text font-light text-black-onyx">
@@ -51,7 +51,7 @@ export default Vue.extend({
           scrollTrigger: {
             id: "about-text",
             trigger: ".about-text",
-            start: "top 65%",
+            start: "top 85%",
             end: "20% 30%",
             scrub: true
           },
