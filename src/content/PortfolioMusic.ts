@@ -12,7 +12,7 @@ export default Vue.extend({
       description: `
         Being a  
         <span class="font-semibold">part-time DJ</span> 
-        from 2019 Dito always offers various perspectives. Dito has performed
+        from 2019, Dito always offers various perspectives. Dito has performed
         several times with his 
         <span class="font-semibold">collective</span> 
         and as a 
