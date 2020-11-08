@@ -57,7 +57,7 @@ export default Vue.extend({
         {
           id: 3,
           show: false,
-          name: "Dara dan Pemuda",
+          name: "Dara Dan Pemuda",
           type: "mixcloud",
           src: [
             "https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbuvv%2Fdara-dan-pemuda-vol1%2F",
