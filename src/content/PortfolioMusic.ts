@@ -11,7 +11,7 @@ export default Vue.extend({
       title: "mixtapes",
       description: `
         Being a  
-        <span class="font-semibold">part-time DJ</span>, 
+        <span class="font-semibold">part-time DJ</span> 
         from 2019 Dito always offers various perspectives. Dito has performed
         several times with his 
         <span class="font-semibold">collective</span> 
@@ -27,7 +27,7 @@ export default Vue.extend({
           show: false,
           rowGrid: 3,
           colGrid: 2,
-          name: "Suddenly Kaget Mixtape: Masa, Masa",
+          name: "Suddenly Kaget Mixtape: masa, masa",
           src: [
             "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/769393264&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
           ],
@@ -58,7 +58,7 @@ export default Vue.extend({
           show: false,
           rowGrid: 1,
           colGrid: 5,
-          name: "Buvv Mixtapes",
+          name: "buvv Mixtapes",
           src: [
             "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fbuvv%2Finfidelity-in-suburbia-mixtape-awal-tahun-2019%2F",
             "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fbuvv%2Ftjakrawala-mixtape-awal-tahun%2F",
