@@ -70,14 +70,6 @@ export default Vue.extend({
   overflow: hidden;
 }
 
-/* .container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
-
 .play-icon {
   position: relative;
   top: 50%;
@@ -85,9 +77,9 @@ export default Vue.extend({
   transition: all 0.5s ease;
 }
 
-.film-container:hover .play-icon{
+.film-container:hover .play-icon {
   transform: translateY(-50%) scale(1.2);
-  color: #BB0A21;
+  color: #bb0a21;
 }
 
 .title-text {
