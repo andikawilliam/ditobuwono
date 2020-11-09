@@ -56,22 +56,22 @@ export default Vue.extend({
         },
         {
           scrollTrigger: {
-            trigger: ".about-section",
-            start: "80% 60%",
-            end: "80% 60%",
+            trigger: "#page-film",
+            start: "top 80%",
+            end: "top 80%",
             toggleActions: "play none reverse reverse"
           },
           backgroundColor: "#0f0f0f",
-          ease: 'power4',
-          duration: 0.5
+          ease: "power4",
+          duration: 0.6
         }
       );
     },
     changeSection() {
       ScrollTrigger.create({
-        trigger: ".about-section",
-        start: "80% 60%",
-        end: "80% 60%",
+        trigger: "#page-film",
+        start: "top 80%",
+        end: "top 80%",
         toggleActions: "play none reverse reverse",
         onEnter: () => this.changeIsMain(false),
         onLeaveBack: () => this.changeIsMain(true)

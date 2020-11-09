@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center px-8 py-12 lg:px-24 lg:py-48">
+  <div class="flex items-center px-8 pb-64 lg:px-24 lg:pt-40 lg:pb-64 lg:mb-32">
     <div class="lg:w-3/4 mx-auto">
       <hr class="about-line mx-auto my-4 lg:my-10" />
       <div class="about-text font-light text-black-onyx">
@@ -36,7 +36,7 @@ export default Vue.extend({
   name: "PageAbout",
   data() {
     return {
-      title: "DITOBUWONO"
+      title: "About"
     };
   },
   mounted: function() {
@@ -53,7 +53,7 @@ export default Vue.extend({
             trigger: ".about-text",
             start: "top 85%",
             end: "20% 30%",
-            scrub: true
+            toggleActions: "play none none reverse"
           },
           y: 0,
           z: 10,
@@ -69,8 +69,8 @@ export default Vue.extend({
 <style scoped>
 .about-line {
   width: 100%;
-  transform: scaleX(0.15);
-  border-top: 10px solid #0f0f0f;
+  transform: scaleX(0.12);
+  border-top: 8px solid #0f0f0f;
 }
 
 .about-text {

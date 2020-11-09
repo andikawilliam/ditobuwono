@@ -1,5 +1,5 @@
 <template>
-  <div class="py-24 lg:py-32">
+  <div class="py-24 lg:py-24">
     <div id="home" class="flex justify-center">
       <div
         class="portfolios-main text-black-onyx font-semibold lg:font-medium lg:leading-snug"
@@ -28,6 +28,13 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollToPlugin);
 
+let offsetScroll = 220;
+const isMobile = window.matchMedia("only screen and (max-width: 760px)")
+  .matches;
+if (isMobile) {
+  offsetScroll = 150;
+}
+
 export default Vue.extend({
   name: "PageMain",
   methods: {
@@ -36,7 +43,7 @@ export default Vue.extend({
         duration: 2,
         scrollTo: {
           y: destination,
-          offsetY: 220
+          offsetY: offsetScroll
         },
         ease: "power2"
       });
@@ -47,7 +54,7 @@ export default Vue.extend({
 
 <style scoped>
 .portfolios-main {
-  font-size: 15vw;
+  font-size: 14vw;
 }
 .portfolios-main p {
   transition: all 0.4s ease-in-out;
@@ -58,5 +65,11 @@ export default Vue.extend({
 }
 .main-text {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1204px) {
+  .portfolios-main {
+    font-size: 15.5vw;
+  }
 }
 </style>
