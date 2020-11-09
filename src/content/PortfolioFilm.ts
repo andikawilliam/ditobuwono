@@ -50,7 +50,7 @@ export default Vue.extend({
           title: "Menyusulmu Bisa Menunggu (2015)",
           type: "Short Fiction Film",
           role: "Roles: Actor, Producer",
-          accolades: ["Winner Global Jaya Film Festival"],
+          accolades: ["Winner SMA Global Jaya Film Festival"],
           href: "https://youtu.be/BMIpvCrxou4",
           embed: "https://www.youtube-nocookie.com/embed/BMIpvCrxou4"
         },
