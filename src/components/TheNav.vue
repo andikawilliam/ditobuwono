@@ -1,12 +1,9 @@
 <template>
   <header
-    class="fixed w-full px-6 lg:px-16 py-8 lg:py-12 z-20"
-    v-bind:class="[isMain ? '' : 'header-portfolio']"
+    id="header"
+    class="fixed w-full px-6 lg:px-16 py-8 lg:py-12 z-20 header-main"
   >
-    <div
-      class="flex justify-between font-medium"
-      v-bind:class="[isMain ? 'text-black-onyx' : 'text-gray-ivory']"
-    >
+    <div class="flex justify-between font-medium">
       <div>
         <h1 class="flex lg:text-2xl cursor-pointer" v-on:click="goTo('#home')">
           <div class="font-bold">DITO</div>
@@ -41,6 +38,9 @@ gsap.registerPlugin(ScrollToPlugin);
 export default Vue.extend({
   name: "TheNav",
   props: ["isMain"],
+  mounted: function() {
+    this.navChangeScroll();
+  },
   methods: {
     goTo: function(destination: string) {
       gsap.to(window, {
@@ -51,6 +51,37 @@ export default Vue.extend({
         },
         ease: "power2"
       });
+    },
+    navChangeScroll() {
+      gsap.fromTo(
+        "#header",
+        {
+          background: `linear-gradient(
+            180deg,
+            rgba(247, 247, 242, 1) 0%,
+            rgba(247, 247, 242, 0.7021183473389356) 50%,
+            rgba(247, 247, 242, 0) 100%
+          );`,
+          color: "rgba(15, 15, 15)"
+        },
+        {
+          scrollTrigger: {
+            trigger: "#page-film",
+            start: "top 80%",
+            end: "top 80%",
+            toggleActions: "play none reverse reverse"
+          },
+          background: `linear-gradient(
+            180deg,
+            rgba(15, 15, 15, 1) 0%,
+            rgba(15, 15, 15, 0.7021183473389356) 50%,
+            rgba(15, 15, 15, 0) 100%
+          `,
+          color: "rgba(247, 247, 242)",
+          ease: "power4",
+          duration: 0.4
+        }
+      );
     }
   }
 });
@@ -58,7 +89,17 @@ export default Vue.extend({
 
 <style scoped>
 header {
-  transition: background-color 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.header-main {
+  background: rgb(247, 247, 242);
+  background: linear-gradient(
+    180deg,
+    rgba(247, 247, 242, 1) 0%,
+    rgba(247, 247, 242, 0.7021183473389356) 69%,
+    rgba(247, 247, 242, 0) 100%
+  );
 }
 
 .header-portfolio {
