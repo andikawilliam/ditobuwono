@@ -78,8 +78,8 @@
 <style scoped>
 .music-grid-container {
   display: grid;
-  grid-template-columns: repeat(5, 2fr);
-  grid-template-rows: repeat(5, 150px);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 125px);
   grid-auto-flow: row;
   gap: 1rem;
 }

@@ -1,72 +1,25 @@
 <template>
-  <div class="flex items-center px-8 pb-64 lg:px-24 lg:pt-40 lg:pb-64 lg:mb-32">
+  <div class="flex items-center px-8 pb-64 lg:px-24 lg:pt-40 lg:pb-64 lg:mb-40">
     <div class="lg:w-3/4 mx-auto">
-      <hr class="about-line mx-auto my-4 lg:my-10" />
+      <hr class="about-line mx-auto" />
       <div class="about-text font-light text-black-onyx">
-        <p>
-          In the course of his creative process, Dito always raises the theme of
-          <span class="font-medium">the meaning of honesty</span>
-          from a sense of loss, where according to him that feeling is a
-          <span class="font-medium">depiction of a complete human figure.</span>
-        </p>
-        <p class="pt-6">
-          This idea developed into one of Dito's quest goals to
-          <span class="font-medium">explore different perspectives</span>
-          from different mediums, which later could describe and preserve
-          <span class="font-medium">the meaning of human beings.</span>
-        </p>
-        <p class="pt-8">
-          Currently, Dito is completing his undergraduate thesis at the Faculty
-          of Psychology, Gadjah Mada University.
-        </p>
+        <p v-for="text in texts" :key="text" v-html="text"></p>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
-export default Vue.extend({
-  name: "PageAbout",
-  data() {
-    return {
-      title: "About"
-    };
-  },
-  mounted: function() {
-    this.aboutScroll();
-  },
-  methods: {
-    aboutScroll() {
-      gsap.fromTo(
-        ".about-text",
-        { autoAlpha: 0, y: 30 },
-        {
-          scrollTrigger: {
-            id: "about-text",
-            trigger: ".about-text",
-            start: "top 85%",
-            end: "20% 30%",
-            toggleActions: "play none none reverse"
-          },
-          y: 0,
-          z: 10,
-          autoAlpha: 1,
-          rotation: 0.01
-        }
-      );
-    }
-  }
-});
-</script>
+<script lang="ts" src="../content/AboutText.ts"></script>
 
 <style scoped>
+p {
+  padding-top: 1em;
+}
+
+.bolded {
+  font-weight: 500;
+}
+
 .about-line {
   width: 100%;
   transform: scaleX(0.12);
