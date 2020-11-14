@@ -40,6 +40,7 @@ export default Vue.extend({
             "Official Selection Viddsee Juree Awards Indonesia 2020",
             "Official Selection Lift-Off Global Network Lift-Off Sessions 2020",
             "Official Selection Lift-Off Global Network First-Time Filmmaker Sessions 2020"
+            "Official Selection Feel The Reel International Film Festival 2020"
           ],
           href: "https://www.viddsee.com/video/belrusak/ywxkh",
           embed: "https://www.viddsee.com/player/ywxkh"
