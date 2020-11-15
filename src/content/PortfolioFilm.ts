@@ -51,7 +51,7 @@ export default Vue.extend({
           title: "Menyusulmu Bisa Menunggu (2015)",
           type: "Short Fiction Film",
           role: "Roles: Actor, Producer",
-          accolades: ["Winner SMA Global Jaya Film Festival"],
+          accolades: ["Winner SMA Global Jaya Film Festival 2015"],
           href: "https://youtu.be/BMIpvCrxou4",
           embed: "https://www.youtube-nocookie.com/embed/BMIpvCrxou4"
         },
@@ -61,7 +61,7 @@ export default Vue.extend({
           title: "Terbelenggu (2014)",
           type: "Short Fiction Film",
           role: "Roles: Actor, Music Director",
-          accolades: ["Winner 8Schoolastic SMAN 8 Jakarta Film Festival"],
+          accolades: ["Winner 8Schoolastic SMAN 8 Jakarta Film Festival 2014"],
           href: "https://youtu.be/_Q2Xg5CHHf8",
           embed: "https://www.youtube-nocookie.com/embed/_Q2Xg5CHHf8"
         }
