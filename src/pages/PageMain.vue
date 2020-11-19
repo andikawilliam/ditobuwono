@@ -4,16 +4,16 @@
       <div
         class="portfolios-main text-current font-semibold lg:font-medium lg:leading-snug"
       >
-        <p class="main-text" v-on:click="goTo('#filmography')">
+        <p id="film" class="main-text" v-on:click="goTo('#filmography')">
           FILM.
         </p>
-        <p class="main-text" v-on:click="goTo('#mixtapes')">
+        <p id="music" class="main-text" v-on:click="goTo('#mixtapes')">
           MUSIC.
         </p>
-        <p class="main-text" v-on:click="goTo('#talks')">
+        <p id="podcast" class="main-text" v-on:click="goTo('#talks')">
           PODCAST.
         </p>
-        <p class="main-text" v-on:click="goTo('#publications')">
+        <p id="writing" class="main-text" v-on:click="goTo('#publications')">
           WRITING.
         </p>
       </div>
@@ -23,6 +23,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { TimelineMax } from "gsap";
 import { gsap } from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 
@@ -37,6 +38,13 @@ if (isMobile) {
 
 export default Vue.extend({
   name: "PageMain",
+  mounted() {
+    const tl = new TimelineMax({ defaults: { duration: 0.25, delay: 0.1 } });
+    tl.to("#film", { autoAlpha: 1, x: "-10vw" });
+    tl.to("#music", { autoAlpha: 1, x: "-10vw" });
+    tl.to("#podcast", { autoAlpha: 1, x: "-10vw" });
+    tl.to("#writing", { autoAlpha: 1, x: "-10vw" });
+  },
   methods: {
     goTo: function(destination: string) {
       gsap.to(window, {
@@ -59,12 +67,15 @@ export default Vue.extend({
 .portfolios-main p {
   transition: all 0.4s ease-in-out;
 }
-.portfolios-main p:hover {
+.main-text:hover {
   transform: translateX(2vw);
   opacity: 0.4;
 }
 .main-text {
   cursor: pointer;
+  opacity: 0;
+  visibility: "hidden";
+  padding-left: 20vw;
 }
 
 @media screen and (max-width: 1204px) {
