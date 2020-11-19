@@ -2,7 +2,7 @@
   <div class="py-24 lg:py-24">
     <div id="home" class="flex justify-center">
       <div
-        class="portfolios-main text-black-onyx font-semibold lg:font-medium lg:leading-snug"
+        class="portfolios-main text-current font-semibold lg:font-medium lg:leading-snug"
       >
         <p class="main-text" v-on:click="goTo('#filmography')">
           FILM.

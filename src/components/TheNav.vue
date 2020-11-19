@@ -58,9 +58,9 @@ export default Vue.extend({
         {
           background: `linear-gradient(
             180deg,
-            rgba(247, 247, 242, 1) 0%,
-            rgba(247, 247, 242, 0.7021183473389356) 50%,
-            rgba(247, 247, 242, 0) 100%
+            rgba(238, 238, 238, 1) 0%,
+            rgba(238, 238, 238, 0.7021183473389356) 50%,
+            rgba(238, 238, 238, 0) 100%
           );`,
           color: "rgba(15, 15, 15)"
         },
@@ -69,7 +69,7 @@ export default Vue.extend({
             trigger: "#page-film",
             start: "top 80%",
             end: "top 80%",
-            toggleActions: "play none reverse reverse"
+            toggleActions: "play none none none"
           },
           background: `linear-gradient(
             180deg,
@@ -77,7 +77,7 @@ export default Vue.extend({
             rgba(15, 15, 15, 0.7021183473389356) 50%,
             rgba(15, 15, 15, 0) 100%
           `,
-          color: "rgba(247, 247, 242)",
+          color: "rgba(238, 238, 238)",
           ease: "power4",
           duration: 0.4
         }

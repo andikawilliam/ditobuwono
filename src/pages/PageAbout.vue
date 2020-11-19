@@ -1,8 +1,8 @@
 <template>
-  <div class="flex items-center px-8 pb-64 lg:px-24 lg:pt-40 lg:pb-64 lg:mb-40">
+  <div class="flex items-center px-8 pb-24 lg:px-24 lg:pt-40 lg:pb-64 lg:mb-24">
     <div class="lg:w-3/4 mx-auto">
       <hr class="about-line mx-auto" />
-      <div class="about-text font-light text-black-onyx">
+      <div class="about-text font-light text-current">
         <p v-for="text in texts" :key="text" v-html="text"></p>
       </div>
     </div>
@@ -23,7 +23,7 @@ p {
 .about-line {
   width: 100%;
   transform: scaleX(0.12);
-  border-top: 8px solid #0f0f0f;
+  border-top: 8px solid currentColor;
 }
 
 .about-text {
@@ -38,7 +38,7 @@ p {
     line-height: 1.48em;
   }
   .about-line {
-    border-top: 3.5px solid #0f0f0f;
+    border-top: 3.5px solid currentColor;
   }
 }
 </style>

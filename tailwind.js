@@ -22,7 +22,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'gray-ivory': "#f7f7f2",
+        // 'gray-ivory': "#f7f7f2",
+        'gray-ivory': "#eee",
         'black-onyx': "#0f0f0f",
         'gray-background': '#121217',
         'gray-dito': '#262626',
