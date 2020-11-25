@@ -1,8 +1,5 @@
 <template>
-  <h1
-    :id="titleId"
-    class="heading-text text-center font-medium uppercase pb-2 lg:pb-4"
-  >
+  <h1 :id="titleId" class="heading-text text-center font-medium uppercase">
     {{ title }}
   </h1>
 </template>
@@ -21,7 +18,7 @@ export default Vue.extend({
   font-size: 7vw;
 }
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 960px) {
   .heading-text {
     font-size: 11vw;
   }

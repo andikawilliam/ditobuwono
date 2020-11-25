@@ -1,6 +1,6 @@
 <template>
   <h3
-    class="description-text pt-4 lg:pt-8 font-light italic tracking-wide"
+    class="description-text pt-4 font-light italic tracking-wide"
     :id="descriptionId"
     v-html="description"
   ></h3>
@@ -22,7 +22,7 @@ export default Vue.extend({
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 960px) {
   .description-text {
     font-size: 4vw;
   }

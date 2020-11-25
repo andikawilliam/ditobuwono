@@ -2,7 +2,6 @@
   <div>
     <PortfolioTitle :title="title" :titleId="titleId" />
     <div class="mb-10 lg:mb-12 lg:w-3/4 lg:mx-auto">
-      <PortfolioLine :lineId="lineId" />
       <PortfolioDescription
         :description="description"
         :descriptionId="descriptionId"
@@ -17,7 +16,6 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 import PortfolioTitle from "../components/PortfolioTitle.vue";
-import PortfolioLine from "../components/PortfolioLine.vue";
 import PortfolioDescription from "../components/PortfolioDescription.vue";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -26,7 +24,7 @@ export default Vue.extend({
   props: ["title", "description"],
   components: {
     PortfolioTitle,
-    PortfolioLine,
+    // PortfolioLine,
     PortfolioDescription
   },
   data() {
@@ -54,11 +52,6 @@ export default Vue.extend({
         "#" + this.titleId,
         { y: "10vw", autoAlpha: 0 },
         { y: 0, autoAlpha: 1, rotation: 0.01, ease: "power2" }
-      );
-      tl.fromTo(
-        "#" + this.lineId,
-        { scaleX: 0.1 },
-        { scaleX: 1, ease: "power2" }
       );
       tl.fromTo(
         "#" + this.descriptionId,
