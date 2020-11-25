@@ -49,11 +49,6 @@ export default Vue.extend({
         }
       });
       tl.fromTo(
-        "#" + this.titleId,
-        { y: "10vw", autoAlpha: 0 },
-        { y: 0, autoAlpha: 1, rotation: 0.01, ease: "power2" }
-      );
-      tl.fromTo(
         "#" + this.descriptionId,
         { autoAlpha: 0, y: "-2vw" },
         { autoAlpha: 1, y: 0, ease: "power2" }
