@@ -36,7 +36,7 @@ export default Vue.extend({
     aboutScroll() {
       gsap.fromTo(
         ".about-text",
-        { autoAlpha: 0, y: 30 },
+        { autoAlpha: 1, y: 30 },
         {
           scrollTrigger: {
             id: "about-text",

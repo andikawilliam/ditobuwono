@@ -97,7 +97,7 @@ export default Vue.extend({
   text-shadow: 1px 1px 4px rgba(15, 15, 15, 0.8);
 }
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 960px) {
   .title-text {
     font-size: 4vw;
   }

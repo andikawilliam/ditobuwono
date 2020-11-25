@@ -1,11 +1,11 @@
 <template>
   <header
     id="header"
-    class="fixed w-full px-6 lg:px-16 py-8 lg:py-12 z-20 header-main"
+    class="fixed w-full px-6 lg:px-16 py-8 lg:py-12 z-20 header-portfolio"
   >
     <div class="flex justify-between font-medium">
       <div>
-        <h1 class="flex lg:text-2xl cursor-pointer" v-on:click="goTo('#home')">
+        <h1 class="flex md:text-2xl cursor-pointer" v-on:click="goTo('#home')">
           <div class="font-bold">DITO</div>
           <div class="font-light">BUWONO</div>
         </h1>
@@ -13,13 +13,13 @@
       <div>
         <a href="https://www.instagram.com/ditobuwono/">
           <font-awesome-icon
-            class="mx-2 lg:text-3xl"
+            class="mx-2 md:text-3xl"
             :icon="['fab', 'instagram']"
           />
         </a>
         <a href="https://www.linkedin.com/in/hanindito-buwono-98437a179/">
           <font-awesome-icon
-            class="ml-1 lg:ml-2 lg:text-3xl"
+            class="ml-1 lg:ml-2 md:text-3xl"
             :icon="['fab', 'linkedin']"
           />
         </a>
@@ -38,9 +38,6 @@ gsap.registerPlugin(ScrollToPlugin);
 export default Vue.extend({
   name: "TheNav",
   props: ["isMain"],
-  mounted: function() {
-    this.navChangeScroll();
-  },
   methods: {
     goTo: function(destination: string) {
       gsap.to(window, {
@@ -51,37 +48,6 @@ export default Vue.extend({
         },
         ease: "power2"
       });
-    },
-    navChangeScroll() {
-      gsap.fromTo(
-        "#header",
-        {
-          background: `linear-gradient(
-            180deg,
-            rgba(238, 238, 238, 1) 0%,
-            rgba(238, 238, 238, 0.7021183473389356) 50%,
-            rgba(238, 238, 238, 0) 100%
-          );`,
-          color: "rgba(15, 15, 15)"
-        },
-        {
-          scrollTrigger: {
-            trigger: "#page-film",
-            start: "top 80%",
-            end: "top 80%",
-            toggleActions: "play none none none"
-          },
-          background: `linear-gradient(
-            180deg,
-            rgba(15, 15, 15, 1) 0%,
-            rgba(15, 15, 15, 0.7021183473389356) 50%,
-            rgba(15, 15, 15, 0) 100%
-          `,
-          color: "rgba(238, 238, 238)",
-          ease: "power4",
-          duration: 0.4
-        }
-      );
     }
   }
 });
@@ -90,16 +56,6 @@ export default Vue.extend({
 <style scoped>
 header {
   transition: all 0.4s ease-in-out;
-}
-
-.header-main {
-  background: rgb(247, 247, 242);
-  background: linear-gradient(
-    180deg,
-    rgba(247, 247, 242, 1) 0%,
-    rgba(247, 247, 242, 0.7021183473389356) 69%,
-    rgba(247, 247, 242, 0) 100%
-  );
 }
 
 .header-portfolio {

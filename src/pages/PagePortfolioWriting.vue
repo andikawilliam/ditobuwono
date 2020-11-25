@@ -1,5 +1,5 @@
 <template>
-  <div class="relative text-gray-ivory px-8 pt-40 pb-12 lg:px-20 lg:py-40">
+  <div class="relative text-gray-ivory px-8 md:px-12  pt-40 pb-12 lg:px-20 lg:py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:grid lg:grid-cols-2 lg:w-2/3 mx-auto gap-24">
       <div
@@ -45,7 +45,7 @@
   letter-spacing: 0.05em;
 }
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 960px) {
   .title-text {
     font-size: 5vw;
   }

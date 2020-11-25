@@ -13,10 +13,6 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 import TheNav from "./components/TheNav.vue";
 import PageMain from "./pages/PageMain.vue";
@@ -39,32 +35,6 @@ export default Vue.extend({
     PagePortfolioWriting,
     PageContact
   },
-  mounted: function() {
-    this.mainScroll();
-  },
-  methods: {
-    mainScroll() {
-      gsap.fromTo(
-        "#app",
-        {
-          backgroundColor: "#eee",
-          color: "#0f0f0f"
-        },
-        {
-          scrollTrigger: {
-            trigger: "#page-film",
-            start: "top 80%",
-            end: "top 80%",
-            toggleActions: "play none none none"
-          },
-          backgroundColor: "#0f0f0f",
-          color: "#eee",
-          ease: "power4",
-          duration: 0.4
-        }
-      );
-    }
-  }
 });
 </script>
 
@@ -74,6 +44,8 @@ export default Vue.extend({
   font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0f0f0f;
+  color: #eee;
 }
 [v-cloak] {
   display: none;

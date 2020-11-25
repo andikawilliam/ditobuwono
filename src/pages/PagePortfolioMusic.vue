@@ -1,5 +1,5 @@
 <template>
-  <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
+  <div class="relative text-gray-ivory px-8 md:px-12 lg:px-20 py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div class="relative lg:w-2/3 mx-auto">
       <div class="w-full music-grid-container">
@@ -127,7 +127,7 @@
   color: #262626;
 }
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 960px) {
   .mixtape-text {
     font-weight: 700;
     font-size: 6vw;

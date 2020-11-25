@@ -1,9 +1,7 @@
 <template>
-  <div class="py-24 lg:py-24">
+  <div class="py-24 md:py-32 xl:py-24">
     <div id="home" class="flex justify-center">
-      <div
-        class="portfolios-main text-current font-semibold lg:font-medium lg:leading-snug"
-      >
+      <div class="portfolios-main text-current font-semibold lg:font-medium">
         <p id="film" class="main-text" v-on:click="goTo('#filmography')">
           FILM.
         </p>
@@ -62,25 +60,26 @@ export default Vue.extend({
 
 <style scoped>
 .portfolios-main {
-  font-size: 14vw;
+  font-size: 9vw;
 }
 .portfolios-main p {
   transition: all 0.4s ease-in-out;
 }
 .main-text:hover {
-  transform: translateX(2vw);
+  transform: translateX(1vw);
   opacity: 0.4;
 }
 .main-text {
   cursor: pointer;
   opacity: 0;
   visibility: "hidden";
-  padding-left: 20vw;
+  line-height: 1.25;
 }
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 960px) {
   .portfolios-main {
-    font-size: 15.5vw;
+    font-size: 15vw;
+    padding-left: 10vw;
   }
 }
 </style>

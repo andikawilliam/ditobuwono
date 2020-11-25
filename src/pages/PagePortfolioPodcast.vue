@@ -1,5 +1,5 @@
 <template>
-  <div class="relative text-gray-ivory px-8 lg:px-20 py-40">
+  <div class="relative text-gray-ivory px-8 md:px-12  lg:px-20 py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
       <div class="grid-container w-full">
@@ -129,7 +129,7 @@
   color: #262626;
 }
 
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 960px) {
   .podcast-grid {
     height: 150px;
   }

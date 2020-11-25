@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center px-8 pb-24 lg:px-24 lg:pt-40 lg:pb-64 lg:mb-24">
+  <div class="flex items-center px-8 md:px-12  pb-24 lg:px-24 lg:pt-40 lg:pb-64">
     <div class="lg:w-3/4 mx-auto">
       <hr class="about-line mx-auto" />
       <div class="about-text font-light text-current">
@@ -31,7 +31,7 @@ p {
   letter-spacing: 0.03em;
   line-height: 1.8em;
 }
-@media screen and (max-width: 1204px) {
+@media screen and (max-width: 960px) {
   .about-text {
     font-size: 4.7vw;
     letter-spacing: 0.015em;
