@@ -44,7 +44,8 @@ export default Vue.extend({
   font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0f0f0f;
+ background: rgb(15,15,15);
+  background: linear-gradient(90deg, rgba(15,15,15,1) 0%, rgba(33,33,33,1) 100%);
   color: #eee;
 }
 [v-cloak] {

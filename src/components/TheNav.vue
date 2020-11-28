@@ -1,7 +1,7 @@
 <template>
   <header
     id="header"
-    class="fixed w-full px-6 lg:px-16 py-6 lg:py-8 z-20 header-portfolio"
+    class="fixed w-full px-6 lg:px-16 py-4 lg:py-8 z-20 header-portfolio"
   >
     <div class="flex justify-between font-medium">
       <div>
@@ -59,12 +59,6 @@ header {
 }
 
 .header-portfolio {
-  background: rgb(15, 15, 15);
-  background: linear-gradient(
-    180deg,
-    rgba(15, 15, 15, 1) 0%,
-    rgba(15, 15, 15, 0.7021183473389356) 69%,
-    rgba(15, 15, 15, 0) 100%
-  );
+  backdrop-filter: blur(1.5px);
 }
 </style>
