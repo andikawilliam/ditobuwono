@@ -1,5 +1,7 @@
 <template>
-  <div class="relative text-gray-ivory px-8 md:px-12  pt-40 pb-12 lg:px-20 lg:py-40">
+  <div
+    class="relative text-gray-ivory px-8 md:px-12  pt-40 pb-12 lg:px-20 lg:py-40"
+  >
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:grid lg:grid-cols-2 lg:w-2/3 mx-auto gap-24">
       <div
@@ -8,16 +10,18 @@
         :key="publication.id"
       >
         <a :href="publication.src">
-          <div class="px-2 grayscale">
-            <img :src="publication.cover" class="mx-auto publication-cover" />
+          <div class="cover-container grayscale">
+            <img :src="publication.cover" class="mx-auto publication-cover w-full">
+            <div class="absolute description-text bottom-0 p-2">
+              <p class="font-light pt-2">
+                {{ publication.description }}
+              </p>
+            </div>
           </div>
         </a>
-        <div class="px-2 pt-6">
+        <div class="px-2 pt-4">
           <p class="title-text text-center font-medium pb-2">
             {{ publication.title }}
-          </p>
-          <p class="description-text font-light pt-2">
-            {{ publication.description }}
           </p>
         </div>
       </div>
@@ -29,10 +33,14 @@
 
 <style scoped>
 .publication-cover {
-  transition: transform 0.5s;
   box-shadow: 0px -2px 10px 2px rgba(15, 15, 15, 0.8);
 }
-.publication-cover:hover {
+
+.cover-container {
+  transition: transform 0.5s;
+  position: relative;
+}
+.cover-container:hover {
   transform: translateY(-1vw);
 }
 
@@ -41,8 +49,10 @@
 }
 
 .description-text {
-  font-size: 1.2vw;
+  font-size: 1vw;
   letter-spacing: 0.05em;
+  background-color: #18181881;
+  backdrop-filter: blur(1px);
 }
 
 @media screen and (max-width: 960px) {

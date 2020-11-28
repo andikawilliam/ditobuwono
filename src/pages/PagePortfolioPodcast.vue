@@ -78,8 +78,8 @@
   height: 160px;
 }
 .podcast-text:hover {
-  color: #0f0f0f;
-  background-color: #f7f7f2;
+  background-color: #767676;
+  transform: translateY(-2%);
 }
 .podcast-text {
   transition: all 0.5s;

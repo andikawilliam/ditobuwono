@@ -1,18 +1,18 @@
 <template>
   <div class="py-24 md:py-32 xl:py-24">
-    <div id="home" class="flex justify-center">
+    <div id="home" class="flex pl-6 lg:pl-16">
       <div class="portfolios-main text-current font-semibold lg:font-medium">
         <p id="film" class="main-text" v-on:click="goTo('#filmography')">
-          FILM.
+          FILMAKER.
         </p>
         <p id="music" class="main-text" v-on:click="goTo('#mixtapes')">
-          MUSIC.
+          PRODUCER.
         </p>
         <p id="podcast" class="main-text" v-on:click="goTo('#talks')">
-          PODCAST.
+          PODCASTER.
         </p>
         <p id="writing" class="main-text" v-on:click="goTo('#publications')">
-          WRITING.
+          WRITER.
         </p>
       </div>
     </div>
@@ -37,11 +37,11 @@ if (isMobile) {
 export default Vue.extend({
   name: "PageMain",
   mounted() {
-    const tl = new TimelineMax({ defaults: { duration: 0.25, delay: 0.1 } });
-    tl.to("#film", { autoAlpha: 1, x: "-10vw" });
-    tl.to("#music", { autoAlpha: 1, x: "-10vw" });
-    tl.to("#podcast", { autoAlpha: 1, x: "-10vw" });
-    tl.to("#writing", { autoAlpha: 1, x: "-10vw" });
+    const tl = new TimelineMax({ defaults: { duration: 0.2, delay: 0.08 } });
+    tl.to("#film", { autoAlpha: 1, x: 0 });
+    tl.to("#music", { autoAlpha: 1, x: 0 });
+    tl.to("#podcast", { autoAlpha: 1, x: 0 });
+    tl.to("#writing", { autoAlpha: 1, x: 0 });
   },
   methods: {
     goTo: function(destination: string) {
@@ -74,12 +74,15 @@ export default Vue.extend({
   opacity: 0;
   visibility: "hidden";
   line-height: 1.25;
+  transform: translateX(6vw);
 }
 
 @media screen and (max-width: 960px) {
   .portfolios-main {
-    font-size: 15vw;
-    padding-left: 10vw;
+    font-size: 12vw;
+  }
+  .main-text {
+    line-height: 1.6;
   }
 }
 </style>

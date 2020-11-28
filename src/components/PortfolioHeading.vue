@@ -45,7 +45,7 @@ export default Vue.extend({
           start: "bottom 80%",
           end: "bottom 80%",
           // markers: true,
-          toggleActions: "play none none none"
+          toggleActions: "play none none reverse"
         }
       });
       tl.fromTo(

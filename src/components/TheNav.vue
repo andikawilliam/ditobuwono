@@ -1,7 +1,7 @@
 <template>
   <header
     id="header"
-    class="fixed w-full px-6 lg:px-16 py-8 lg:py-12 z-20 header-portfolio"
+    class="fixed w-full px-6 lg:px-16 py-6 lg:py-8 z-20 header-portfolio"
   >
     <div class="flex justify-between font-medium">
       <div>

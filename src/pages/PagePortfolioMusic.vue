@@ -79,7 +79,7 @@
 .music-grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 125px);
+  grid-template-rows: repeat(5, 120px);
   grid-auto-flow: row;
   gap: 1rem;
 }
@@ -102,8 +102,8 @@
 }
 
 .mixtape-text:hover {
-  color: #0f0f0f;
-  background-color: #f7f7f2;
+  background-color: #767676;
+  transform: translateY(-2%);
 }
 
 .mixtape-index {

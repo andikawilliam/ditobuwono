@@ -36,12 +36,12 @@ export default Vue.extend({
     aboutScroll() {
       gsap.fromTo(
         ".about-text",
-        { autoAlpha: 1, y: 30 },
+        { autoAlpha: 0, y: 30 },
         {
           scrollTrigger: {
             id: "about-text",
             trigger: ".about-text",
-            start: "top 85%",
+            start: "top 75%",
             end: "20% 30%",
             toggleActions: "play none none reverse"
           },

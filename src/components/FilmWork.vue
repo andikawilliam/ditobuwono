@@ -70,11 +70,19 @@ export default Vue.extend({
   overflow: hidden;
 }
 
+.film-container {
+  transition: all 0.5s ease;
+}
+
 .play-icon {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.5s ease;
+}
+
+.film-container:hover {
+  transform: translateY(-1%);
 }
 
 .film-container:hover .play-icon {
@@ -91,6 +99,7 @@ export default Vue.extend({
 .accolade-text {
   font-size: 1.2vw;
   margin: 0.1em 0.2em;
+  color: #e6e4e4;
 }
 
 .text-shadow {
@@ -105,8 +114,11 @@ export default Vue.extend({
     font-size: 2.4vw;
   }
   .accolade-text {
-    font-size: 2.2vw;
+    font-size: 2vw;
     margin: 0.06em 0.2em;
+  }
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(15, 15, 15, 0.8);
   }
 }
 </style>

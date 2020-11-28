@@ -15,12 +15,12 @@ export default Vue.extend({
 
 <style scoped>
 .heading-text {
-  font-size: 7vw;
+  font-size: 6vw;
 }
 
 @media screen and (max-width: 960px) {
   .heading-text {
-    font-size: 11vw;
+    font-size: 9vw;
   }
 }
 </style>

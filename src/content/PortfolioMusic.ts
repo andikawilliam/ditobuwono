@@ -17,7 +17,6 @@ export default Vue.extend({
         <span class="font-semibold">collective</span> 
         and as a 
         <span class="font-semibold">solo.</span> 
-        <br><br>
         Currently, Dito likes to explore and experiment from various music 
         genres through his mixtape choices.
       `,
