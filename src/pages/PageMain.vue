@@ -6,7 +6,7 @@
           FILMMAKER.
         </p>
         <p id="music" class="main-text" v-on:click="goTo('#mixtapes')">
-          DISKJOCKEY.
+          DISCJOCKEY.
         </p>
         <p id="podcast" class="main-text" v-on:click="goTo('#talks')">
           PODCASTER.
