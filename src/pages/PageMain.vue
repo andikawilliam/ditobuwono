@@ -1,6 +1,6 @@
 <template>
-  <div class="py-24 md:py-32 xl:py-24">
-    <div id="home" class="flex pl-6 lg:pl-16">
+  <div id="home" class="py-24 md:py-32 xl:py-24">
+    <div class="flex pl-6 lg:pl-16">
       <div class="portfolios-main text-current font-semibold lg:font-medium">
         <p id="film" class="main-text" v-on:click="goTo('#filmography')">
           FILMMAKER.
@@ -37,11 +37,14 @@ if (isMobile) {
 export default Vue.extend({
   name: "PageMain",
   mounted() {
-    const tl = new TimelineMax({ defaults: { duration: 0.2, delay: 0.08 } });
-    tl.to("#film", { autoAlpha: 1, x: 0 });
-    tl.to("#music", { autoAlpha: 1, x: 0 });
-    tl.to("#podcast", { autoAlpha: 1, x: 0 });
-    tl.to("#writing", { autoAlpha: 1, x: 0 });
+    const tl = new TimelineMax();
+    tl.to("#ditotext", { x: "20vw", autoAlpha: 1, duration: 2, delay: 0.08 });
+    tl.to("#ditotext", { x: 0, y: 0, scale: 1, duration: 0.5 });
+
+    tl.to("#film", { autoAlpha: 1, x: 0, duration: 0.2, delay: 0.05 });
+    tl.to("#music", { autoAlpha: 1, x: 0, duration: 0.2, delay: 0.05 });
+    tl.to("#podcast", { autoAlpha: 1, x: 0, duration: 0.2, delay: 0.05 });
+    tl.to("#writing", { autoAlpha: 1, x: 0, duration: 0.2, delay: 0.05 });
   },
   methods: {
     goTo: function(destination: string) {
@@ -60,15 +63,12 @@ export default Vue.extend({
 
 <style scoped>
 .portfolios-main {
-  font-size: 9vw;
+  font-size: 8vw;
 }
 .portfolios-main p {
   transition: all 0.4s ease-in-out;
 }
-.main-text:hover {
-  transform: translateX(1vw);
-  opacity: 0.4;
-}
+
 .main-text {
   cursor: pointer;
   opacity: 0;

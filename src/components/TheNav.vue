@@ -5,7 +5,11 @@
   >
     <div class="flex justify-between font-medium">
       <div>
-        <h1 class="flex md:text-2xl cursor-pointer" v-on:click="goTo('#home')">
+        <h1
+          id="ditotext"
+          class="flex md:text-2xl cursor-pointer"
+          v-on:click="goTo('#home')"
+        >
           <div class="font-bold">DITO</div>
           <div class="font-light">BUWONO</div>
         </h1>
@@ -60,5 +64,16 @@ header {
 
 .header-portfolio {
   backdrop-filter: blur(1.5px);
+}
+
+#ditotext {
+  opacity: 0;
+  transform: translateX(25vw) translateY(25vw) scale(4);
+}
+
+@media screen and (max-width: 960px) {
+  #ditotext {
+    transform: translateX(25vw) translateY(50vw) scale(2);
+  }
 }
 </style>
