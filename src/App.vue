@@ -34,7 +34,7 @@ export default Vue.extend({
     PagePortfolioPodcast,
     PagePortfolioWriting,
     PageContact
-  },
+  }
 });
 </script>
 
@@ -44,8 +44,12 @@ export default Vue.extend({
   font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(15,15,15);
-  background: linear-gradient(90deg, rgba(15,15,15,1) 0%, rgba(33,33,33,1) 100%);
+  background: rgb(15, 15, 15);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 15, 15, 1) 0%,
+    rgba(33, 33, 33, 1) 100%
+  );
   color: #eee;
 }
 [v-cloak] {
