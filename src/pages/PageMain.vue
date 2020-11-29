@@ -3,7 +3,7 @@
     <div id="home" class="flex pl-6 lg:pl-16">
       <div class="portfolios-main text-current font-semibold lg:font-medium">
         <p id="film" class="main-text" v-on:click="goTo('#filmography')">
-          FILMAKER.
+          FILMMAKER.
         </p>
         <p id="music" class="main-text" v-on:click="goTo('#mixtapes')">
           PRODUCER.
