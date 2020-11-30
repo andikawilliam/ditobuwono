@@ -1,5 +1,5 @@
 <template>
-  <div class="relative text-gray-ivory px-8 md:px-12 lg:px-20 py-40">
+  <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-32">
     <PortfolioHeading :title="title" :description="description" />
     <div class="relative lg:w-2/3 mx-auto">
       <div class="w-full music-grid-container">
@@ -130,7 +130,9 @@
 @media screen and (max-width: 960px) {
   .mixtape-text {
     font-weight: 700;
-    font-size: 6vw;
+    font-size: 5vw;
+    border-width: 2px;
+    border-radius: 1em;
   }
   .mixtape-index {
     margin: 0 0.05em;

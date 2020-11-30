@@ -21,7 +21,6 @@ export default Vue.extend({
         was made with his friends as a guest star. Both podcast's talking about 
         sharing the perspective and experience listening to variant genre of 
         music. 
-        <br>
         In 2019, he was entrusted to manage the
         <span class="font-semibold">EksotisMerauke</span> 
         podcast, where the podcast tells about the experiences when he and his 

@@ -1,17 +1,20 @@
 <template>
   <div
-    class="relative text-gray-ivory px-8 md:px-12  pt-40 pb-12 lg:px-20 lg:py-40"
+    class="relative text-gray-ivory px-8 md:px-16 pt-40 pb-12 lg:px-20 lg:py-32"
   >
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:grid lg:grid-cols-2 lg:w-2/3 mx-auto gap-24">
       <div
-        class="lg:row-span-1 lg:col-span-1 mb-12 lg:mb-24"
+        class="lg:row-span-1 lg:col-span-1 px-8 sm:px-16 lg:px-0 mb-12 sm:mb-20 lg:mb-24"
         v-for="publication in publications"
         :key="publication.id"
       >
         <a :href="publication.src">
-          <div class="cover-container grayscale">
-            <img :src="publication.cover" class="mx-auto publication-cover w-full">
+          <div class="cover-container relative grayscale">
+            <img
+              :src="publication.cover"
+              class="mx-auto publication-cover w-full"
+            />
             <div class="absolute description-text bottom-0 p-2">
               <p class="font-light pt-2">
                 {{ publication.description }}
@@ -38,7 +41,6 @@
 
 .cover-container {
   transition: transform 0.5s;
-  position: relative;
 }
 .cover-container:hover {
   transform: translateY(-1vw);
@@ -61,7 +63,7 @@
   }
 
   .description-text {
-    font-size: 3.5vw;
+    font-size: 3.2vw;
   }
 }
 </style>

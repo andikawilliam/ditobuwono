@@ -4,6 +4,7 @@ import "@/assets/css/tailwind.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
+  faChevronDown,
   faChevronLeft,
   faChevronRight,
   faPlayCircle
@@ -13,6 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
   faInstagram,
   faLinkedin,
+  faChevronDown,
   faChevronLeft,
   faChevronRight,
   faPlayCircle

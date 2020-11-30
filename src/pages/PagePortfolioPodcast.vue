@@ -1,5 +1,5 @@
 <template>
-  <div class="relative text-gray-ivory px-8 md:px-12  lg:px-20 py-40">
+  <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-32">
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
       <div class="grid-container w-full">
@@ -134,7 +134,9 @@
     height: 150px;
   }
   .podcast-text {
-    font-size: 6vw;
+    font-size: 5vw;
+    border-width: 2px;
+    border-radius: 1em;
   }
 
   .podcast-index {

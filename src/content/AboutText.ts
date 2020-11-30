@@ -41,7 +41,7 @@ export default Vue.extend({
           scrollTrigger: {
             id: "about-text",
             trigger: ".about-text",
-            start: "top 75%",
+            start: "top 64%",
             end: "20% 30%",
             toggleActions: "play none none reverse"
           },

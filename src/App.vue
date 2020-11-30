@@ -2,7 +2,7 @@
   <div id="app" v-cloak>
     <TheNav />
     <PageMain />
-    <PageAbout class="about-section" />
+    <PageAbout id="about-section" />
     <PagePortfolioFilm id="page-film" />
     <PagePortfolioMusic id="page-music" />
     <PagePortfolioPodcast id="page-podcast" />
@@ -45,10 +45,15 @@ export default Vue.extend({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(15, 15, 15);
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(15, 15, 15, 1) 0%,
-    rgba(33, 33, 33, 1) 100%
+    rgb(41, 41, 41) 100%
+  ); */
+  background: linear-gradient(
+    90deg,
+    rgba(0, 10, 18, 1) 0%,
+    rgb(32, 43, 48) 100%
   );
   color: #eee;
 }

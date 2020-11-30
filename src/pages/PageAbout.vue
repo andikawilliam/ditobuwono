@@ -1,7 +1,8 @@
 <template>
-  <div class="flex items-center px-8 md:px-12  pb-24 lg:px-24 lg:pt-40 lg:pb-64">
-    <div class="lg:w-2/3">
-      <hr class="about-line" />
+  <div
+    class="flex items-center px-8 md:px-16  pb-24 lg:px-24 lg:pt-40 lg:pb-64"
+  >
+    <div class="lg:w-1/2 lg:right-0">
       <div class="about-text font-light text-current">
         <p v-for="text in texts" :key="text" v-html="text"></p>
       </div>
@@ -28,8 +29,8 @@ p {
 
 .about-text {
   font-size: 2vw;
-  letter-spacing: 0.02em;
-  line-height: 1.6em;
+  letter-spacing: 0.025em;
+  line-height: 1.4em;
 }
 @media screen and (max-width: 960px) {
   .about-text {
