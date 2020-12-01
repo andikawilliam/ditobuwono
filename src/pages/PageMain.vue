@@ -15,7 +15,7 @@
           WRITER.
         </p>
         <font-awesome-icon
-          class="text-3xl down-notice animate-bounce"
+          class="text-xl lg:text-3xl down-notice animate-bounce"
           :icon="['fas', 'chevron-down']"
         />
       </div>
@@ -42,7 +42,6 @@ export default Vue.extend({
   name: "PageMain",
   mounted() {
     const tl = new TimelineMax();
-    tl.to("#ditotext", { filter: "blur(12px)", autoAlpha: 0, duration: 0.1 });
     tl.to("#ditotext", { filter: "blur(0px)", autoAlpha: 1, duration: 1 });
     tl.to("#ditotext", { x: 0, y: 0, scale: 1, duration: 0.5, delay: 0.5 });
 

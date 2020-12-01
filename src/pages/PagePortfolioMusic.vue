@@ -99,6 +99,7 @@
   font-weight: 500;
   border-radius: 0.1em;
   border-width: 4px;
+  border-radius: 0.4em;
 }
 
 .mixtape-text:hover {

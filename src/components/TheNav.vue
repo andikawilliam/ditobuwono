@@ -69,6 +69,7 @@ header {
 #ditotext {
   opacity: 0;
   transform: translateX(25vw) translateY(25vw) scale(4);
+  filter: blur(12px);
 }
 
 @media screen and (max-width: 960px) {

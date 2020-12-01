@@ -94,7 +94,7 @@
   font-size: 2.4vw;
   font-style: italic;
   font-weight: 500;
-  border-radius: 0.1em;
+  border-radius: 0.4em;
   border-width: 4px;
 }
 
