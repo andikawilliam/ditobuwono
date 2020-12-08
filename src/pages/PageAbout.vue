@@ -28,7 +28,7 @@ p {
 .about-text {
   font-size: 1.9vw;
   letter-spacing: 0.025em;
-  line-height: 1.375em;
+  line-height: 1.5em;
 }
 @media screen and (max-width: 960px) {
   .about-container {
@@ -36,9 +36,9 @@ p {
   }
 
   .about-text {
-    font-size: 3.8vw;
+    font-size: 4.2vw;
     letter-spacing: 0.03em;
-    line-height: 1.8em;
+    line-height: 1.5em;
   }
   .about-line {
     border-top: 3.5px solid currentColor;

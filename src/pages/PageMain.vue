@@ -1,19 +1,24 @@
 <template>
-  <div id="home" class="py-24 md:py-32 xl:py-32">
-    <div class="flex pl-6 md:pl-16">
-      <div class="portfolios-main text-current font-semibold lg:font-medium">
-        <p id="film" class="main-text" v-on:click="goTo('#filmography')">
-          FILMMAKER.
-        </p>
-        <p id="music" class="main-text" v-on:click="goTo('#mixtapes')">
-          DISCJOCKEY.
-        </p>
-        <p id="podcast" class="main-text" v-on:click="goTo('#talks')">
-          PODCASTER.
-        </p>
-        <p id="writing" class="main-text" v-on:click="goTo('#publications')">
-          WRITER.
-        </p>
+  <div id="home" class="py-24 md:py-32 xl:py-64">
+    <div class="flex px-6 md:px-24">
+      <div
+        class="portfolios-main text-current lg:text-center font-semibold lg:font-medium"
+      >
+        <div>
+          <p id="film" class="main-text" v-on:click="goTo('#filmography')">
+            FILMMAKER.
+          </p>
+          <p id="music" class="main-text" v-on:click="goTo('#mixtapes')">
+            DISCJOCKEY.
+          </p>
+          <p id="podcast" class="main-text" v-on:click="goTo('#talks')">
+            PODCASTER.
+          </p>
+          <p id="writing" class="main-text" v-on:click="goTo('#publications')">
+            WRITER.
+          </p>
+        </div>
+        <!-- <p class="sub-text font-thin pt-4">A personal portfolio</p> -->
         <font-awesome-icon
           class="text-xl lg:text-3xl down-notice animate-bounce"
           :icon="['fas', 'chevron-down']"
@@ -43,7 +48,7 @@ export default Vue.extend({
   mounted() {
     const tl = new TimelineMax();
     tl.to("#ditotext", { filter: "blur(0px)", autoAlpha: 1, duration: 1 });
-    tl.to("#ditotext", { x: 0, y: 0, scale: 1, duration: 0.5, delay: 0.5 });
+    tl.to("#ditotext", { x: 0, y: 0, scale: 1, duration: 0.6, delay: 0.5 });
 
     tl.to("#film", { autoAlpha: 1, x: 0, duration: 0.2 });
     tl.to("#music", { autoAlpha: 1, x: 0, duration: 0.2 });
@@ -69,10 +74,7 @@ export default Vue.extend({
 
 <style scoped>
 .portfolios-main {
-  font-size: 7.5vw;
-}
-.portfolios-main p {
-  transition: all 0.4s ease-in-out;
+  font-size: 6vw;
 }
 
 .main-text {
@@ -80,14 +82,19 @@ export default Vue.extend({
   opacity: 0;
   visibility: "hidden";
   line-height: 1.25;
-  transform: translateX(6vw);
+  display: inline;
+  transition: all 0.4s ease-in-out;
+}
+
+.sub-text {
+  font-size: 2vw;
 }
 
 .down-notice {
   position: absolute;
   opacity: 0;
   left: 50%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 @media screen and (max-width: 960px) {

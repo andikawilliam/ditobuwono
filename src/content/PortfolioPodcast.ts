@@ -14,16 +14,16 @@ export default Vue.extend({
     return {
       title: "talks",
       description: `
-        Dito started his own podcast with 
+        Dito started his own podcast in 2018 with 
         <span class="font-semibold">Dara Dan Pemuda</span>,
-        then within the same year in 2018, 
+        then within the same year, 
         <span class="font-semibold">Loka Bersua</span> 
-        was made with his friends as a guest star. Both podcast's talking about 
-        sharing the perspective and experience listening to variant genre of 
-        music. 
+        was made with his friends as the guest star. Both podcast talks about 
+        sharing the perspective and experience in listening to variant music 
+        genres.
         In 2019, he was entrusted to manage the
         <span class="font-semibold">EksotisMerauke</span> 
-        podcast, where the podcast tells about the experiences when he and his 
+        podcast, where it tells about the experiences when he and his 
         college friends participated in social services in Merauke, Papua.
       `,
       podcasts: [

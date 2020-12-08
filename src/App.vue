@@ -45,11 +45,6 @@ export default Vue.extend({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(15, 15, 15);
-  /* background: linear-gradient(
-    90deg,
-    rgba(15, 15, 15, 1) 0%,
-    rgb(41, 41, 41) 100%
-  ); */
   background: linear-gradient(
     90deg,
     rgba(0, 10, 18, 1) 0%,

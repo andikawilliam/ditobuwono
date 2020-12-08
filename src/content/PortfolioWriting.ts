@@ -12,13 +12,13 @@ export default Vue.extend({
     return {
       title: "publications",
       description: `
-        Dito started writing short stories from elementary school, where 
-        since then he has been happy to write wherever he has free time and some
-        of his writings are still not published. In 2017, Dito was invited by 
+        Dito started writing short stories from elementary school.
+        Since then he has been happy to write whenever he has free time, with some
+        of his writings still not published. In 2017, Dito was invited by 
         his college friend to become a contributor for his campus independent 
         zine, 
         <span class="font-semibold">Mati Lampu</span>. 
-        And in 2020, he began to create and design his own publications.
+        In 2020, he began to create and design his own publications.
       `,
       publications: [
         {

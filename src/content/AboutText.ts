@@ -17,7 +17,7 @@ export default Vue.extend({
           <span class="font-medium">depiction of a complete human figure.</span>
         `,
         `
-          This idea developed into one of Dito's quest goals to
+          This idea developed into one of Dito's quests to
           <span class="font-medium">explore different perspectives</span>
           from different mediums, which later could describe and preserve
           <span class="font-medium">the meaning of human beings.</span>

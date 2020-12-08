@@ -68,7 +68,7 @@ header {
 
 #ditotext {
   opacity: 0;
-  transform: translateX(25vw) translateY(25vw) scale(4);
+  transform: translateX(40vw) translateY(20vw) scale(1.8);
   filter: blur(12px);
 }
 
