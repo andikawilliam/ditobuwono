@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="py-24 md:py-32 xl:py-24">
+  <div id="home" class="py-24 md:py-32 xl:py-32">
     <div class="flex pl-6 md:pl-16">
       <div class="portfolios-main text-current font-semibold lg:font-medium">
         <p id="film" class="main-text" v-on:click="goTo('#filmography')">
@@ -69,7 +69,7 @@ export default Vue.extend({
 
 <style scoped>
 .portfolios-main {
-  font-size: 8vw;
+  font-size: 7.5vw;
 }
 .portfolios-main p {
   transition: all 0.4s ease-in-out;

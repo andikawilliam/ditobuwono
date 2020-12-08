@@ -1,6 +1,6 @@
 <template>
   <h3
-    class="description-text py-2 font-light italic tracking-wide"
+    class="description-text text-justify py-2 font-light italic tracking-wide"
     :id="descriptionId"
     v-html="description"
   ></h3>
