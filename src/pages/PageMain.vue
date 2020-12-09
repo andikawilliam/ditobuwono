@@ -8,13 +8,13 @@
           <p id="film" class="main-text" v-on:click="goTo('#filmography')">
             FILMMAKER.
           </p>
-          <p id="music" class="main-text" v-on:click="goTo('#mixtapes')">
+          <p id="music" class="main-text text-gray-600" v-on:click="goTo('#mixtapes')">
             DISCJOCKEY.
           </p>
           <p id="podcast" class="main-text" v-on:click="goTo('#talks')">
             PODCASTER.
           </p>
-          <p id="writing" class="main-text" v-on:click="goTo('#publications')">
+          <p id="writing" class="main-text text-gray-600" v-on:click="goTo('#publications')">
             WRITER.
           </p>
         </div>
