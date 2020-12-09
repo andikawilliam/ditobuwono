@@ -1,8 +1,8 @@
 <template>
-  <div class="film-container pb-12 lg:pb-32">
+  <div :id="filmId" class="film-container pb-12 lg:pb-32">
     <a :href="href" target="_blank" rel="noopener noreferrer">
       <div class="film-content text-shadow" v-on:click="showText = false">
-        <img class="absolute rounded-md grayscale" :src="image" />
+        <img class="absolute w-full rounded-md grayscale" :src="image" />
         <div class="absolute px-2 py-1 lg:px-4 lg:py-2">
           <p class="title-text font-semibold">{{ title }}</p>
           <p class="role-text float-left">{{ role }}</p>
@@ -26,27 +26,20 @@
         </div>
       </div>
     </a>
-    <!-- <div class="flex justify-end text-right pt-2 lg:pt-4">
-      <div>
-        <p class="title-text font-semibold">{{ title }}</p>
-        <p>{{ role }}</p>
-        <p
-            class="accolade-text" 
-            v-for="accolade in accolades"
-            :key="accolade"
-          >
-            {{ accolade }}
-        </p>
-      </div>
-    </div> -->
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default Vue.extend({
   name: "FilmWork",
   props: {
+    id: Number,
     image: String,
     title: String,
     type: String,
@@ -57,8 +50,33 @@ export default Vue.extend({
   },
   data() {
     return {
-      showText: true
+      showText: true,
+      filmId: "film-" + this.id
     };
+  },
+  mounted: function() {
+    const direction = this.id % 2 == 0 ? -80 : 80;
+    this.filmAnimation(direction);
+  },
+  methods: {
+    filmAnimation(direction: number) {
+      gsap.fromTo(
+        "#" + this.filmId,
+        { autoAlpha: 0, x: direction },
+        {
+          scrollTrigger: {
+            trigger: "#" + this.filmId,
+            start: "top 90%",
+            end: "top 90%",
+            scrub: true
+          },
+          autoAlpha: 1,
+          x: 0,
+          ease: "power4",
+          duration: 0.4
+        }
+      );
+    }
   }
 });
 </script>

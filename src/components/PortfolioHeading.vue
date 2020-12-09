@@ -24,7 +24,6 @@ export default Vue.extend({
   props: ["title", "description"],
   components: {
     PortfolioTitle,
-    // PortfolioLine,
     PortfolioDescription
   },
   data() {

@@ -6,6 +6,7 @@
         <FilmWork
           v-for="film in films"
           :key="film.id"
+          v-bind:id="film.id"
           v-bind:image="film.image"
           v-bind:title="film.title"
           v-bind:type="film.type"
