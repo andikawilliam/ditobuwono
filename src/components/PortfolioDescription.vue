@@ -18,8 +18,8 @@ export default Vue.extend({
 <style scoped>
 .description-text {
   position: relative;
-  font-size: 1.8vw;
-  letter-spacing: 0.0275em;
+  font-size: 1.6vw;
+  letter-spacing: 0.025em;
 }
 
 @media screen and (max-width: 960px) {
