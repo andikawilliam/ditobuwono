@@ -2,7 +2,7 @@
   <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-32">
     <PortfolioHeading :title="title" :description="description" />
     <div class="relative">
-      <div class="lg:w-2/3 mx-auto overflow-hidden">
+      <div class="lg:w-2/3 xl:w-3/5 mx-auto overflow-hidden">
         <FilmWork
           v-for="film in films"
           :key="film.id"
