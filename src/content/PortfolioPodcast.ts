@@ -77,7 +77,6 @@ export default Vue.extend({
           trigger: ".podcast-grid-container",
           start: "top 64%",
           end: "20% 30%",
-          markers: true,
           toggleActions: "play none none reverse"
         },
         y: 0, autoAlpha: 1, duration: 1, stagger: 0.2
