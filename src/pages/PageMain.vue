@@ -7,7 +7,7 @@
             <span class="font-semibold lg:font-medium">FILM</span>MAKER.
           </p>
           <p id="music" class="main-text" v-on:click="goTo('#mixtapes')">
-            <span class="font-semibold lg:font-medium">D</span>ISC<span class="font-semibold lg:font-medium">J</span>OCKEY.
+            <span class="font-semibold lg:font-medium">DISC</span>JOCKEY.
           </p>
           <p id="podcast" class="main-text" v-on:click="goTo('#talks')">
             <span class="font-semibold lg:font-medium">PODCAST</span>ER.
@@ -16,7 +16,6 @@
             <span class="font-semibold lg:font-medium">WRITE</span>R.
           </p>
         </div>
-        <!-- <p class="sub-text font-thin pt-4">A personal portfolio</p> -->
         <font-awesome-icon
           class="text-xl lg:text-3xl down-notice animate-bounce"
           :icon="['fas', 'chevron-down']"
@@ -48,14 +47,8 @@ export default Vue.extend({
     tl.to("#ditotext", { autoAlpha: 1, duration: 1 });
     tl.to("#ditotext", { autoAlpha: 0, duration: 0.5, delay: 0.5 });
     tl.to("#ditotext", { x: 0, y: 0, scale: 1 });
-    tl.to("#ditotext", { autoAlpha: 1, duration: 0.2});
-
-
-    tl.to("#film", { autoAlpha: 1, x: 0, duration: 0.2 });
-    tl.to("#music", { autoAlpha: 1, x: 0, duration: 0.2 });
-    tl.to("#podcast", { autoAlpha: 1, x: 0, duration: 0.2 });
-    tl.to("#writing", { autoAlpha: 1, x: 0, duration: 0.2 });
-
+    tl.to("#ditotext", { autoAlpha: 1, duration: 0.2 });
+    tl.to(".main-text", { autoAlpha: 1, x: 0, duration: 0.2, stagger: 0.15 });
     tl.to(".down-notice", { autoAlpha: 1, y: 10, duration: 0.5, delay: 0.5 });
   },
   methods: {

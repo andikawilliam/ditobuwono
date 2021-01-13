@@ -68,6 +68,22 @@ export default Vue.extend({
       ]
     };
   },
+  mounted() {
+    gsap.fromTo(
+      ".podcast-grid",
+      { y: 50, autoAlpha: 0 },
+      {
+        scrollTrigger: {
+          trigger: ".podcast-grid-container",
+          start: "top 64%",
+          end: "20% 30%",
+          markers: true,
+          toggleActions: "play none none reverse"
+        },
+        y: 0, autoAlpha: 1, duration: 1, stagger: 0.2
+      }
+    );
+  },
   methods: {
     loopNext: function(id: number, length: number) {
       const len = length;

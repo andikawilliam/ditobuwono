@@ -40,16 +40,24 @@ export default Vue.extend({
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-#app {
-  font-family: "Ubuntu", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  background: rgb(15, 15, 15);
+}
+
+body {
   background: rgb(15, 15, 15);
   background: linear-gradient(
     90deg,
     rgba(0, 10, 18, 1) 0%,
     rgb(24, 33, 37) 100%
   );
+}
+
+#app {
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
   color: #eee;
 }
 [v-cloak] {

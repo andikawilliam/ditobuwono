@@ -3,7 +3,7 @@
     class="flex justify-center items-center px-8 md:px-16 pb-16 lg:px-24 lg:pt-40 lg:pb-24"
   >
     <div class="about-container">
-      <div class="about-text font-light italic text-current lg:text-justify">
+      <div class="about-text font-light text-current lg:text-justify">
         <p v-for="text in texts" :key="text" v-html="text"></p>
       </div>
     </div>

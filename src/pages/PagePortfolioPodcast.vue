@@ -2,7 +2,7 @@
   <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-32">
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
-      <div class="grid-container w-full">
+      <div class="podcast-grid-container w-full">
         <div
           class="podcast-grid mb-16 grayscale"
           v-for="podcast in podcasts"

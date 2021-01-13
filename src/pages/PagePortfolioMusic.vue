@@ -2,9 +2,9 @@
   <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-32">
     <PortfolioHeading :title="title" :description="description" />
     <div class="relative lg:w-2/3 mx-auto">
-      <div class="w-full music-grid-container">
+      <div class="mixtape-grid-container w-full">
         <div
-          class="row-span-1 col-span-5 grayscale"
+          class="mixtape-grid row-span-1 col-span-5 grayscale"
           v-for="mixtape in mixtapes"
           :key="mixtape.id"
           v-bind:class="gridSpan(mixtape.rowGrid, mixtape.colGrid)"
@@ -73,10 +73,11 @@
   </div>
 </template>
 
-<script lang="ts" src="../content/PortfolioMusic"></script>
+<script lang="ts" src="../content/PortfolioMusic">
+</script>
 
 <style scoped>
-.music-grid-container {
+.mixtape-grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 120px);

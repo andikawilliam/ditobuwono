@@ -1,4 +1,8 @@
 import Vue from "vue";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 import PortfolioHeading from "../components/PortfolioHeading.vue";
 
 export default Vue.extend({
@@ -69,6 +73,22 @@ export default Vue.extend({
       ]
     };
   },
+  mounted: function() {
+    gsap.fromTo(
+      ".mixtape-grid",
+      { y: 100, autoAlpha: 0 },
+      {
+        scrollTrigger: {
+          trigger: ".mixtape-grid-container",
+          start: "top 64%",
+          end: "20% 30%",
+          markers: true,
+          toggleActions: "play none none reverse"
+        },
+        y: 0, autoAlpha: 1, duration: 1, stagger: 0.2
+      }
+    );
+  },
   methods: {
     gridSpan: function(rowSize: number, columnSize: number) {
       const row: string = "lg:row-span-" + rowSize;
@@ -83,6 +103,7 @@ export default Vue.extend({
         id = len;
       }
       return id;
-    }
+    },
+    
   }
 });
