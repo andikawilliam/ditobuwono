@@ -46,7 +46,7 @@ html {
 
 body {
   background: rgb(0,0,0);
-  background: radial-gradient(circle, rgb(15, 15, 15) 70%, rgba(33,33,33,1) 94%);
+  background: radial-gradient(circle, rgb(12, 12, 12) 40%, rgba(33,33,33,1) 100%);
 }
 
 #app {

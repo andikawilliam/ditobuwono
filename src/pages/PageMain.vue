@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="py-24 md:py-32 xl:py-64">
+  <div id="home" class="py-24 md:py-32 lg:py-56 xl:py-64">
     <div class="flex px-6 md:px-24">
       <div class="portfolios-main text-current lg:text-center">
         <div class="font-oxygen font-bold">
