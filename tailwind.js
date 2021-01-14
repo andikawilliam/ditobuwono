@@ -22,7 +22,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // 'gray-ivory': "#f7f7f2",
         'gray-ivory': "#eee",
         'black-onyx': "#0f0f0f",
         'gray-background': '#121217',
@@ -31,7 +30,7 @@ module.exports = {
       },
       fontFamily: {
         'ubuntu': ['Ubuntu', 'sans-serif'],
-        'rubik': ['Rubik', 'sans-serif']
+        'oxygen': ['Oxygen', 'sans-serif']
       }
     }
   },

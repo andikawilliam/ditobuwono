@@ -45,12 +45,8 @@ html {
 }
 
 body {
-  background: rgb(15, 15, 15);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 10, 18, 1) 0%,
-    rgb(24, 33, 37) 100%
-  );
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgb(15, 15, 15) 70%, rgba(33,33,33,1) 94%);
 }
 
 #app {

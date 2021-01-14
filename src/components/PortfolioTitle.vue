@@ -1,5 +1,5 @@
 <template>
-  <h1 :id="titleId" class="heading-text text-center font-medium uppercase">
+  <h1 :id="titleId" class="heading-text text-center font-oxygen font-bold uppercase">
     {{ title }}
   </h1>
 </template>

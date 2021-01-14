@@ -1,19 +1,19 @@
 <template>
   <div id="home" class="py-24 md:py-32 xl:py-64">
     <div class="flex px-6 md:px-24">
-      <div class="portfolios-main text-current lg:text-center font-thin">
-        <div>
+      <div class="portfolios-main text-current lg:text-center">
+        <div class="font-oxygen font-bold">
           <p id="film" class="main-text" v-on:click="goTo('#filmography')">
-            <span class="font-semibold lg:font-medium">FILM</span>MAKER.
+            <span class="text-gray-200">FILM</span>MAKER.
           </p>
           <p id="music" class="main-text" v-on:click="goTo('#mixtapes')">
-            <span class="font-semibold lg:font-medium">DISC</span>JOCKEY.
+            <span class="text-gray-200">DISC</span>JOCKEY.
           </p>
           <p id="podcast" class="main-text" v-on:click="goTo('#talks')">
-            <span class="font-semibold lg:font-medium">PODCAST</span>ER.
+            <span class="text-gray-200">PODCAST</span>ER.
           </p>
           <p id="writing" class="main-text" v-on:click="goTo('#publications')">
-            <span class="font-semibold lg:font-medium">WRITE</span>R.
+            <span class="text-gray-200">WRITE</span>R.
           </p>
         </div>
         <font-awesome-icon

@@ -1,3 +1,16 @@
+@include font-face( Ubuntu, '~/assets/fonts/Ubuntu-Bold.woff');
+@include font-face( Ubuntu, '~/assets/fonts/Ubuntu-BoldItalic.woff');
+@include font-face( Ubuntu, '~/assets/fonts/Ubuntu-Italic.woff');
+@include font-face( Ubuntu, '~/assets/fonts/Ubuntu-Light.woff');
+@include font-face( Ubuntu, '~/assets/fonts/Ubuntu-LightItalic.woff');
+@include font-face( Ubuntu, '~/assets/fonts/Ubuntu-Medium.woff');
+@include font-face( Ubuntu, '~/assets/fonts/Ubuntu-MediumItalic.woff');
+@include font-face( Ubuntu, '~/assets/fonts/Ubuntu-Regular.woff');
+
+@include font-face( Oxygen, '~/assets/fonts/Oxygen-Bold.woff');
+@include font-face( Oxygen, '~/assets/fonts/Oxygen-Light.woff');
+@include font-face( Oxygen, '~/assets/fonts/Oxygen-Regular.woff');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
