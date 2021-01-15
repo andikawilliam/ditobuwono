@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="pt-8 pb-24 md:py-32 lg:py-56 xl:py-64">
+  <div id="home" class="pt-8 pb-24 md:pt-16 md:pb-40 lg:py-40 xl:py-48">
     <div class="flex px-6 md:px-24">
       <div class="portfolios-main text-current lg:text-center">
         <div class="font-oxygen font-bold">
@@ -17,7 +17,7 @@
           </p>
         </div>
         <font-awesome-icon
-          class="text-xl lg:text-3xl down-notice animate-bounce"
+          class="text-xl sm:text-2xl lg:text-3xl down-notice animate-bounce"
           :icon="['fas', 'chevron-down']"
         />
       </div>
@@ -92,7 +92,20 @@ export default Vue.extend({
   margin-top: 10%;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1023px) {
+  .portfolios-main {
+    font-size: 11vw;
+  }
+  .main-text {
+    line-height: 1.8;
+  }
+  .down-notice {
+    margin-top: 15%;
+  }
+}
+
+
+@media screen and (max-width: 639px) {
   .portfolios-main {
     font-size: 12vw;
   }

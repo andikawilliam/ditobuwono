@@ -22,7 +22,15 @@ export default Vue.extend({
   letter-spacing: 0.025em;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1023px) {
+  .description-text {
+    font-size: 3.2vw;
+    letter-spacing: 0.035em;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 639px) {
   .description-text {
     font-size: 4vw;
     letter-spacing: 0.035em;

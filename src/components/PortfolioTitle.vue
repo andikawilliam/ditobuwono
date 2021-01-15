@@ -18,7 +18,13 @@ export default Vue.extend({
   font-size: 5vw;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1023px) {
+  .heading-text {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (max-width: 639px) {
   .heading-text {
     font-size: 9vw;
   }
