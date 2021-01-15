@@ -1,5 +1,5 @@
 <template>
-  <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-32">
+  <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-16 sm:py-20 lg:py-24">
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
       <div class="podcast-grid-container w-full">

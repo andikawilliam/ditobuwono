@@ -31,6 +31,14 @@ module.exports = {
       fontFamily: {
         'ubuntu': ['Ubuntu', 'sans-serif'],
         'oxygen': ['Oxygen', 'sans-serif']
+      },
+      fontSize: {
+        '1.7vh': '1.7vh',
+        '1.8vh': '1.8vh',
+      },
+      padding: {
+        '20vh': '20vh',
+        '30vh': '30vh'
       }
     }
   },

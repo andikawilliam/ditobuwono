@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="py-24 md:py-32 lg:py-56 xl:py-64">
+  <div id="home" class="pt-8 pb-24 md:py-32 lg:py-56 xl:py-64">
     <div class="flex px-6 md:px-24">
       <div class="portfolios-main text-current lg:text-center">
         <div class="font-oxygen font-bold">
@@ -48,6 +48,7 @@ export default Vue.extend({
     tl.to("#ditotext", { autoAlpha: 0, duration: 0.5, delay: 0.5 });
     tl.to("#ditotext", { x: 0, y: 0, scale: 1 });
     tl.to("#ditotext", { autoAlpha: 1, duration: 0.2 });
+
     tl.to(".main-text", { autoAlpha: 1, x: 0, duration: 0.2, stagger: 0.15 });
     tl.to(".down-notice", { autoAlpha: 1, y: 10, duration: 0.5, delay: 0.5 });
   },

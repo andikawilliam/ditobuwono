@@ -34,7 +34,7 @@ export default Vue.extend({
     PagePortfolioPodcast,
     PagePortfolioWriting,
     PageContact
-  }
+  },
 });
 </script>
 
