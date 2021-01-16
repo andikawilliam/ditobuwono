@@ -8,7 +8,7 @@ export default Vue.extend({
       notifState: true,
       notifText: `
         Belrusak won Best Documentary October 
-        Edition Feel the Reel International Festival 2020! ✨
+        Edition Feel The Reel International Film Festival 2020! ✨
       `
     }
   },
