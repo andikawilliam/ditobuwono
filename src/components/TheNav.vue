@@ -3,7 +3,7 @@
     id="header"
     class="sticky w-full top-0 z-20 header-portfolio"
   >
-    <TheNotification />
+    <!-- <TheNotification /> -->
     <div class="flex justify-between font-medium px-6 md:px-12 lg:px-16 py-4 md:py-8">
       <div>
         <h1
@@ -35,7 +35,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import TheNotification from "./TheNotification.vue";
+// import TheNotification from "./TheNotification.vue";
 
 import { gsap } from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
@@ -45,9 +45,9 @@ gsap.registerPlugin(ScrollToPlugin);
 export default Vue.extend({
   name: "TheNav",
   props: ["isMain"],
-  components: {
-    TheNotification
-  },
+  // components: {
+  //   TheNotification
+  // },
   methods: {
     goTo: function(destination: string) {
       gsap.to(window, {
