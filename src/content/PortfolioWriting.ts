@@ -24,6 +24,21 @@ export default Vue.extend({
       publications: [
         {
           id: 1,
+          src: "https://www.bukuindie.com/p/because-the-end-is-really-the-beginning/",
+          cover: CoverTheEnd,
+          title: "Because The End Is Really The Beginning",
+          description: `
+          Muhammad Fakhri: umur setengah baya, status cerai, hanya itulah yang ia ingat.
+          Malam itu ia terbangun di halte bis yang biasa digunakan untuk menaiki bis antar kota. 
+          Hanya saja, saat itu halte tersebut sepi sekali.
+          
+          Lalu, di tengah kegelapan tersebut, terlihat perempuan cantik nan jelita yang amat ia kenal.
+          Siapakah perempuan tersebut?
+          `,
+          orderLink: "https://www.bukuindie.com/p/because-the-end-is-really-the-beginning/"
+        },
+        {
+          id: 2,
           src:
             "https://issuu.com/matilampu/docs/mati_lampu_vol4_7f301e70bf19a9",
           cover: CoverToleransi,
@@ -36,7 +51,7 @@ export default Vue.extend({
           `
         },
         {
-          id: 2,
+          id: 3,
           src: "https://issuu.com/haninditobuwono9413/docs/kaput_rev",
           cover: CoverKaput,
           title: "Kaput",
@@ -46,19 +61,7 @@ export default Vue.extend({
             maintain his sanity with a choice of songs, which he thinks can help
             him to get through this uncertainty.
           `
-        },
-        {
-          id: 3,
-          src: "https://www.bukuindie.com/p/because-the-end-is-really-the-beginning/",
-          cover: CoverTheEnd,
-          title: "The End Is Really The Beginning",
-          description: `
-          Muhammad Fakhri: umur setengah baya, status cerai, hanya itulah yang ia ingat.
-          Malam itu ia terbangun di halte bis yang biasa digunakan untuk menaiki bis antar kota. Hanya saja, saat itu halte tersebut sepi sekali.
-          Lalu, di tengah kegelapan tersebut, terlihat perempuan cantik nan jelita yang amat ia kenal.
-          Siapakah perempuan tersebut?
-          `
-        }      
+        },   
       ]
     };
   },
