@@ -15,7 +15,7 @@
               :src="publication.cover"
               class="mx-auto publication-cover w-full"
             />
-            <div class="absolute description-text bottom-0 p-2">
+            <div class="absolute h-1/2 description-text bottom-0 p-2">
               <p class="font-light pt-2">
                 {{ publication.description }}
               </p>
@@ -53,7 +53,7 @@
 .description-text {
   font-size: 1vw;
   letter-spacing: 0.05em;
-  background-color: #18181881;
+  background-color: #1818189c;
   backdrop-filter: blur(1px);
 }
 

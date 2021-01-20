@@ -1,5 +1,6 @@
 import Vue from "vue";
 import PortfolioHeading from "../components/PortfolioHeading.vue";
+import CoverTheEnd from "../assets/cover-the-end.jpg";
 import CoverToleransi from "../assets/cover-toleransi.png";
 import CoverKaput from "../assets/cover-kaput.png";
 
@@ -45,7 +46,19 @@ export default Vue.extend({
             maintain his sanity with a choice of songs, which he thinks can help
             him to get through this uncertainty.
           `
-        },      
+        },
+        {
+          id: 3,
+          src: "https://www.bukuindie.com/p/because-the-end-is-really-the-beginning/",
+          cover: CoverTheEnd,
+          title: "The End Is Really The Beginning",
+          description: `
+          Muhammad Fakhri: umur setengah baya, status cerai, hanya itulah yang ia ingat.
+          Malam itu ia terbangun di halte bis yang biasa digunakan untuk menaiki bis antar kota. Hanya saja, saat itu halte tersebut sepi sekali.
+          Lalu, di tengah kegelapan tersebut, terlihat perempuan cantik nan jelita yang amat ia kenal.
+          Siapakah perempuan tersebut?
+          `
+        }      
       ]
     };
   },
