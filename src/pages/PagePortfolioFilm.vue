@@ -1,5 +1,5 @@
 <template>
-  <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-32 lg:py-24">
+  <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-32 lg:py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div class="relative">
       <div class="lg:w-2/3 xl:w-3/5 mx-auto overflow-hidden">

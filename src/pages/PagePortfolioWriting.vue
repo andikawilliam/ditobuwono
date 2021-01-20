@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative text-gray-ivory px-8 md:px-16 pt-40 pb-12 lg:px-20 py-12 sm:py-20 lg:py-24"
+    class="relative text-gray-ivory px-8 md:px-16 pt-40 pb-12 lg:px-20 py-12 sm:py-20 lg:py-40"
   >
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:grid lg:grid-cols-2 lg:w-2/3 mx-auto gap-24">
