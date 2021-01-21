@@ -19,23 +19,25 @@ export default Vue.extend({
         his college friend to become a contributor for his campus independent 
         zine, 
         <span class="font-semibold">Mati Lampu</span>. 
-        In 2020, he began to create and design his own publications.
+        In 2021, he published his first book called
+        <span class="font-semibold">Because the End Is Really the Beginning</span>.
       `,
       publications: [
         {
           id: 1,
-          src: "https://www.bukuindie.com/p/because-the-end-is-really-the-beginning/",
+          src: "https://linktr.ee/EndIsBeginning",
           cover: CoverTheEnd,
-          title: "Because The End Is Really The Beginning",
+          title: "Because the End Is Really the Beginning",
           description: `
-          Muhammad Fakhri: umur setengah baya, status cerai, hanya itulah yang ia ingat.
-          Malam itu ia terbangun di halte bis yang biasa digunakan untuk menaiki bis antar kota. 
-          Hanya saja, saat itu halte tersebut sepi sekali.
-          
-          Lalu, di tengah kegelapan tersebut, terlihat perempuan cantik nan jelita yang amat ia kenal.
-          Siapakah perempuan tersebut?
+          Dito wrote a short story book about regrets.
+          Where according to him, a mistake will remain forever
+          and it is part of our life. It cannot be forced to
+          be erased or transferred, it must be embraced in
+          our body and soul. With the illustration and audio
+          in this book, Dito hopes that his readers can feel
+          the feelings that he has felt during his life until now.
           `,
-          orderLink: "https://www.bukuindie.com/p/because-the-end-is-really-the-beginning/"
+          orderLink: "https://linktr.ee/EndIsBeginning"
         },
         {
           id: 2,
@@ -56,10 +58,9 @@ export default Vue.extend({
           cover: CoverKaput,
           title: "Kaput",
           description: `
-            Starting to make his own publication, Kaput is one of Dito’s 
-            cathartic medium in the midst of this pandemic. Where he tries to
-            maintain his sanity with a choice of songs, which he thinks can help
-            him to get through this uncertainty.
+            Kaput is one of Dito’s cathartic medium in the midst of this pandemic. 
+            Where he tries to maintain his sanity with a choice of songs, 
+            which he thinks can help him to get through this uncertainty.
           `
         },   
       ]

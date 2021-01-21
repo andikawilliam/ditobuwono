@@ -7,10 +7,10 @@ export default Vue.extend({
       // to turn off change notifState to : false
       notifState: true,
       notifText: `
-        Belrusak won Best Documentary October 
-        Edition Feel The Reel International Film Festival 2020! ✨
+        Pre-order "Because the End Is Really
+        the Beginning" now! ✨
       `,
-      notifLink: "https://www.viddsee.com/video/belrusak/ywxkh"
+      notifLink: "https://linktr.ee/EndIsBeginning"
     }
   },
   methods: {
