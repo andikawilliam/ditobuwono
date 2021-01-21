@@ -58,10 +58,9 @@ export default Vue.extend({
           cover: CoverKaput,
           title: "Kaput",
           description: `
-            Starting to make his own publication, Kaput is one of Dito’s 
-            cathartic medium in the midst of this pandemic. Where he tries to
-            maintain his sanity with a choice of songs, which he thinks can help
-            him to get through this uncertainty.
+            Kaput is one of Dito’s cathartic medium in the midst of this pandemic. 
+            Where he tries to maintain his sanity with a choice of songs, 
+            which he thinks can help him to get through this uncertainty.
           `
         },   
       ]
