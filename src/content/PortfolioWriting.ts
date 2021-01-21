@@ -28,14 +28,15 @@ export default Vue.extend({
           cover: CoverTheEnd,
           title: "Because The End Is Really The Beginning",
           description: `
-          Muhammad Fakhri: umur setengah baya, status cerai, hanya itulah yang ia ingat.
-          Malam itu ia terbangun di halte bis yang biasa digunakan untuk menaiki bis antar kota. 
-          Hanya saja, saat itu halte tersebut sepi sekali.
-          
-          Lalu, di tengah kegelapan tersebut, terlihat perempuan cantik nan jelita yang amat ia kenal.
-          Siapakah perempuan tersebut?
+          Dito wrote a short story book about regret.
+          Where according to him, a mistake will remain forever
+          and it is part of our life. It cannot be forced to
+          be erased or transferred, it must be embraced in
+          our body and soul. With the illustration and audio
+          in this book, Dito hopes that his readers can feel
+          the feelings that he has felt during his life until now.
           `,
-          orderLink: "https://www.bukuindie.com/p/because-the-end-is-really-the-beginning/"
+          orderLink: "https://linktr.ee/EndIsBeginning"
         },
         {
           id: 2,
