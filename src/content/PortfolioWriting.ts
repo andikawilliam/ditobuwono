@@ -28,7 +28,7 @@ export default Vue.extend({
           cover: CoverTheEnd,
           title: "Because The End Is Really The Beginning",
           description: `
-          Dito wrote a short story book about regret.
+          Dito wrote a short story book about regrets.
           Where according to him, a mistake will remain forever
           and it is part of our life. It cannot be forced to
           be erased or transferred, it must be embraced in
