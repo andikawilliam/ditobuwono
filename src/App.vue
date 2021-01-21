@@ -4,9 +4,9 @@
     <PageMain />
     <PageAbout id="about-section" />
     <PagePortfolioFilm id="page-film" />
+    <PagePortfolioWriting id="page-writing" />
     <PagePortfolioMusic id="page-music" />
     <PagePortfolioPodcast id="page-podcast" />
-    <PagePortfolioWriting id="page-writing" />
     <PageContact />
   </div>
 </template>
@@ -39,7 +39,9 @@ export default Vue.extend({
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url(
+  "https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+);
 html {
   background: rgb(15, 15, 15);
 }
