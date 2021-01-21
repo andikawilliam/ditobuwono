@@ -24,7 +24,7 @@ export default Vue.extend({
       publications: [
         {
           id: 1,
-          src: "https://www.bukuindie.com/p/because-the-end-is-really-the-beginning/",
+          src: "https://linktr.ee/EndIsBeginning",
           cover: CoverTheEnd,
           title: "Because The End Is Really The Beginning",
           description: `
