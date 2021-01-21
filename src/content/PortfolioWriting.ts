@@ -26,7 +26,7 @@ export default Vue.extend({
           id: 1,
           src: "https://linktr.ee/EndIsBeginning",
           cover: CoverTheEnd,
-          title: "Because The End Is Really The Beginning",
+          title: "Because the End Is Really the Beginning",
           description: `
           Dito wrote a short story book about regrets.
           Where according to him, a mistake will remain forever
