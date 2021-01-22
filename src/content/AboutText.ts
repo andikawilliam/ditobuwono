@@ -14,15 +14,15 @@ export default Vue.extend({
       texts: [
         `
           In the course of his creative process, Dito always raises the theme of
-          <span class="font-bold">the meaning of honesty</span>
+          <span class="">the meaning of honesty</span>
           from a sense of loss, where according to him that feeling is a
-          <span class="font-bold">depiction of a complete human figure.</span>
+          <span class="">depiction of a complete human figure.</span>
         `,
         `
           This idea developed into one of Dito's quests to
-          <span class="font-bold">explore different perspectives</span>
+          <span class="">explore different perspectives</span>
           from different mediums, which later could describe and preserve
-          <span class="font-bold">the meaning of human beings.</span>
+          <span class="">the meaning of human beings.</span>
         `,
         `
           Currently, Dito is completing his undergraduate thesis at the Faculty
@@ -43,8 +43,8 @@ export default Vue.extend({
           scrollTrigger: {
             id: "about-content",
             trigger: ".about-text",
-            start: "top 64%",
-            end: "20% 30%",
+            start: "top 90%",
+            end: "20% 50%",
             toggleActions: "play none none reverse"
           },
           y: 0,

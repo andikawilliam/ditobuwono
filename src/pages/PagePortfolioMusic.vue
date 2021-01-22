@@ -1,5 +1,5 @@
 <template>
-  <div class="relative text-gray-dito px-8 md:px-16 lg:px-20 py-32 sm:py-40">
+  <div class="relative px-8 md:px-16 lg:px-20 py-32 sm:py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div class="relative lg:w-2/3 mx-auto">
       <div class="mixtape-grid-container w-full">
@@ -12,7 +12,7 @@
           <transition name="mixtape-fade">
             <div
               v-show="!mixtape.show"
-              class="mixtape-text border-gray-dito-text"
+              class="mixtape-text font-cormorant"
               v-on:click="mixtape.show = true"
             >
               {{ mixtape.name }}
@@ -99,12 +99,10 @@
   font-weight: 500;
   border-radius: 0.1em;
   border-radius: 0.2em;
-  background-color: #1a1a1a;
-  opacity: 0.8;
+  box-shadow: .5px .5px 3px 0px rgba(26, 26, 26, 0.596);
 }
 
 .mixtape-text:hover {
-  opacity: 1;
   transform: translateY(-2%);
 }
 
@@ -137,8 +135,7 @@
 
 @media screen and (max-width: 639px) {
   .mixtape-text {
-    font-weight: 700;
-    font-size: 5vw;
+    font-size: 6vw;
   }
   .mixtape-index {
     margin: 0 0.05em;

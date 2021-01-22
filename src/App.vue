@@ -39,8 +39,8 @@ export default Vue.extend({
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
 /* @font-face {
   font-family: 'Roboto Slab';
   src:  url('./assets/fonts/Roboto Slab/Roboto-Slab.woff') format('woff'),
@@ -92,10 +92,10 @@ body {
 }
 
 #app {
-  font-family: Cormorant, serif;
+  font-family: "Open Sans", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #eee;
+  color: #262626;
 }
 [v-cloak] {
   display: none;

@@ -18,7 +18,7 @@ export default Vue.extend({
 
 <style scoped>
 .heading-text {
-  font-size: 4.5vw;
+  font-size: 4vw;
 }
 
 @media screen and (max-width: 1023px) {

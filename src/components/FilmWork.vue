@@ -91,6 +91,7 @@ export default Vue.extend({
 .film-container {
   transition: all 0.5s ease;
   color: #e6e4e4;
+  font-family: "Bitter";
 }
 
 .play-icon {

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative text-gray-dito px-8 md:px-16 lg:px-20 py-32 sm:py-20 lg:py-40"
+    class="relative px-8 md:px-16 lg:px-20 py-32 sm:py-20 lg:py-40"
   >
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
@@ -12,7 +12,7 @@
         >
           <transition name="podcast-fade">
             <div
-              class="podcast-text border-gray-dito-text"
+              class="podcast-text font-cormorant"
               v-show="!podcast.show"
               v-on:click="podcast.show = !podcast.show"
             >
@@ -95,12 +95,10 @@
   font-size: 2.4vw;
   font-style: italic;
   font-weight: 500;
-  background-color: #1a1a1a;
-  opacity: 0.8;
+  box-shadow: .5px .5px 3px 0px rgba(26, 26, 26, 0.596);
 }
 
 .podcast-text:hover {
-  opacity: 1;
   transform: translateY(-2%);
 }
 
@@ -140,7 +138,7 @@
     height: 150px;
   }
   .podcast-text {
-    font-size: 4.5vw;
+    font-size: 6vw;
     border-radius: 0.2em;
   }
 

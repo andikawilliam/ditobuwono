@@ -29,8 +29,6 @@ module.exports = {
         'gray-dito-text': '#767676'
       },
       fontFamily: {
-        'ubuntu': ['Ubuntu', 'sans-serif'],
-        'oxygen': ['Oxygen', 'sans-serif'],
         'cormorant': ['Cormorant', 'serif'],
         'roboto-slab': ['Roboto-Slab', 'serif'],
       },

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative text-gray-dito px-8 md:px-16 pt-40 pb-12 lg:px-20 py-32 sm:py-20 lg:py-40"
+    class="relative px-8 md:px-16 pt-40 pb-12 lg:px-20 py-32 sm:py-20 lg:py-40"
   >
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:grid lg:grid-cols-2 lg:w-2/3 mx-auto gap-24">
@@ -15,7 +15,7 @@
               class="absolute h-0 description-text bottom-0 flex items-center overflow-hidden"
             >
               <p
-                class="font-light pt-2 px-2 lg:px-6"
+                class="text-gray-ivory font-light pt-2 px-2 lg:px-6 hidden"
                 v-html="publication.description"
               />
             </div>
@@ -26,7 +26,7 @@
           </div>
         </a>
         <div class="px-2 pt-4">
-          <p class="title-text text-center font-medium pb-2">
+          <p class="title-text text-center font-medium font-cormorant pb-2">
             {{ publication.title }}
           </p>
           <div class="flex justify-center" v-if="publication.orderLink">
@@ -48,7 +48,7 @@
 
 <style scoped>
 .publication-cover {
-  box-shadow: 0px -2px 10px 2px rgba(15, 15, 15, 0.8);
+  box-shadow: 1px 1px 4px 0px rgba(15, 15, 15, 0.8);
 }
 
 .cover-container {

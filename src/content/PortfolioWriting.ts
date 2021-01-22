@@ -18,9 +18,9 @@ export default Vue.extend({
         of his writings still not published. In 2017, Dito was invited by 
         his college friend to become a contributor for his campus independent 
         zine, 
-        <span class="font-semibold">Mati Lampu</span>. 
+        <span class="">Mati Lampu</span>. 
         In 2021, he published his first book called
-        <span class="font-semibold">Because the End Is Really the Beginning</span>.
+        <span class="">Because the End Is Really the Beginning</span>.
       `,
       publications: [
         {
