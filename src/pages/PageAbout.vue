@@ -4,10 +4,12 @@
   >
     <div class="about-content image-container pb-4 lg:w-1/2 lg:mr-12 xl:mr-24">
       <img class="lg:w-5/6 lg:mx-auto" :src="picture" />
-      <div class="text-sm text-center mt-2 lg:text-base">Hanindito Buwono.</div>
+      <div class="text-sm text-center mt-2 lg:text-base">
+        Hanindito Buwono.
+      </div>
     </div>
     <div class="about-content about-container">
-      <div class="about-text font-cormorant text-current">
+      <div class="about-text font-cormorant text-current text-gray-dito">
         <p v-for="text in texts" :key="text" v-html="text" />
       </div>
     </div>

@@ -2,7 +2,7 @@
   <header id="header" class="sticky w-full top-0 z-20 header-portfolio">
     <TheNotification />
     <div
-      class="flex justify-between font-medium px-6 md:px-12 lg:px-16 py-4 md:py-8"
+      class="flex justify-between text-gray-dito font-medium px-6 md:px-12 lg:px-16 py-4 md:py-8"
     >
       <div>
         <h1
@@ -10,8 +10,8 @@
           class="flex md:text-2xl cursor-pointer font-cormorant"
           v-on:click="goTo('#home')"
         >
-          <div class="font-bold">DITO</div>
-          <div class="font-light">BUWONO</div>
+          <div class="font-black">DITO</div>
+          <div class="font-base">BUWONO</div>
         </h1>
       </div>
       <div>

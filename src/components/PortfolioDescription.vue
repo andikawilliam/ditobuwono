@@ -1,6 +1,6 @@
 <template>
   <h3
-    class="description-text py-2 font-light lg:text-justify tracking-wide"
+    class="description-text py-2 font-medium lg:text-justify tracking-wide"
     :id="descriptionId"
     v-html="description"
   ></h3>

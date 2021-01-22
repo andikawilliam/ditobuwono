@@ -79,15 +79,15 @@ export default Vue.extend({
 } */
 
 html {
-  background: rgb(15, 15, 15);
+  background: rgb(255, 255, 255);
 }
 
 body {
   background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
-    rgb(19, 19, 19) 20%,
-    rgb(12, 12, 12) 100%
+    rgb(231, 231, 231) 20%,
+    rgb(233, 233, 233) 100%
   );
 }
 

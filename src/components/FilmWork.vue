@@ -90,6 +90,7 @@ export default Vue.extend({
 
 .film-container {
   transition: all 0.5s ease;
+  color: #e6e4e4;
 }
 
 .play-icon {
@@ -117,7 +118,6 @@ export default Vue.extend({
 .accolade-text {
   font-size: 1.2vw;
   margin: 0.1em 0.2em;
-  color: #e6e4e4;
 }
 
 .text-shadow {
