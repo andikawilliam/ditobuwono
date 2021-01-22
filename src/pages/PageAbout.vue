@@ -3,8 +3,10 @@
     class="flex justify-center items-center px-8 md:px-16 pb-16 lg:px-24 lg:py-24"
   >
     <div class="about-container">
-      <div class="about-text font-light font-ubuntu text-current lg:text-justify">
-        <p v-for="text in texts" :key="text" v-html="text"></p>
+      <div
+        class="about-text font-cormorant font-light text-current lg:text-justify"
+      >
+        <p v-for="text in texts" :key="text" v-html="text" />
       </div>
     </div>
   </div>
@@ -22,7 +24,7 @@ p {
 }
 
 .about-container {
-  width: 67%;
+  width: 50%;
 }
 
 .about-text {
@@ -60,9 +62,9 @@ p {
   }
 
   .about-text {
-    font-size: 4.2vw;
-    letter-spacing: 0.03em;
-    line-height: 1.5em;
+    font-size: 5vw;
+    letter-spacing: 0.025em;
+    line-height: 1.4em;
   }
   .about-line {
     border-top: 3.5px solid currentColor;

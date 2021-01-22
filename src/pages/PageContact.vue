@@ -1,6 +1,6 @@
 <template>
   <a href="mailto:hanindito.arief@gmail.com?subject=Hi Dito!">
-    <div class="text-center md:text-2xl italic pb-24 text-gray-ivory">
+    <div class="text-center md:text-2xl italic pt-12 pb-24 text-gray-ivory">
       <p class="font-semibold my-2">Say Hello</p>
       <p>hanindito.arief@gmail.com</p>
     </div>
@@ -14,3 +14,5 @@ export default Vue.extend({
   name: "PageContact"
 });
 </script>
+
+<style scoped></style>

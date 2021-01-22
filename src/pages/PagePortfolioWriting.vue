@@ -11,7 +11,9 @@
       >
         <a :href="publication.src">
           <div class="cover-container relative grayscale">
-            <div class="absolute h-0 description-text bottom-0 flex items-center overflow-hidden">
+            <div
+              class="absolute h-0 description-text bottom-0 flex items-center overflow-hidden"
+            >
               <p
                 class="font-light pt-2 px-2 lg:px-6"
                 v-html="publication.description"
@@ -71,10 +73,9 @@
   background-color: #181818b7;
   backdrop-filter: blur(1px);
 }
-
- .order-text {
-    font-size: 1.2vw;
-  }
+.order-text {
+  font-size: 1.2vw;
+}
 
 @media screen and (max-width: 1023px) {
   .title-text {

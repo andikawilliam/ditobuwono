@@ -1,14 +1,13 @@
 <template>
-  <header
-    id="header"
-    class="sticky w-full top-0 z-20 header-portfolio"
-  >
+  <header id="header" class="sticky w-full top-0 z-20 header-portfolio">
     <TheNotification />
-    <div class="flex justify-between font-medium px-6 md:px-12 lg:px-16 py-4 md:py-8">
+    <div
+      class="flex justify-between font-medium px-6 md:px-12 lg:px-16 py-4 md:py-8"
+    >
       <div>
         <h1
           id="ditotext"
-          class="flex md:text-2xl cursor-pointer"
+          class="flex md:text-2xl cursor-pointer font-cormorant"
           v-on:click="goTo('#home')"
         >
           <div class="font-bold">DITO</div>
@@ -74,7 +73,7 @@ header {
 
 #ditotext {
   opacity: 0;
-  transform: translateX(42vw) translateY(25vw) scale(3.5);
+  transform: translateX(42vw) translateY(20vw) scale(3.5);
 }
 
 @media screen and (max-width: 960px) {

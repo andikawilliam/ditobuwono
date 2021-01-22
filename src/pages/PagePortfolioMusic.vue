@@ -73,8 +73,7 @@
   </div>
 </template>
 
-<script lang="ts" src="../content/PortfolioMusic">
-</script>
+<script lang="ts" src="../content/PortfolioMusic"></script>
 
 <style scoped>
 .mixtape-grid-container {
@@ -99,12 +98,12 @@
   font-style: italic;
   font-weight: 500;
   border-radius: 0.1em;
-  border-width: 4px;
+  border-width: 1px;
   border-radius: 0.4em;
 }
 
 .mixtape-text:hover {
-  background-color: #767676;
+  background-color: #262626;
   transform: translateY(-2%);
 }
 
@@ -133,7 +132,7 @@
   .mixtape-text {
     font-weight: 700;
     font-size: 5vw;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 1em;
   }
   .mixtape-index {

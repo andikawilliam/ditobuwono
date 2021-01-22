@@ -34,28 +34,29 @@ export default Vue.extend({
     PagePortfolioPodcast,
     PagePortfolioWriting,
     PageContact
-  },
+  }
 });
 </script>
 
 <style>
-@import url(
-  "https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-);
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 html {
   background: rgb(15, 15, 15);
 }
 
 body {
-  background: rgb(0,0,0);
-  background: radial-gradient(circle, rgb(14, 14, 14) 20%, rgb(20, 20, 20) 100%);
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgb(14, 14, 14) 20%,
+    rgb(20, 20, 20) 100%
+  );
 }
 
 #app {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Cormorant", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
   color: #eee;
 }
 [v-cloak] {

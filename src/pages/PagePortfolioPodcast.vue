@@ -1,5 +1,7 @@
 <template>
-  <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-16 sm:py-20 lg:py-40">
+  <div
+    class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-16 sm:py-20 lg:py-40"
+  >
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
       <div class="podcast-grid-container w-full">
@@ -78,7 +80,7 @@
   height: 160px;
 }
 .podcast-text:hover {
-  background-color: #767676;
+  background-color: #262626;
   transform: translateY(-2%);
 }
 .podcast-text {
@@ -95,7 +97,7 @@
   font-style: italic;
   font-weight: 500;
   border-radius: 0.4em;
-  border-width: 4px;
+  border-width: 1px;
 }
 
 .podcast-fade-enter-active,
@@ -135,7 +137,7 @@
   }
   .podcast-text {
     font-size: 5vw;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 1em;
   }
 

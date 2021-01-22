@@ -30,7 +30,9 @@ module.exports = {
       },
       fontFamily: {
         'ubuntu': ['Ubuntu', 'sans-serif'],
-        'oxygen': ['Oxygen', 'sans-serif']
+        'oxygen': ['Oxygen', 'sans-serif'],
+        'cormorant': ['Cormorant', 'serif'],
+        'roboto-slab': ['Roboto-Slab', 'serif'],
       },
       fontSize: {
         '1.7vh': '1.7vh',

@@ -17,7 +17,7 @@
           class="absolute text-right right-0 bottom-0 px-2 py-1 lg:px-4 lg:py-2"
         >
           <p
-            class="accolade-text float-right"
+            class="accolade-text float-right font-medium"
             v-for="accolade in accolades"
             :key="accolade"
           >
@@ -121,7 +121,7 @@ export default Vue.extend({
 }
 
 .text-shadow {
-  text-shadow: 1px 1px 4px rgba(15, 15, 15, 0.8);
+  text-shadow: 1.5px 1.5px 4px rgba(15, 15, 15, 0.8);
 }
 
 @media screen and (max-width: 960px) {
