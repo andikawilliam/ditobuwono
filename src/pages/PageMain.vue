@@ -2,7 +2,7 @@
   <div id="home" class="pt-8 pb-32 md:pt-16 md:pb-40 lg:py-24">
     <div class="flex px-6 md:px-24">
       <div class="portfolios-main text-current lg:text-center">
-        <div class="font-roboto-slab font-medium">
+        <div class="font-cormorant font-bold">
           <p id="film" class="main-text" v-on:click="goTo('#filmography')">
             FILMMAKER.
           </p>

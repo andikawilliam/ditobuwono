@@ -7,7 +7,7 @@
       <div class="text-sm text-center mt-2 lg:text-base">Hanindito Buwono.</div>
     </div>
     <div class="about-content about-container">
-      <div class="about-text font-cormorant font-light text-current">
+      <div class="about-text font-cormorant text-current">
         <p v-for="text in texts" :key="text" v-html="text" />
       </div>
     </div>
@@ -64,7 +64,7 @@ p {
   }
 
   .about-text {
-    font-size: 5vw;
+    font-size: 4vw;
     letter-spacing: 0.025em;
     line-height: 1.4em;
   }

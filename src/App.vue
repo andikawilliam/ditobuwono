@@ -39,7 +39,45 @@ export default Vue.extend({
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap");
+
+/* @font-face {
+  font-family: 'Roboto Slab';
+  src:  url('./assets/fonts/Roboto Slab/Roboto-Slab.woff') format('woff'),
+}
+@font-face {
+  font-family: Cormorant;
+  src:  url('./assets/fonts/Cormorant/Cormorant-Bold.woff') format('woff'), 
+}
+@font-face {
+  font-family: Cormorant;
+  src: url('./assets/fonts/Cormorant/Cormorant-BoldItalic.woff') format('woff'), 
+}
+@font-face {
+  font-family: Cormorant;
+  src: url('./assets/fonts/Cormorant/Cormorant-Italic.woff') format('woff'), 
+}
+@font-face {
+  font-family: Cormorant;
+  src:  url('./assets/fonts/Cormorant/Cormorant-Light.woff') format('woff'), 
+}
+@font-face {
+  font-family: Cormorant;
+  src:  url('./assets/fonts/Cormorant/Cormorant-LightItalic.woff') format('woff'), 
+}
+@font-face {
+  font-family: Cormorant;
+  src:  url('./assets/fonts/Cormorant/Cormorant-Medium.woff') format('woff'), 
+}
+@font-face {
+  font-family: Cormorant;
+  src:  url('./assets/fonts/Cormorant/Cormorant-MediumItalic.woff') format('woff'), 
+}
+@font-face {
+  font-family: Cormorant;
+  src:  url('./assets/fonts/Cormorant/Cormorant-Regular.woff') format('woff'), 
+} */
+
 html {
   background: rgb(15, 15, 15);
 }
