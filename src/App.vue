@@ -48,8 +48,8 @@ body {
   background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
-    rgb(14, 14, 14) 20%,
-    rgb(20, 20, 20) 100%
+    rgb(19, 19, 19) 20%,
+    rgb(12, 12, 12) 100%
   );
 }
 

@@ -1,6 +1,7 @@
 import Vue from "vue";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import PersonalPhoto from "../assets/dito-personal.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,6 +10,7 @@ export default Vue.extend({
   data() {
     return {
       title: "About",
+      picture: PersonalPhoto,
       texts: [
         `
           In the course of his creative process, Dito always raises the theme of
@@ -35,19 +37,20 @@ export default Vue.extend({
   methods: {
     aboutScroll() {
       gsap.fromTo(
-        ".about-text",
+        ".about-content",
         { autoAlpha: 0, y: 30 },
         {
           scrollTrigger: {
-            id: "about-text",
+            id: "about-content",
             trigger: ".about-text",
-            start: "top 64%",
+            start: "top 70%",
             end: "20% 30%",
             toggleActions: "play none none reverse"
           },
           y: 0,
           z: 10,
           autoAlpha: 1,
+          stagger: 0.2,
           rotation: 0.01
         }
       );

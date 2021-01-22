@@ -84,14 +84,17 @@ export default Vue.extend({
           end: "20% 30%",
           toggleActions: "play none none reverse"
         },
-        y: 0, autoAlpha: 1, duration: 1, stagger: 0.2
+        y: 0,
+        autoAlpha: 1,
+        duration: 1,
+        stagger: 0.2
       }
     );
   },
   methods: {
     gridSpan: function(rowSize: number, columnSize: number) {
-      const row: string = "lg:row-span-" + rowSize;
-      const col: string = "lg:col-span-" + columnSize;
+      const row: string = "md:row-span-" + rowSize;
+      const col: string = "md:col-span-" + columnSize;
       return row + " " + col;
     },
     loopNext: function(id: number, length: number) {
@@ -102,7 +105,6 @@ export default Vue.extend({
         id = len;
       }
       return id;
-    },
-    
+    }
   }
 });

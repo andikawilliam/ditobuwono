@@ -1,11 +1,13 @@
 <template>
   <div
-    class="flex justify-center items-center px-8 md:px-16 pb-16 lg:px-24 lg:py-24"
+    class="lg:flex lg:justify-center lg:items-center px-8 md:px-16 pb-16 lg:px-24 lg:py-32 lg:pb-40"
   >
-    <div class="about-container">
-      <div
-        class="about-text font-cormorant font-light text-current lg:text-justify"
-      >
+    <div class="about-content image-container pb-4 lg:w-1/2 lg:mr-12 xl:mr-24">
+      <img class="lg:w-5/6 lg:mx-auto" :src="picture" />
+      <div class="text-sm text-center mt-2 lg:text-base">Hanindito Buwono.</div>
+    </div>
+    <div class="about-content about-container">
+      <div class="about-text font-cormorant font-light text-current">
         <p v-for="text in texts" :key="text" v-html="text" />
       </div>
     </div>
@@ -24,18 +26,18 @@ p {
 }
 
 .about-container {
-  width: 50%;
+  width: 40%;
 }
 
 .about-text {
-  font-size: 1.8vw;
-  letter-spacing: 0.024em;
-  line-height: 1.5em;
+  font-size: 1.7vw;
+  letter-spacing: 0.02em;
+  line-height: 1.4em;
 }
 
 @media screen and (max-width: 1279px) {
   .about-text {
-    font-size: 2.5vw;
+    font-size: 2vw;
     letter-spacing: 0.01em;
     line-height: 1.4em;
   }

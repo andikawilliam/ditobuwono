@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-16 sm:py-20 lg:py-40"
+    class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-32 sm:py-20 lg:py-40"
   >
     <PortfolioHeading :title="title" :description="description" />
     <div class="lg:w-2/3 mx-auto">
@@ -31,7 +31,10 @@
             allow="encrypted-media"
           >
           </iframe>
-          <div class="my-2 text-center font-semibold" v-show="podcast.show">
+          <div
+            class="my-2 text-center font-roboto-slab font-semibold"
+            v-show="podcast.show"
+          >
             <div
               class="inline-block mr-2 text-sm lg:mx-4 cursor-pointer"
               v-show="podcast.src.length > 1"
@@ -79,10 +82,6 @@
   margin-top: 5px;
   height: 160px;
 }
-.podcast-text:hover {
-  background-color: #262626;
-  transform: translateY(-2%);
-}
 .podcast-text {
   transition: all 0.5s;
   cursor: pointer;
@@ -96,8 +95,13 @@
   font-size: 2.4vw;
   font-style: italic;
   font-weight: 500;
-  border-radius: 0.4em;
-  border-width: 1px;
+  background-color: #1a1a1a;
+  opacity: 0.8;
+}
+
+.podcast-text:hover {
+  opacity: 1;
+  transform: translateY(-2%);
 }
 
 .podcast-fade-enter-active,
@@ -136,9 +140,8 @@
     height: 150px;
   }
   .podcast-text {
-    font-size: 5vw;
-    border-width: 1px;
-    border-radius: 1em;
+    font-size: 4.5vw;
+    border-radius: 0.2em;
   }
 
   .podcast-index {

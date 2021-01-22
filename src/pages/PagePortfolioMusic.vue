@@ -1,5 +1,5 @@
 <template>
-  <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-16 sm:py-40">
+  <div class="relative text-gray-ivory px-8 md:px-16 lg:px-20 py-32 sm:py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div class="relative lg:w-2/3 mx-auto">
       <div class="mixtape-grid-container w-full">
@@ -32,7 +32,7 @@
             </iframe>
           </transition>
           <div
-            class="my-2 text-center font-semibold"
+            class="my-2 text-center font-semibold font-roboto-slab"
             v-show="mixtape.show && mixtape.id === 4"
           >
             <div
@@ -81,7 +81,7 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 120px);
   grid-auto-flow: row;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .mixtape-text {
@@ -98,12 +98,13 @@
   font-style: italic;
   font-weight: 500;
   border-radius: 0.1em;
-  border-width: 1px;
-  border-radius: 0.4em;
+  border-radius: 0.2em;
+  background-color: #1a1a1a;
+  opacity: 0.8;
 }
 
 .mixtape-text:hover {
-  background-color: #262626;
+  opacity: 1;
   transform: translateY(-2%);
 }
 
@@ -114,7 +115,7 @@
   display: inline-block;
   padding: 0 0.5em;
   margin: 0 0.2em;
-  color: #404040;
+  color: #414141;
 }
 
 .mixtape-index:hover {
@@ -130,15 +131,19 @@
 
 @media screen and (max-width: 960px) {
   .mixtape-text {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .mixtape-text {
     font-weight: 700;
     font-size: 5vw;
-    border-width: 1px;
-    border-radius: 1em;
   }
   .mixtape-index {
     margin: 0 0.05em;
   }
-  .music-grid-container {
+  .mixtape-grid-container {
     grid-template-rows: repeat(4, 150px);
   }
 }
