@@ -54,7 +54,7 @@ body {
 }
 
 #app {
-  font-family: "Cormorant", serif;
+  font-family: Cormorant, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #eee;
