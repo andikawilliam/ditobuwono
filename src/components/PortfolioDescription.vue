@@ -21,7 +21,7 @@ export default Vue.extend({
 <style scoped>
 .description-text {
   position: relative;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   letter-spacing: 0.025em;
 }
 

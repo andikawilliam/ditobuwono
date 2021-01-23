@@ -2,7 +2,7 @@
   <header id="header" class="sticky w-full top-0 z-20 header-portfolio">
     <TheNotification />
     <div
-      class="flex justify-between text-gray-dito font-medium px-6 md:px-12 lg:px-16 py-4 md:pt-8"
+      class="flex justify-between text-gray-dito font-medium px-6 md:px-12 lg:px-16 pt-4 md:pt-8"
     >
       <div>
         <h1
