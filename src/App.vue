@@ -101,7 +101,7 @@ body {
   display: none;
 }
 .grayscale {
-  -webkit-filter: grayscale(50%);
-  filter: grayscale(50%);
+  -webkit-filter: grayscale(30%);
+  filter: grayscale(30%);
 }
 </style>
