@@ -1,7 +1,7 @@
 import Vue from "vue";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import PersonalPhoto from "../assets/dito-personal.jpeg";
+import PersonalPhoto from "../assets/dito-picture.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,15 +42,15 @@ export default Vue.extend({
         {
           scrollTrigger: {
             id: "about-content",
-            trigger: ".about-text",
-            start: "top 90%",
-            end: "20% 50%",
+            trigger: ".image-container",
+            start: "top 60%",
+            end: "top 60%",
             toggleActions: "play none none reverse"
           },
           y: 0,
-          z: 10,
           autoAlpha: 1,
-          stagger: 0.2,
+          stagger: 0.4,
+          duration: 0.5,
           rotation: 0.01
         }
       );
