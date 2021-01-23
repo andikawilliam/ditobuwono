@@ -2,7 +2,7 @@
   <div
     class="lg:flex lg:justify-center lg:items-center px-8 md:px-16 pb-16 lg:px-24 lg:py-32 lg:pb-40"
   >
-    <div class="about-content image-container pb-4 lg:w-1/2 lg:mr-12 xl:mr-24">
+    <div class="about-content image-container pb-4 lg:pb-0 lg:pt-8 lg:w-1/2 lg:mr-12 xl:mr-24">
       <img class="lg:w-4/5 lg:mx-auto" :src="picture" />
       <div class="text-sm text-center mt-2 font-cormorant lg:text-base">
         Hanindito Buwono.

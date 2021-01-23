@@ -1,5 +1,5 @@
 <template>
-  <div :id="filmId" class="film-container pb-12 lg:pb-32 xl:pb-16">
+  <div :id="filmId" class="film-container  pb-12 lg:pb-32 xl:pb-16">
     <a :href="href" target="_blank" rel="noopener noreferrer">
       <div class="film-content text-shadow" v-on:click="showText = false">
         <img class="absolute w-full rounded-md grayscale" :src="image" />
