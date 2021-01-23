@@ -5,13 +5,13 @@
     <div
       class="about-content image-container pb-4 lg:pb-0 lg:pt-8 lg:w-1/2 lg:mr-12 xl:mr-24"
     >
-      <img class="md:w-1/2 lg:w-2/3 mx-auto" :src="picture" />
-      <div class="text-sm text-center mt-2 font-cormorant lg:text-base">
+      <img class="w-4/5 md:w-1/2 lg:w-2/3 mx-auto" :src="picture" />
+      <div class="font-cormorant mt-2 text-sm text-center lg:text-base">
         Hanindito Buwono.
       </div>
     </div>
     <div class="about-content about-container mx-auto text-center lg:text-left">
-      <div class="about-text text-current opacity-75">
+      <div class="about-text font-light md:font-normal text-current">
         <p v-for="text in texts" :key="text" v-html="text" />
       </div>
     </div>

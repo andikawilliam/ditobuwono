@@ -4,7 +4,7 @@
     v-show="notifState && notifText"
   >
     <div
-      class="relative grid grid-cols-11 text-1.8vh font-cormorant font-medium sm:text-center lg:text-base"
+      class="relative grid grid-cols-11 text-sm font-cormorant font-medium sm:text-center lg:text-base"
     >
       <p class="col-span-10 lg:col-span-11">
         <a :href="notifLink">

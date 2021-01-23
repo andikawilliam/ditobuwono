@@ -30,7 +30,7 @@ module.exports = {
       },
       fontFamily: {
         'cormorant': ['Cormorant', 'serif'],
-        'roboto-slab': ['Roboto-Slab', 'serif'],
+        'roboto-slab': ['Roboto Slab', 'serif'],
       },
       fontSize: {
         '1.7vh': '1.7vh',

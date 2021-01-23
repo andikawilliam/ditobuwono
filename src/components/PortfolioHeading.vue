@@ -1,7 +1,7 @@
 <template>
   <div>
     <PortfolioTitle :title="title" :titleId="titleId" />
-    <div class="mb-10 lg:mb-12 md:w-9/10 lg:w-3/4 lg:mx-auto opacity-75">
+    <div class="mb-10 lg:mb-12 md:w-9/10 lg:w-3/4 lg:mx-auto">
       <PortfolioDescription
         :description="description"
         :descriptionId="descriptionId"

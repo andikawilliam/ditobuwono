@@ -1,10 +1,12 @@
 <template>
-  <h3
-    class="description-text py-2 lg:text-justify tracking-wide opacity-50"
-    :id="descriptionId"
-    v-html="description"
-  >
-  </h3>
+  <div class="py-2 lg:text-justify tracking-wide font-light lg:font-normal">
+    <h3
+      class="description-text "
+      :id="descriptionId"
+      v-html="description"
+    >
+    </h3>
+  </div>
 </template>
 
 <script lang="ts">
@@ -20,7 +22,7 @@ export default Vue.extend({
 .description-text {
   position: relative;
   font-size: 1.3vw;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.025em;
 }
 
 @media screen and (max-width: 1023px) {
@@ -33,9 +35,9 @@ export default Vue.extend({
 
 @media screen and (max-width: 639px) {
   .description-text {
-    font-size: 4vw;
-    letter-spacing: 0.035em;
-    line-height: 1.6;
+    font-size: 4.4vw;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
   }
 }
 </style>

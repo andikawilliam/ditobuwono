@@ -1,7 +1,7 @@
 <template>
   <h1
     :id="titleId"
-    class="heading-text text-center font-roboto-slab opacity-80 capitalize"
+    class="heading-text text-center font-cormorant font-medium capitalize"
   >
     {{ title }}
   </h1>
@@ -19,7 +19,7 @@ export default Vue.extend({
 <style scoped>
 .heading-text {
   font-size: 3vw;
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 @media screen and (max-width: 1023px) {
