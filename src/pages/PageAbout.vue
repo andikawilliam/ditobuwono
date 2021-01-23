@@ -10,7 +10,7 @@
         Hanindito Buwono.
       </div>
     </div>
-    <div class="about-content text-center about-container mx-auto">
+    <div class="about-content about-container mx-auto text-center lg:text-left">
       <div class="about-text text-current opacity-75">
         <p v-for="text in texts" :key="text" v-html="text" />
       </div>
@@ -41,7 +41,7 @@ p {
 
 @media screen and (max-width: 1279px) {
   .about-text {
-    font-size: 2vw;
+    font-size: 1.5vw;
     letter-spacing: 0.01em;
     line-height: 1.4em;
   }
