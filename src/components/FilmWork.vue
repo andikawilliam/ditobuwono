@@ -1,12 +1,16 @@
 <template>
-  <div :id="filmId" class="film-container  pb-12 lg:pb-32 xl:pb-16">
+  <div :id="filmId" class="film-container font-cormorant pb-12 lg:pb-32 xl:pb-16">
     <a :href="href" target="_blank" rel="noopener noreferrer">
       <div class="film-content text-shadow" v-on:click="showText = false">
         <img class="absolute w-full rounded-md grayscale" :src="image" />
-        <div class="absolute px-2 py-1 lg:px-4 lg:py-2">
-          <p class="title-text font-semibold">{{ title }}</p>
-          <p class="role-text float-left">{{ role }}</p>
-        </div>
+        <!-- <div class="absolute px-2 py-1 lg:px-4 lg:py-2">
+          <p class="title-text font-semibold">
+            {{ title }}
+          </p>
+          <p class="role-text float-left">
+            {{ role }}
+          </p>
+        </div> -->
         <div class="absolute inset-0 text-center">
           <font-awesome-icon
             class="play-icon text-2xl lg:text-5xl"
@@ -16,15 +20,21 @@
         <div
           class="absolute text-right right-0 bottom-0 px-2 py-1 lg:px-4 lg:py-2"
         >
-          <p
+          <!-- <p
             class="accolade-text float-right font-medium"
             v-for="accolade in accolades"
             :key="accolade"
           >
             {{ accolade }}
-          </p>
+          </p> -->
         </div>
       </div>
+      <p class="title-text text-center font-semibold opacity-75">
+        {{ title }}
+      </p>
+      <p class="role-text text-center opacity-75">
+        {{ role }}
+      </p>
     </a>
   </div>
 </template>
@@ -90,8 +100,6 @@ export default Vue.extend({
 
 .film-container {
   transition: all 0.5s ease;
-  color: #e6e4e4;
-  font-family: "Bitter";
 }
 
 .play-icon {
@@ -107,11 +115,11 @@ export default Vue.extend({
 
 .film-container:hover .play-icon {
   transform: translateY(-50%) scale(1.2);
-  color: #bb0a21;
+  color: #af2538;
 }
 
 .title-text {
-  font-size: 2vw;
+  font-size: 1.6vw;
 }
 .role-text {
   font-size: 1vw;

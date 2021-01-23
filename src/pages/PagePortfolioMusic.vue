@@ -32,7 +32,7 @@
             </iframe>
           </transition>
           <div
-            class="my-2 text-center font-semibold font-roboto-slab"
+            class="my-2 text-center font-roboto-slab"
             v-show="mixtape.show && mixtape.id === 4"
           >
             <div
@@ -99,7 +99,7 @@
   font-weight: 500;
   border-radius: 0.1em;
   border-radius: 0.2em;
-  box-shadow: .5px .5px 3px 0px rgba(26, 26, 26, 0.596);
+  box-shadow: 0.5px 0.5px 3px 0px rgba(26, 26, 26, 0.596);
 }
 
 .mixtape-text:hover {
@@ -123,8 +123,8 @@
 }
 
 .mixtape-active {
-  background-color: #f7f7f2;
-  color: #262626;
+  background-color: #5c5c5c;
+  color: #f7f7f2;
 }
 
 @media screen and (max-width: 960px) {

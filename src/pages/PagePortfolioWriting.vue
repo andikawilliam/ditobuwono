@@ -3,9 +3,11 @@
     class="relative px-8 md:px-16 pt-40 pb-12 lg:px-20 py-32 sm:py-20 lg:py-40"
   >
     <PortfolioHeading :title="title" :description="description" />
-    <div class="lg:grid lg:grid-cols-2 lg:w-2/3 mx-auto gap-24">
+    <div
+      class="mx-auto md:grid md:grid-cols-3 lg:grid-cols-2 lg:w-2/3 lg:gap-24"
+    >
       <div
-        class="lg:row-span-1 lg:col-span-1 px-8 sm:px-16 lg:px-0 mb-12 sm:mb-20 lg:mb-24"
+        class="lg:row-span-1 lg:col-span-1 px-8 lg:px-0 mb-12 sm:mb-20 md:mb-4"
         v-for="publication in publications"
         :key="publication.id"
       >
@@ -31,7 +33,7 @@
           </p>
           <div class="flex justify-center" v-if="publication.orderLink">
             <button
-              class="order-text button mx-auto p-1 lg:px-4 border border-white rounded-lg hover:bg-white hover:text-black"
+              class="order-text button mx-auto p-1 lg:px-4 underline rounded-lg hover:bg-white hover:text-black"
             >
               <a :href="publication.orderLink">
                 Pre-Order Now
@@ -79,20 +81,23 @@
 
 @media screen and (max-width: 1023px) {
   .title-text {
-    font-size: 5vw;
+    font-size: 2vw;
   }
 
   .description-text {
-    font-size: 3.2vw;
+    font-size: 1vw;
     height: auto;
   }
 
   .order-text {
-    font-size: 3.5vw;
+    font-size: 1vw;
   }
 }
 
 @media screen and (max-width: 639px) {
+  .title-text {
+    font-size: 5vw;
+  }
   .description-text {
     font-size: 2.8vw;
   }

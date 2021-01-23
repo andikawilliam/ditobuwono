@@ -1,5 +1,8 @@
 <template>
-  <div class="w-full px-6 py-2 bg-gray-ivory shadow-sm" v-show="notifState && notifText">
+  <div
+    class="w-full px-6 py-2 bg-gray-ivory shadow-sm"
+    v-show="notifState && notifText"
+  >
     <div
       class="relative grid grid-cols-11 text-1.8vh font-cormorant font-medium sm:text-center lg:text-base"
     >

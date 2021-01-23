@@ -75,11 +75,14 @@ export default Vue.extend({
       {
         scrollTrigger: {
           trigger: ".podcast-grid-container",
-          start: "top 64%",
+          start: "top 80%",
           end: "20% 30%",
           toggleActions: "play none none reverse"
         },
-        y: 0, autoAlpha: 1, duration: 1, stagger: 0.2
+        y: 0,
+        autoAlpha: 1,
+        duration: 1,
+        stagger: 0.2
       }
     );
   },
