@@ -5,7 +5,7 @@
   >
     <div class="flex px-6 md:px-24">
       <div class="portfolios-main text-current lg:text-center">
-        <div class="font-cormorant font-bold">
+        <div class="font-playfair-display font-semibold">
           <p id="film" class="main-text" v-on:click="goTo('#filmography')">
             FILMMAKER.
           </p>
@@ -73,6 +73,7 @@ export default Vue.extend({
 <style scoped>
 .portfolios-main {
   font-size: 6vw;
+  opacity: 0.9;
 }
 
 .main-text {
