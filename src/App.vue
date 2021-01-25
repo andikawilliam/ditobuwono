@@ -73,7 +73,7 @@ body {
   display: none;
 }
 .grayscale {
-  -webkit-filter: grayscale(30%);
-  filter: grayscale(30%);
+  -webkit-filter: grayscale(35%);
+  filter: grayscale(35%);
 }
 </style>

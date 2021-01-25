@@ -1,5 +1,7 @@
 import Vue from "vue";
 import PortfolioHeading from "../components/PortfolioHeading.vue";
+import PortfolioDescription from "../components/PortfolioDescription.vue";
+
 
 import FilmWork from "../components/FilmWork.vue";
 import CoverBelrusak from "../assets/ss-belrusak.jpeg";
@@ -10,7 +12,8 @@ export default Vue.extend({
   name: "PortfolioFilm",
   components: {
     PortfolioHeading,
-    FilmWork
+    FilmWork,
+    PortfolioDescription
   },
   data: function() {
     return {

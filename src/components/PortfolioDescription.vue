@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2 lg:text-justify tracking-wide font-light md:font-normal md:opacity-75">
+  <div class="py-2 lg:text-center tracking-wide font-light md:font-normal md:opacity-75">
     <h3
       class="description-text "
       :id="descriptionId"
@@ -21,8 +21,9 @@ export default Vue.extend({
 <style scoped>
 .description-text {
   position: relative;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   letter-spacing: 0.025em;
+  line-height: 1.8;
 }
 
 @media screen and (max-width: 1023px) {

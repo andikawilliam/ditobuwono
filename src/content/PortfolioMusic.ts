@@ -82,7 +82,7 @@ export default Vue.extend({
           trigger: ".mixtape-grid-container",
           start: "top 64%",
           end: "20% 30%",
-          toggleActions: "play none none reverse"
+          toggleActions: "play none none none"
         },
         y: 0,
         autoAlpha: 1,

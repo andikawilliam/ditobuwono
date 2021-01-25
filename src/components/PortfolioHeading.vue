@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="md:w-9/10 lg:w-3/5 lg:mx-auto">
     <PortfolioTitle :title="title" :titleId="titleId" />
-    <div class="mb-10 lg:mb-12 md:w-9/10 lg:w-3/4 lg:mx-auto">
+    <div class="mb-10 lg:mb-12">
       <PortfolioDescription
         :description="description"
         :descriptionId="descriptionId"

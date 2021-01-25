@@ -129,7 +129,7 @@
 
 @media screen and (max-width: 1279px) {
   .podcast-text {
-    font-size: 3.5vw;
+    font-size: 2.8vw;
     border-radius: 0.2em;
   }
 }
