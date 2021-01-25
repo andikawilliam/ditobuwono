@@ -32,8 +32,15 @@
       <p class="title-text text-center font-semibold opacity-75">
         {{ title }}
       </p>
-      <p class="role-text text-center opacity-75">
+      <p class="role-text text-center opacity-75 pb-2">
         {{ role }}
+      </p>
+      <p
+        class="accolade-text text-center font-medium"
+        v-for="accolade in accolades"
+        :key="accolade"
+      >
+        ⬩{{ accolade }}⬩
       </p>
     </a>
   </div>
@@ -122,7 +129,7 @@ export default Vue.extend({
   font-size: 1.6vw;
 }
 .role-text {
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 .accolade-text {
   font-size: 1.2vw;

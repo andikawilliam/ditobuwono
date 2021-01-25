@@ -32,7 +32,7 @@
             </iframe>
           </transition>
           <div
-            class="my-2 text-center font-roboto-slab"
+            class="my-2 text-center text-sm"
             v-show="mixtape.show && mixtape.id === 4"
           >
             <div

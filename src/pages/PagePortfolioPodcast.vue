@@ -29,9 +29,9 @@
             allow="encrypted-media"
           >
           </iframe>
-          <div class="my-2 text-center font-roboto-slab" v-show="podcast.show">
+          <div class="my-2 text-center text-sm" v-show="podcast.show">
             <div
-              class="inline-block mr-2 text-sm lg:mx-4 cursor-pointer"
+              class="inline-block mr-2 lg:mx-4 cursor-pointer"
               v-show="podcast.src.length > 1"
               v-on:click="
                 podcast.active = loopNext(
@@ -52,7 +52,7 @@
               {{ index + 1 }}
             </div>
             <div
-              class="inline-block ml-2 text-sm lg:mx-4 cursor-pointer"
+              class="inline-block ml-2 lg:mx-4 cursor-pointer"
               v-show="podcast.src.length > 1"
               v-on:click="
                 podcast.active = loopNext(

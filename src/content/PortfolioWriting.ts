@@ -18,9 +18,9 @@ export default Vue.extend({
         of his writings still not published. In 2017, Dito was invited by 
         his college friend to become a contributor for his campus independent 
         zine, 
-        <span class="">Mati Lampu</span>. 
+        <span class="italic">Mati Lampu</span>. 
         In 2021, he published his first book called
-        <span class="">Because the End Is Really the Beginning</span>.
+        <span class="italic">Because the End Is Really the Beginning</span>.
       `,
       publications: [
         {
@@ -31,7 +31,9 @@ export default Vue.extend({
           description: `
           Dito wrote a short story book about regrets.
           Where according to him, a mistake will remain forever
-          and it is part of our life. It cannot be forced to
+          and it is part of our life. 
+          <br><br>
+          It cannot be forced to
           be erased or transferred, it must be embraced in
           our body and soul. With the illustration and audio
           in this book, Dito hopes that his readers can feel
@@ -46,8 +48,9 @@ export default Vue.extend({
           cover: CoverToleransi,
           title: "Mati Lampu Vol.4: Toleransi",
           description: `
-            Became a contributor to the fourth volume of “Mati Lampu” zine. This
-            zine raises about tolerance, where it is moved to see a "reality of
+            Became a contributor to the fourth volume of “Mati Lampu” zine.
+            <br><br>
+            This zine raises about tolerance, where it is moved to see a "reality of
             tolerance" with differences as a principle of analysis: seeing the
             distance from idealization of tolerance, with empirical reality.
           `

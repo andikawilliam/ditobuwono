@@ -4,7 +4,7 @@
   >
     <PortfolioHeading :title="title" :description="description" />
     <div
-      class="mx-auto sm:grid sm:grid-cols-3 lg:w-2/3 md:gap-2 lg:gap-16 xl:gap-32"
+      class="mx-auto sm:grid sm:grid-cols-3 lg:pt-4 lg:w-4/5 md:gap-2 lg:gap-16 xl:gap-24"
     >
       <div
         class="lg:row-span-1 lg:col-span-1 px-8 lg:px-0 my-24 sm:my-0"
@@ -12,15 +12,7 @@
         :key="publication.id"
       >
         <a :href="publication.src">
-          <div class="cover-container relative grayscale">
-            <div
-              class="absolute h-0 description-text bottom-0 flex items-center overflow-hidden"
-            >
-              <p
-                class="text-gray-ivory font-light pt-2 px-2 lg:px-6 hidden"
-                v-html="publication.description"
-              />
-            </div>
+          <div class="cover-container relative grayscale lg:px-4">
             <img
               :src="publication.cover"
               class="mx-auto publication-cover w-full grayscale"
@@ -31,6 +23,10 @@
           <p class="title-text text-center font-medium font-cormorant pb-2">
             {{ publication.title }}
           </p>
+          <p
+            class="description-text font-light pb-4"
+            v-html="publication.description"
+          />
           <div class="flex justify-center" v-if="publication.orderLink">
             <button
               class="order-text button mx-auto p-1 lg:px-4 underline rounded-lg hover:bg-white hover:text-black"
@@ -69,14 +65,11 @@
 }
 
 .description-text {
-  transition: height 0.4s ease;
-  font-size: 1.2vw;
-  letter-spacing: 0.0375em;
-  background-color: #181818b7;
-  backdrop-filter: blur(1px);
+  font-size: 0.9vw;
+  letter-spacing: 0.02em;
 }
 .order-text {
-  font-size: 1vw;
+  font-size: 0.9vw;
 }
 
 @media screen and (max-width: 1023px) {
