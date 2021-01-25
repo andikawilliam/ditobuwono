@@ -32,7 +32,7 @@
       <p class="title-text text-center font-semibold opacity-75">
         {{ title }}
       </p>
-      <p class="role-text text-center opacity-75 pb-2">
+      <p class="role-text text-center font-medium opacity-75 lg:pb-2">
         {{ role }}
       </p>
       <p
@@ -145,11 +145,11 @@ export default Vue.extend({
     font-size: 4vw;
   }
   .role-text {
-    font-size: 2.4vw;
+    font-size: 2.6vw;
   }
   .accolade-text {
-    font-size: 2vw;
-    margin: 0.06em 0.2em;
+    font-size: 2.4vw;
+    margin: 0.06em 0;
   }
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(15, 15, 15, 0.8);

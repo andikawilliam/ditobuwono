@@ -7,7 +7,7 @@
       class="mx-auto sm:grid sm:grid-cols-3 lg:pt-4 lg:w-4/5 md:gap-2 lg:gap-16 xl:gap-24"
     >
       <div
-        class="lg:row-span-1 lg:col-span-1 px-8 lg:px-0 my-24 sm:my-0"
+        class="lg:row-span-1 lg:col-span-1 px-0 my-24 sm:my-0"
         v-for="publication in publications"
         :key="publication.id"
       >
@@ -19,7 +19,7 @@
             />
           </div>
         </a>
-        <div class="px-2 pt-4">
+        <div class="lg:px-2 pt-6 lg:pt-4">
           <p class="title-text text-center font-medium font-cormorant pb-2">
             {{ publication.title }}
           </p>
@@ -92,11 +92,11 @@
     font-size: 5vw;
   }
   .description-text {
-    font-size: 2.8vw;
+    font-size: 3.5vw;
   }
 
   .order-text {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 </style>
