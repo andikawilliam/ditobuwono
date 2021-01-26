@@ -67,18 +67,17 @@ header {
   transition: all 0.4s ease-in-out;
 }
 
-.header-portfolio {
-  backdrop-filter: blur(1.5px);
-}
-
 #ditotext {
   opacity: 0;
-  transform: translateX(42vw) translateY(20vw) scale(3.5);
+  transform: translateX(40vw) translateY(20vw) scale(3.5);
 }
 
 @media screen and (max-width: 960px) {
   #ditotext {
     transform: translateX(25vw) translateY(50vw) scale(2);
+  }
+  .header-portfolio {
+    backdrop-filter: blur(1.5px);
   }
 }
 </style>

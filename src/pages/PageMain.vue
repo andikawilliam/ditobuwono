@@ -1,6 +1,6 @@
 <template>
   <div
-    class="pt-8 pb-32 md:pt-16 md:pb-40 lg:py-24"
+    class="pt-8 pb-32 md:pt-16 md:pb-40 lg:pt-40 lg:pb-24"
     id="home"
   >
     <div class="flex px-6 md:px-24">
