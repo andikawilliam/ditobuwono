@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2 lg:text-center tracking-wide font-light md:font-normal md:opacity-75">
+  <div class="py-2 text-center tracking-wide font-light md:font-normal md:opacity-75">
     <h3
       class="description-text "
       :id="descriptionId"

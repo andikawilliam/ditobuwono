@@ -3,9 +3,9 @@
     class="lg:flex lg:justify-center lg:items-center px-8 md:px-16 pb-16 md:py-16 lg:px-24 lg:py-32 lg:pb-40"
   >
     <div
-      class="about-content image-container pb-4 lg:pb-0 lg:pt-8 lg:w-1/2 lg:mr-12 xl:mr-24"
+      class="about-content image-container pb-4 lg:pb-0 lg:pt-8 lg:w-1/2 lg:mr-12 xl:mr-8"
     >
-      <img class="w-2/3 md:w-1/2 lg:w-2/3 mx-auto" :src="picture" />
+      <img class="w-2/3 md:w-1/2 lg:w-1/2 mx-auto" :src="picture" />
       <div class="font-cormorant mt-2 text-sm text-center lg:text-base">
         Hanindito Buwono.
       </div>

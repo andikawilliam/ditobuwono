@@ -24,7 +24,7 @@
             {{ publication.title }}
           </p>
           <p
-            class="description-text font-light pb-4"
+            class="description-text text-center font-light pb-4"
             v-html="publication.description"
           />
           <div class="flex justify-center" v-if="publication.orderLink">
