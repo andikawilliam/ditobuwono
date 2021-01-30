@@ -7,7 +7,7 @@
       <div>
         <h1
           id="ditotext"
-          class="flex md:text-2xl cursor-pointer"
+          class="flex md:text-2xl cursor-pointer opacity-75"
           v-on:click="goTo('#home')"
         >
           <div class="font-black">DITO</div>
@@ -21,12 +21,12 @@
         <span
           class="burger-line bg-black opacity-75"
           id="top-bun"
-          v-bind:class="{ 'top-bun-active' : activeSidebar }"
+          v-bind:class="{ 'top-bun-active': activeSidebar }"
         />
         <span
           class="burger-line bg-black opacity-75"
           id="bot-bun"
-          v-bind:class="{ 'bot-bun-active' : activeSidebar }"
+          v-bind:class="{ 'bot-bun-active': activeSidebar }"
         />
       </div>
       <div
@@ -35,25 +35,25 @@
       >
         <div class="text-3xl sm:text-lg sm:flex">
           <p
-            class="navline ml-8 my-4"
+            class="navline ml-8 my-4 sm:my-0"
             v-on:click="goTo('#filmography')"
           >
             Film
           </p>
           <p
-            class="navline ml-8 my-4"
+            class="navline ml-8 my-4 sm:my-0"
             v-on:click="goTo('#publications')"
           >
             Publications
           </p>
           <p
-            class="navline ml-8 my-4"
+            class="navline ml-8 my-4 sm:my-0"
             v-on:click="goTo('#mixtapes')"
           >
             Mixtapes
           </p>
           <p
-            class="navline ml-8 my-4"
+            class="navline ml-8 my-4 sm:my-0"
             v-on:click="goTo('#talks')"
           >
             Podcasts
@@ -81,8 +81,8 @@ export default Vue.extend({
   },
   data() {
     return {
-      activeSidebar: false,
-    }
+      activeSidebar: false
+    };
   },
   methods: {
     goTo: function(destination: string) {
@@ -107,12 +107,12 @@ header {
 
 #ditotext {
   opacity: 0;
-  transform: translateX(40vw) translateY(20vw) scale(3.5);
+  transform: translateX(42vw) translateY(20vw) scale(3.5);
 }
 
 @media screen and (max-width: 960px) {
   #ditotext {
-    transform: translateX(25vw) translateY(50vw) scale(2);
+    transform: translateX(30vw) translateY(50vw) scale(2);
   }
   .header-portfolio {
     backdrop-filter: blur(1.5px);
@@ -137,12 +137,12 @@ header {
 }
 
 #top-bun {
-	top: 0;
-	margin-top: 4px;
+  top: 0;
+  margin-top: 4px;
 }
 #bot-bun {
-	bottom: 0;
-	margin-bottom: 2px;
+  bottom: 0;
+  margin-bottom: 2px;
 }
 
 .top-bun-active {
@@ -154,7 +154,7 @@ header {
 
 .transition-width {
   transition: width;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .navline {
@@ -165,7 +165,7 @@ header {
 }
 
 .navline::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   width: 0;
