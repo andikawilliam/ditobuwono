@@ -40,15 +40,6 @@ export default Vue.extend({
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
-/* @font-face {
-  font-family: 'Roboto Slab';
-  src:  url('./assets/fonts/Roboto Slab/Roboto-Slab.woff') format('woff'),
-}
-@font-face {
-  font-family: Cormorant;
-  src:  url('./assets/fonts/Cormorant/Cormorant-Bold.woff') format('woff'), 
-}
-*/
 
 html {
   background: rgb(255, 255, 255);
