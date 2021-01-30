@@ -32,7 +32,7 @@
               class="order-text button mx-auto p-1 lg:px-4 underline rounded-lg hover:bg-white hover:text-black"
             >
               <a :href="publication.orderLink">
-                Pre-Order Now
+                Order Now
               </a>
             </button>
           </div>
