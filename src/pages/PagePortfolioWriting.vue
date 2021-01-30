@@ -4,7 +4,7 @@
   >
     <PortfolioHeading :title="title" :description="description" />
     <div
-      class="mx-auto sm:grid sm:grid-cols-3 lg:pt-4 lg:w-4/5 md:gap-2 lg:gap-16 xl:gap-24"
+      class="mx-auto sm:grid sm:grid-cols-3 lg:pt-4 lg:w-4/5 md:gap-12 lg:gap-16 xl:gap-24"
     >
       <div
         class="lg:row-span-1 lg:col-span-1 px-0 my-24 sm:my-0"

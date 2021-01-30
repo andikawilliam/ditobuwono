@@ -11,12 +11,11 @@ export default Vue.extend({
         the Beginning" is available now! ✨
       `,
       notifLink: "https://linktr.ee/EndIsBeginning"
-    }
+    };
   },
   methods: {
     closeNotification() {
       this.notifState = false;
     }
-  },
-  
+  }
 });

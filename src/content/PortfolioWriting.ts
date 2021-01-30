@@ -65,11 +65,8 @@ export default Vue.extend({
             Where he tries to maintain his sanity with a choice of songs, 
             which he thinks can help him to get through this uncertainty.
           `
-        },   
+        }
       ]
     };
-  },
-  methods: {
-
   }
 });

@@ -11,7 +11,9 @@
       </div>
     </div>
     <div class="about-content about-container mx-auto text-center lg:text-left">
-      <div class="about-text font-light md:font-normal md:opacity-75 text-current">
+      <div
+        class="about-text font-light md:font-normal md:opacity-75 text-current"
+      >
         <p v-for="text in texts" :key="text" v-html="text" />
       </div>
     </div>

@@ -1,4 +1,14 @@
 @tailwind base;
 @tailwind components;
 
+.sidebar {
+  @apply absolute h-screen bg-gray-ivory overflow-hidden right-0 top-0 flex items-center;
+}
+
+@screen sm {
+  .desktopbar {
+    @apply static bg-transparent block;
+  }
+}
+
 @tailwind utilities;

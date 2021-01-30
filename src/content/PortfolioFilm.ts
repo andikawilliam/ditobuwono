@@ -2,7 +2,6 @@ import Vue from "vue";
 import PortfolioHeading from "../components/PortfolioHeading.vue";
 import PortfolioDescription from "../components/PortfolioDescription.vue";
 
-
 import FilmWork from "../components/FilmWork.vue";
 import CoverBelrusak from "../assets/ss-belrusak.jpeg";
 import CoverMenyusulmu from "../assets/ss-menyusulmu.png";

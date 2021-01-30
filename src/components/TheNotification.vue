@@ -11,10 +11,7 @@
           {{ this.notifText }}
         </a>
       </p>
-      <button
-        class="md:absolute md:right-0"
-        v-on:click="closeNotification"
-      >
+      <button class="md:absolute md:right-0" v-on:click="closeNotification">
         ⓧ
       </button>
     </div>
