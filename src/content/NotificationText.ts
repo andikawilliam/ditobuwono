@@ -7,7 +7,7 @@ export default Vue.extend({
       // to turn off change notifState to : false
       notifState: true,
       notifText: `
-        Pre-order "Because the End Is Really
+        "Because the End Is Really
         the Beginning" is available now! ✨
       `,
       notifLink: "https://linktr.ee/EndIsBeginning"
