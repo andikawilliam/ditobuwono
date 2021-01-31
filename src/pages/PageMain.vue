@@ -1,13 +1,13 @@
 <template>
-  <div class="pt-16 pb-32 md:pt-16 md:pb-40 lg:pt-40 lg:pb-24" id="home">
+  <div class="pt-16 pb-32 md:pt-16 md:pb-40 lg:pt-40 lg:pb-24 xl:pt-48" id="home">
     <div class="flex px-6 md:px-24">
       <div class="portfolios-main text-current text-center lg:text-left mx-auto">
         <div class="font-playfair-display">
-            <p class="inline cursor">
-              Hanindito Buwono is a 
-              <span class="text-typed text-black"> </span>
-            </p>
-          <p>He is based in Jakarta, Indonesia.</p>
+          <p class="main-text cursor">
+            Hanindito Buwono is a 
+            <span class="text-typed text-black"> </span>
+          </p>
+          <p class="main-text">He is based in Jakarta, Indonesia.</p>
         </div>
         <font-awesome-icon
           class="text-lg sm:text-xl lg:text-32xl down-notice animate-bounce"
@@ -39,7 +39,7 @@ export default Vue.extend({
   name: "PageMain",
   mounted() {
     const tl = new TimelineMax();
-    tl.to("#ditotext", { autoAlpha: 1, duration: 0.4 });
+    // tl.fromTo(".main-text", { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 1, stagger: 1.5 });
     tl.to(".down-notice", { autoAlpha: 1, y: 10, duration: 0.5, delay: 0.5 });
 
     // text 
@@ -54,7 +54,7 @@ export default Vue.extend({
       {
         duration: 1.5,
         repeat: 1,
-        repeatDelay: 2.2,
+        repeatDelay: 1.5,
         yoyo: true,
         text: {
           //this is the code that replaces the text
@@ -120,19 +120,6 @@ export default Vue.extend({
   color: rgba(0, 0, 0, 0.75);
 }
 
-.main-text {
-  cursor: pointer;
-  opacity: 0;
-  visibility: "hidden";
-  line-height: 1.25;
-  display: inline;
-  transition: all 0.4s ease-in-out;
-}
-
-.sub-text {
-  font-size: 2vw;
-}
-
 .down-notice {
   position: absolute;
   opacity: 0;
@@ -144,9 +131,6 @@ export default Vue.extend({
   .portfolios-main {
     font-size: 8vw;
   }
-  .main-text {
-    line-height: 1.8;
-  }
   .down-notice {
     margin-top: 15%;
   }
@@ -156,9 +140,6 @@ export default Vue.extend({
   .portfolios-main {
     width: 80%;
     font-size: 8vw;
-  }
-  .main-text {
-    line-height: 1.8;
   }
   .down-notice {
     margin-top: 15%;

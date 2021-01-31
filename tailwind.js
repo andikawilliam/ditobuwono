@@ -23,6 +23,7 @@ module.exports = {
     extend: {
       colors: {
         'gray-ivory': "#e7e7e7",
+        'dark-gray-ivory': "#e9e9e9",
         'black-onyx': "#0f0f0f",
         'gray-background': '#121217',
         'gray-dito': '#262626',

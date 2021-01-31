@@ -4,7 +4,7 @@
     <div class="relative lg:w-2/3 mx-auto">
       <div class="mixtape-grid-container w-full">
         <div
-          class="mixtape-grid row-span-1 col-span-5 grayscale"
+          class="mixtape-grid row-span-1 col-span-5 grayscale bg-gray-ivory"
           v-for="mixtape in mixtapes"
           :key="mixtape.id"
           v-bind:class="gridSpan(mixtape.rowGrid, mixtape.colGrid)"
@@ -81,7 +81,7 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 120px);
   grid-auto-flow: row;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .mixtape-text {
@@ -99,7 +99,7 @@
   font-weight: 500;
   border-radius: 0.1em;
   border-radius: 0.2em;
-  box-shadow: 0.5px 0.5px 3px 0px rgba(26, 26, 26, 0.596);
+  box-shadow: 0.5px 0.5px 2px 0px rgba(26, 26, 26, 0.596);
 }
 
 .mixtape-text:hover {

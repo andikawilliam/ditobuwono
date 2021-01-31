@@ -6,7 +6,6 @@
     >
       <div>
         <h1
-          id="ditotext"
           class="flex md:text-2xl cursor-pointer opacity-75"
           v-on:click="goTo('#home')"
         >
@@ -105,10 +104,6 @@ header {
   transition: all 0.4s ease-in-out;
 }
 
-#ditotext {
-  opacity: 0;
-}
-
 @media screen and (max-width: 960px) {
   .header-portfolio {
     backdrop-filter: blur(1.5px);
@@ -119,7 +114,7 @@ header {
   position: fixed;
   cursor: pointer;
   height: 1em;
-  width: 1em;
+  width: 1.5em;
 }
 
 .burger-line {

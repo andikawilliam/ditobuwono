@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative px-8 md:px-16 pt-40 pb-12 lg:px-20 py-32 sm:py-20 lg:py-40"
+    class="relative px-8 md:px-16 pb-12 lg:px-20 py-32 sm:py-20 lg:py-40"
   >
     <PortfolioHeading :title="title" :description="description" />
     <div

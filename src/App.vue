@@ -64,7 +64,7 @@ body {
   display: none;
 }
 .grayscale {
-  -webkit-filter: grayscale(30%);
-  filter: grayscale(30%);
+  -webkit-filter: grayscale(25%);
+  filter: grayscale(25%);
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
   <div
-    class="w-full px-6 py-2 bg-gray-200 shadow-sm"
+    class="w-full px-6 py-2 bg-gray-ivory shadow-sm"
     v-show="notifState && notifText"
   >
     <div
-      class="relative grid grid-cols-11 text-sm font-cormorant font-medium sm:text-center lg:text-lg"
+      class="relative grid grid-cols-11 text-sm font-playfair-display font-medium sm:text-center"
     >
       <p class="col-span-10 lg:col-span-11">
         <a :href="notifLink">
