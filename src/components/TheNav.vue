@@ -6,7 +6,7 @@
     >
       <div>
         <h1
-          class="flex md:text-2xl cursor-pointer opacity-75"
+          class="flex md:text-2xl cursor-pointer opacity-90"
           v-on:click="goTo('#home')"
         >
           <div class="font-black">DITO</div>
