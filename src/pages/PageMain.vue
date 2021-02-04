@@ -39,8 +39,10 @@ export default Vue.extend({
   name: "PageMain",
   mounted() {
     const tl = new TimelineMax();
-    // tl.fromTo(".main-text", { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 1, stagger: 1.5 });
-    tl.to(".down-notice", { autoAlpha: 1, y: 10, duration: 0.5, delay: 0.5 });
+    tl.fromTo(".main-text", { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 1, stagger: 3 });
+    tl.to(".down-notice", { autoAlpha: 1, y: 10, duration: 0.5 });
+    tl.to("#notification", { autoAlpha: 1, height: "auto", duration: 0.5 });
+
 
     // text 
     const textArr = [
@@ -76,6 +78,7 @@ export default Vue.extend({
     const tl1 = gsap.timeline()
 
     tl1.to(".text-typed", {
+      delay: 1,
       keyframes: getKeyFrames(),
       repeat: -1,
     })

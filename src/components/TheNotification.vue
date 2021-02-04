@@ -1,10 +1,11 @@
 <template>
   <div
-    class="w-full px-6 py-2 bg-gray-ivory shadow"
+    id="notification"
+    class="w-full px-6 bg-gray-ivory shadow"
     v-show="notifState && notifText"
   >
     <div
-      class="relative grid grid-cols-11 text-sm font-cormorant font-medium sm:text-base sm:text-center lg:text-lg"
+      class="relative grid grid-cols-11 my-2 text-sm font-cormorant font-medium sm:text-base sm:text-center lg:text-lg"
     >
       <p class="col-span-10 lg:col-span-11">
         <a :href="notifLink">
@@ -20,4 +21,9 @@
 
 <script lang="ts" src="../content/NotificationText.ts"></script>
 
-<style scoped></style>
+<style scoped>
+#notification {
+  height: 0;
+  overflow: hidden;
+}
+</style>
