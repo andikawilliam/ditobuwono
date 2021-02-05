@@ -13,7 +13,7 @@ export default Vue.extend({
     return {
       title: "publications",
       description: `
-        Dito started writing short stories from elementary school.
+        Dito started writing short stories from junior high school.
         Since then he has been happy to write whenever he has free time, with some
         of his writings still not published. In 2017, Dito was invited by 
         his college friend to become a contributor for his campus independent 
