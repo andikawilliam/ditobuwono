@@ -55,7 +55,7 @@ p {
   }
 
   .about-text {
-    font-size: 2.4vw;
+    font-size: 2.2vw;
     letter-spacing: 0.03em;
     line-height: 1.5em;
   }
@@ -70,7 +70,7 @@ p {
   }
 
   .about-text {
-    font-size: 4.2vw;
+    font-size: 4.4vw;
     letter-spacing: 0.03em;
     line-height: 1.6em;
   }

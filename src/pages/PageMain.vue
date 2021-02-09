@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-16 pb-32 md:pt-16 md:pb-40 lg:pt-40 lg:pb-24 xl:pt-48" id="home">
+  <div class="pt-16 pb-28 md:pt-16 md:pb-40 lg:pt-40 lg:pb-24 xl:pt-48" id="home">
     <div class="flex px-6 md:px-24">
       <div class="portfolios-main text-current text-center lg:text-left mx-auto">
         <div class="font-playfair-display">
@@ -39,7 +39,7 @@ export default Vue.extend({
   name: "PageMain",
   mounted() {
     const tl = new TimelineMax();
-    tl.fromTo(".main-text", { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 1, stagger: 3 });
+    tl.fromTo(".main-text", { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 1, stagger: 3, delay: 0.2 });
     tl.to(".down-notice", { autoAlpha: 1, y: 10, duration: 0.5 });
     tl.to("#notification", { autoAlpha: 1, height: "auto", duration: 0.5 });
 
