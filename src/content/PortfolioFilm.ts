@@ -3,7 +3,7 @@ import PortfolioHeading from "../components/PortfolioHeading.vue";
 import PortfolioDescription from "../components/PortfolioDescription.vue";
 
 import FilmWork from "../components/FilmWork.vue";
-import CoverGerajak from "../assets/ss-gerajak.webp";
+import CoverGerajak from "../assets/ss-gerajak.jpeg";
 import CoverBelrusak from "../assets/ss-belrusak.webp";
 import CoverMenyusulmu from "../assets/ss-menyusulmu.webp";
 import CoverTerbelenggu from "../assets/ss-terbelenggu.webp";
