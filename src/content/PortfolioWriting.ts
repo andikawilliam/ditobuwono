@@ -1,8 +1,8 @@
 import Vue from "vue";
 import PortfolioHeading from "../components/PortfolioHeading.vue";
-import CoverTheEnd from "../assets/cover-the-end.jpg";
-import CoverToleransi from "../assets/cover-toleransi.png";
-import CoverKaput from "../assets/cover-kaput.png";
+import CoverTheEnd from "../assets/cover-the-end.webp";
+import CoverToleransi from "../assets/cover-toleransi.webp";
+import CoverKaput from "../assets/cover-kaput.webp";
 
 export default Vue.extend({
   name: "PortfolioWriting",

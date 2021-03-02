@@ -5,9 +5,9 @@
     v-show="notifState && notifText"
   >
     <div
-      class="relative grid grid-cols-11 my-2 text-sm font-cormorant font-medium sm:text-base sm:text-center lg:text-lg"
+      class="relative grid grid-cols-12 my-2 text-sm font-cormorant font-medium sm:text-base sm:text-center lg:text-lg"
     >
-      <p class="col-span-10 lg:col-span-11">
+      <p class="col-span-11 lg:col-span-12">
         <a :href="notifLink">
           {{ this.notifText }}
         </a>

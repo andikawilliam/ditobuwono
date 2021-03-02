@@ -13,7 +13,6 @@
           v-bind:role="film.role"
           v-bind:accolades="film.accolades"
           v-bind:href="film.href"
-          v-bind:embed="film.embed"
         />
       </div>
     </div>

@@ -3,14 +3,6 @@
     <a :href="href" target="_blank" rel="noopener noreferrer">
       <div class="film-content text-shadow" v-on:click="showText = false">
         <img class="absolute w-full rounded-md grayscale" :src="image" />
-        <!-- <div class="absolute px-2 py-1 lg:px-4 lg:py-2">
-          <p class="title-text font-semibold">
-            {{ title }}
-          </p>
-          <p class="role-text float-left">
-            {{ role }}
-          </p>
-        </div> -->
         <div class="absolute inset-0 text-center">
           <font-awesome-icon
             class="play-icon text-2xl lg:text-5xl"
@@ -20,13 +12,6 @@
         <div
           class="absolute text-right right-0 bottom-0 px-2 py-1 lg:px-4 lg:py-2"
         >
-          <!-- <p
-            class="accolade-text float-right font-medium"
-            v-for="accolade in accolades"
-            :key="accolade"
-          >
-            {{ accolade }}
-          </p> -->
         </div>
       </div>
       <p class="title-text text-center font-semibold opacity-75">
@@ -63,7 +48,6 @@ export default Vue.extend({
     role: String,
     accolades: Array,
     href: String,
-    embed: String
   },
   data() {
     return {

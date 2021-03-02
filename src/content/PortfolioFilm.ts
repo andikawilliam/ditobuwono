@@ -3,9 +3,11 @@ import PortfolioHeading from "../components/PortfolioHeading.vue";
 import PortfolioDescription from "../components/PortfolioDescription.vue";
 
 import FilmWork from "../components/FilmWork.vue";
-import CoverBelrusak from "../assets/ss-belrusak.jpeg";
-import CoverMenyusulmu from "../assets/ss-menyusulmu.png";
-import CoverTerbelenggu from "../assets/ss-terbelenggu.png";
+import CoverGerajak from "../assets/ss-gerajak.webp";
+import CoverBelrusak from "../assets/ss-belrusak.webp";
+import CoverMenyusulmu from "../assets/ss-menyusulmu.webp";
+import CoverTerbelenggu from "../assets/ss-terbelenggu.webp";
+
 
 export default Vue.extend({
   name: "PortfolioFilm",
@@ -33,6 +35,15 @@ export default Vue.extend({
       films: [
         {
           id: 1,
+          image: CoverGerajak,
+          title: "Gerajak (2021)",
+          type: "Short Surrealist Dance Film",
+          role: "Role: Still Photographer, Script Continuity",
+          accolades: ["MIP Awards Moving Image Of The Year 2021"],
+          href: "",
+        },
+        {
+          id: 2,
           image: CoverBelrusak,
           title: "Belrusak (2020)",
           type: "Short Documentary Film",
@@ -45,27 +56,24 @@ export default Vue.extend({
             "Best Documentary October Edition Feel The Reel International Film Festival 2020"
           ],
           href: "https://www.viddsee.com/video/belrusak/ywxkh",
-          embed: "https://www.viddsee.com/player/ywxkh"
         },
         {
-          id: 2,
+          id: 3,
           image: CoverMenyusulmu,
           title: "Menyusulmu Bisa Menunggu (2015)",
           type: "Short Fiction Film",
           role: "Roles: Actor, Producer",
           accolades: ["Winner SMA Global Jaya Film Festival 2015"],
           href: "https://youtu.be/BMIpvCrxou4",
-          embed: "https://www.youtube-nocookie.com/embed/BMIpvCrxou4"
         },
         {
-          id: 3,
+          id: 4,
           image: CoverTerbelenggu,
           title: "Terbelenggu (2014)",
           type: "Short Fiction Film",
           role: "Roles: Actor, Music Director",
           accolades: ["Winner 8Schoolastic SMAN 8 Jakarta Film Festival 2014"],
           href: "https://youtu.be/_Q2Xg5CHHf8",
-          embed: "https://www.youtube-nocookie.com/embed/_Q2Xg5CHHf8"
         }
       ]
     };
