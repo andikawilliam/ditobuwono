@@ -38,8 +38,8 @@ export default Vue.extend({
           image: CoverGerajak,
           title: "Gerajak (2021)",
           type: "Short Surrealist Dance Film",
-          role: "Role: Still Photographer, Script Continuity",
-          accolades: ["MIP Awards Moving Image Of The Year 2021"],
+          role: "Roles: Still Photographer, Script Continuity",
+          accolades: ["MIP Awards Moving Image of the Year 2021"],
           href: "",
         },
         {
