@@ -25,20 +25,6 @@ export default Vue.extend({
       publications: [
         {
           id: 1,
-          src:
-            "https://issuu.com/matilampu/docs/mati_lampu_vol4_7f301e70bf19a9",
-          cover: CoverToleransi,
-          title: "Mati Lampu Vol.4: Toleransi",
-          description: `
-            Became a contributor to the fourth volume of “Mati Lampu” zine.
-            <br><br>
-            This zine raises about tolerance, where it is moved to see a "reality of
-            tolerance" with differences as a principle of analysis: seeing the
-            distance from idealization of tolerance, with empirical reality.
-          `
-        },
-        {
-          id: 2,
           src: "https://linktr.ee/EndIsBeginning",
           cover: CoverTheEnd,
           title: "Because the End Is Really the Beginning",
@@ -54,6 +40,20 @@ export default Vue.extend({
           the feelings that he has felt during his life until now.
           `,
           orderLink: "https://linktr.ee/EndIsBeginning"
+        },
+        {
+          id: 2,
+          src:
+            "https://issuu.com/matilampu/docs/mati_lampu_vol4_7f301e70bf19a9",
+          cover: CoverToleransi,
+          title: "Mati Lampu Vol.4: Toleransi",
+          description: `
+            Became a contributor to the fourth volume of “Mati Lampu” zine.
+            <br><br>
+            This zine raises about tolerance, where it is moved to see a "reality of
+            tolerance" with differences as a principle of analysis: seeing the
+            distance from idealization of tolerance, with empirical reality.
+          `
         },
         {
           id: 3,
