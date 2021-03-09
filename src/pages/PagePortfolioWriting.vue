@@ -51,6 +51,7 @@
 
 .cover-container {
   transition: transform 0.5s;
+  width: 100%;
 }
 .cover-container:hover {
   transform: translateY(-1vw);
