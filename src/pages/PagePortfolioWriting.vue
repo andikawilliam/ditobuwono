@@ -1,13 +1,11 @@
 <template>
-  <div
-    class="relative px-8 md:px-16 pb-12 lg:px-20 py-32 sm:py-20 lg:py-40"
-  >
+  <div class="relative px-8 md:px-16 pb-12 lg:px-20 py-32 sm:py-20 lg:py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div
-      class="mx-auto sm:grid sm:grid-cols-3 lg:pt-4 lg:w-4/5 md:gap-12 lg:gap-16 xl:gap-24"
+      class="mx-auto sm:grid sm:grid-cols-3 lg:w-4/5 md:gap-12 lg:gap-16 xl:gap-24"
     >
       <div
-        class="lg:row-span-1 lg:col-span-1 px-0 my-24 sm:my-0"
+        class="lg:row-span-1 lg:col-span-1 px-0 mb-32 sm:my-0"
         v-for="publication in publications"
         :key="publication.id"
       >
@@ -47,11 +45,12 @@
 <style scoped>
 .publication-cover {
   box-shadow: 1px 1px 4px 0px rgba(15, 15, 15, 0.8);
+  width: 100%;
+  height: 100%;
 }
 
 .cover-container {
   transition: transform 0.5s;
-  width: 100%;
 }
 .cover-container:hover {
   transform: translateY(-1vw);
