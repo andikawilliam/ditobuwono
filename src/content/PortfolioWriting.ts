@@ -34,7 +34,7 @@ export default Vue.extend({
           and it is part of our life. 
           <br><br>
           It cannot be forced to
-          be erased or transferred, it must be embraced in
+          be erased or transferred, we must embraced it in
           our body and soul. With the illustration and audio
           in this book, Dito hopes that his readers can feel
           the feelings that he has felt during his life until now.
