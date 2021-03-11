@@ -40,7 +40,7 @@ export default Vue.extend({
           `,
           accolades: [
             "Editor’s Choice at bukuindie.com",
-            "Book Talks at “Bedah Buku Madania“"
+            "Book Review Talks at “Bedah Buku Madania“"
           ],
           orderLink: "https://linktr.ee/EndIsBeginning"
         },
