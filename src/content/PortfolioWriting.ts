@@ -39,6 +39,10 @@ export default Vue.extend({
           in this book, Dito hopes that his readers can feel
           the feelings that he has felt during his life until now.
           `,
+          accolades: [
+            "Editor’s Choice at bukuindie.com",
+            "Book Talks at “Bedah Buku Madania“"
+          ],
           orderLink: "https://linktr.ee/EndIsBeginning"
         },
         {
@@ -49,7 +53,6 @@ export default Vue.extend({
           title: "Mati Lampu Vol.4: Toleransi",
           description: `
             Became a contributor to the fourth volume of “Mati Lampu” zine.
-            <br><br>
             This zine raises about tolerance, where it is moved to see a "reality of
             tolerance" with differences as a principle of analysis: seeing the
             distance from idealization of tolerance, with empirical reality.

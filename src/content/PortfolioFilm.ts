@@ -8,7 +8,6 @@ import CoverBelrusak from "../assets/ss-belrusak.webp";
 import CoverMenyusulmu from "../assets/ss-menyusulmu.webp";
 import CoverTerbelenggu from "../assets/ss-terbelenggu.webp";
 
-
 export default Vue.extend({
   name: "PortfolioFilm",
   components: {
@@ -40,7 +39,7 @@ export default Vue.extend({
           type: "Short Surrealist Dance Film",
           role: "Roles: Script Continuity, Still Photographer",
           accolades: ["MIP Awards Moving Image of the Year 2021"],
-          href: "",
+          href: ""
         },
         {
           id: 2,
@@ -55,7 +54,7 @@ export default Vue.extend({
             "Offical Selection Lift-Off Global Network Lift-Off Sessions 2020",
             "Official Selection Viddsee Juree Awards Indonesia 2020"
           ],
-          href: "https://www.viddsee.com/video/belrusak/ywxkh",
+          href: "https://www.viddsee.com/video/belrusak/ywxkh"
         },
         {
           id: 3,
@@ -64,7 +63,7 @@ export default Vue.extend({
           type: "Short Fiction Film",
           role: "Roles: Actor, Producer",
           accolades: ["Winner SMA Global Jaya Film Festival 2015"],
-          href: "https://youtu.be/BMIpvCrxou4",
+          href: "https://youtu.be/BMIpvCrxou4"
         },
         {
           id: 4,
@@ -73,7 +72,7 @@ export default Vue.extend({
           type: "Short Fiction Film",
           role: "Roles: Actor, Music Director",
           accolades: ["Winner 8Schoolastic SMAN 8 Jakarta Film Festival 2014"],
-          href: "https://youtu.be/_Q2Xg5CHHf8",
+          href: "https://youtu.be/_Q2Xg5CHHf8"
         }
       ]
     };

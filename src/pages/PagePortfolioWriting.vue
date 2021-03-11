@@ -25,6 +25,14 @@
             class="description-text text-center font-light pb-4"
             v-html="publication.description"
           />
+          <div
+            class="description-text text-center font-light italic pb-4"
+            v-if="publication.accolades"
+          >
+            <p v-for="accolade in publication.accolades" :key="accolade">
+              {{ accolade }}
+            </p>
+          </div>
           <div class="flex justify-center" v-if="publication.orderLink">
             <button
               class="order-text button mx-auto p-1 lg:px-4 underline rounded-lg hover:bg-white hover:text-black"
