@@ -31,8 +31,7 @@ export default Vue.extend({
           description: `
           Dito wrote a short story book about regrets.
           Where according to him, a mistake will remain forever
-          and it is part of our life. 
-          <br><br>
+          and it is part of our life. <br>
           It cannot be forced to
           be erased or transferred, we must embraced it in
           our body and soul. With the illustration and audio

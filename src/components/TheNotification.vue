@@ -1,11 +1,11 @@
 <template>
   <div
     id="notification"
-    class="w-full px-6 bg-gray-ivory shadow"
+    class="w-full px-6 bg-gray-dito text-gray-ivory shadow"
     v-show="notifState && notifText"
   >
     <div
-      class="relative grid grid-cols-12 my-2 text-sm font-cormorant font-medium sm:text-base sm:text-center lg:text-lg"
+      class="relative grid grid-cols-12 my-2 font-cormorant font-medium sm:text-base sm:text-center lg:text-lg"
     >
       <p class="col-span-11 lg:col-span-12">
         <a :href="notifLink">
@@ -25,5 +25,6 @@
 #notification {
   height: 0;
   overflow: hidden;
+  font-size: 0.8em;
 }
 </style>
