@@ -45,16 +45,10 @@
           >
             Publications
           </p>
-          <p
-            class="navline ml-8 my-4 sm:my-0"
-            v-on:click="goTo('#mixtapes')"
-          >
+          <p class="navline ml-8 my-4 sm:my-0" v-on:click="goTo('#mixtapes')">
             Mixtapes
           </p>
-          <p
-            class="navline ml-8 my-4 sm:my-0"
-            v-on:click="goTo('#talks')"
-          >
+          <p class="navline ml-8 my-4 sm:my-0" v-on:click="goTo('#talks')">
             Podcasts
           </p>
         </div>

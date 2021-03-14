@@ -1,10 +1,15 @@
 <template>
-  <div class="pt-16 pb-28 md:pt-16 md:pb-40 lg:pt-40 lg:pb-24 xl:pt-48" id="home">
+  <div
+    class="pt-16 pb-28 md:pt-16 md:pb-40 lg:pt-40 lg:pb-24 xl:pt-48"
+    id="home"
+  >
     <div class="flex px-6 md:px-24">
-      <div class="portfolios-main text-current text-center lg:text-left mx-auto">
+      <div
+        class="portfolios-main text-current text-center lg:text-left mx-auto"
+      >
         <div class="font-playfair-display">
           <p class="main-text cursor">
-            Hanindito Buwono is a 
+            Hanindito Buwono is a
             <span class="text-typed text-black"> </span>
           </p>
           <p class="main-text">He is based in Jakarta, Indonesia.</p>
@@ -39,54 +44,48 @@ export default Vue.extend({
   name: "PageMain",
   mounted() {
     const tl = new TimelineMax();
-    tl.fromTo(".main-text", { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 1, stagger: 3, delay: 0.2 });
+    tl.fromTo(
+      ".main-text",
+      { autoAlpha: 0, y: 40 },
+      { autoAlpha: 1, y: 0, duration: 1, stagger: 3, delay: 0.2 }
+    );
     tl.to(".down-notice", { autoAlpha: 1, y: 10, duration: 0.5 });
     tl.to("#notification", { autoAlpha: 1, height: "auto", duration: 0.5 });
 
+    const textArr = ["Filmmaker.", "Writer.", "DJ.", "Podcaster."];
 
-    // text 
-    const textArr = [
-      "Filmmaker.",
-      "Writer.",
-      "DJ.",
-      "Podcaster.",
-    ]
-
-    const getAnimFromIndex = (index: any) => (
-      {
-        duration: 1.5,
-        repeat: 1,
-        repeatDelay: 1.5,
-        yoyo: true,
-        text: {
-          //this is the code that replaces the text
-          value: textArr[index],
-          delimiter: ""
-        },
-        ease: "ease.in",
-      }
-    )
+    const getAnimFromIndex = (index: number) => ({
+      duration: 1.5,
+      repeat: 1,
+      repeatDelay: 1.5,
+      yoyo: true,
+      text: {
+        value: textArr[index],
+        delimiter: ""
+      },
+      ease: "ease.in"
+    });
 
     const getKeyFrames = () => {
-      const keyframes = []
+      const keyframes = [];
       for (let i = 0; i < textArr.length; i++) {
-        keyframes.push(getAnimFromIndex(i))
+        keyframes.push(getAnimFromIndex(i));
       }
-      return keyframes
-    }
+      return keyframes;
+    };
 
-    const tl1 = gsap.timeline()
+    const tl1 = gsap.timeline();
 
     tl1.to(".text-typed", {
       delay: 1,
       keyframes: getKeyFrames(),
-      repeat: -1,
-    })
+      repeat: -1
+    });
 
     //cursor logic
     //blink only when not typing or deleting
 
-    const tl2 = gsap.timeline()
+    const tl2 = gsap.timeline();
 
     tl2.to(".cursor", {
       keyframes: [
@@ -95,10 +94,10 @@ export default Vue.extend({
         { "--typeCursorOpacity": 1, duration: 0, delay: 0.55 },
         { "--typeCursorOpacity": 0, duration: 0, delay: 0.55 },
         { "--typeCursorOpacity": 1, duration: 0, delay: 0.55 },
-        { "--typeCursorOpacity": 1, duration: 1.5, delay: 0 },
+        { "--typeCursorOpacity": 1, duration: 1.5, delay: 0 }
       ],
-      repeat: -1,
-    })
+      repeat: -1
+    });
   },
   methods: {
     goTo: function(destination: string) {
@@ -113,7 +112,6 @@ export default Vue.extend({
     }
   }
 });
-
 </script>
 
 <style scoped>

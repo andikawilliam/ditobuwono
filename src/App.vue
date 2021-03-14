@@ -39,7 +39,7 @@ export default Vue.extend({
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:wght@400;500;600;700;800&display=swap");
 
 html {
   background: rgb(255, 255, 255);

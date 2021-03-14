@@ -1,11 +1,8 @@
 <template>
-  <div class="py-2 text-center tracking-wide font-light md:font-normal md:opacity-75">
-    <h3
-      class="description-text "
-      :id="descriptionId"
-      v-html="description"
-    >
-    </h3>
+  <div
+    class="py-2 text-center tracking-wide font-light md:font-normal md:opacity-75"
+  >
+    <h3 class="description-text " :id="descriptionId" v-html="description"></h3>
   </div>
 </template>
 
