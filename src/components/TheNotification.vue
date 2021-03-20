@@ -5,7 +5,7 @@
     v-show="notifState && notifText"
   >
     <div
-      class="relative grid grid-cols-12 my-2 font-cormorant sm:text-base sm:text-center lg:text-lg"
+      class="relative grid grid-cols-12 my-2 font-cormorant sm:text-center text-notif lg:text-lg"
     >
       <p class="col-span-11 lg:col-span-12">
         <a :href="notifLink">
@@ -25,6 +25,6 @@
 #notification {
   height: 0;
   overflow: hidden;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 </style>

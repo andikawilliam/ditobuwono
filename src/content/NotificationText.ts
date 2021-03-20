@@ -8,7 +8,7 @@ export default Vue.extend({
       notifState: true,
       notifText: `
         "Because the End Is Really
-        the Beginning" is available now!
+        the Beginning" book is available now!
       `,
       notifLink: "https://linktr.ee/EndIsBeginning"
     };

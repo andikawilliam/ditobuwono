@@ -47,9 +47,9 @@ export default Vue.extend({
     tl.fromTo(
       ".main-text",
       { autoAlpha: 0, y: 40 },
-      { autoAlpha: 1, y: 0, duration: 1, stagger: 3, delay: 0.2 }
+      { autoAlpha: 1, y: 0, duration: 1, stagger: 3, delay: 0.8 }
     );
-    tl.to(".down-notice", { autoAlpha: 1, y: 10, duration: 0.5 });
+    tl.to(".down-notice", { autoAlpha: 1, y: 10, duration: 1 });
     tl.to("#notification", { autoAlpha: 1, height: "auto", duration: 0.5 });
 
     const textArr = ["Filmmaker.", "Writer.", "DJ.", "Podcaster."];
@@ -77,7 +77,7 @@ export default Vue.extend({
     const tl1 = gsap.timeline();
 
     tl1.to(".text-typed", {
-      delay: 1,
+      delay: 1.5,
       keyframes: getKeyFrames(),
       repeat: -1
     });

@@ -2,7 +2,7 @@
   <div class="relative px-8 md:px-16 pb-12 lg:px-20 py-32 sm:py-20 lg:py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div
-      class="mx-auto sm:grid sm:grid-cols-3 lg:w-4/5 md:gap-12 lg:gap-16 xl:gap-24"
+      class="mx-auto grid-container sm:grid sm:grid-cols-3 sm:gap-4 lg:gap-16 xl:gap-24"
     >
       <div
         class="lg:row-span-1 lg:col-span-1 px-0 mb-32 sm:my-0"
@@ -10,10 +10,10 @@
         :key="publication.id"
       >
         <a :href="publication.src">
-          <div class="cover-container relative grayscale lg:px-4">
+          <div class="cover-container mx-auto">
             <img
               :src="publication.cover"
-              class="mx-auto publication-cover w-full grayscale"
+              class="publication-cover shadow-lg w-full grayscale"
             />
           </div>
         </a>
@@ -51,13 +51,17 @@
 <script lang="ts" src="../content/PortfolioWriting.ts"></script>
 
 <style scoped>
+.grid-container {
+  width: 1024px;
+}
+
 .publication-cover {
-  box-shadow: 1px 1px 4px 0px rgba(15, 15, 15, 0.8);
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .cover-container {
+  width: 240px;
   transition: transform 0.5s;
 }
 .cover-container:hover {
@@ -80,7 +84,19 @@
   font-size: 0.9vw;
 }
 
+@media screen and (max-width: 1280px) {
+  .grid-container {
+    width: 800px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
+  .grid-container {
+    width: 720px;
+  }
+  .cover-container {
+    width: 200px;
+  }
   .title-text {
     font-size: 2vw;
   }
@@ -95,7 +111,22 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .grid-container {
+    width: 600px;
+  }
+  .cover-container {
+    width: 160px;
+  }
+}
+
 @media screen and (max-width: 639px) {
+  .grid-container {
+    width: 100%;
+  }
+  .cover-container {
+    width: 100%;
+  }
   .title-text {
     font-size: 5vw;
   }
