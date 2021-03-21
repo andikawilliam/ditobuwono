@@ -25,8 +25,8 @@ export default Vue.extend({
           <span class="">the meaning of human beings.</span>
         `,
         `
-          Currently, Dito has completed his undergraduate study at the Faculty
-          of Psychology, Gadjah Mada University.
+          Currently, Dito is working on his second short documentary as well
+          as his first novella, all of which are inspired by fragments of his past.
         `
       ]
     };
