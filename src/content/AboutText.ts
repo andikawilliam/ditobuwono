@@ -26,7 +26,7 @@ export default Vue.extend({
         `,
         `
           Currently, Dito is working on his second short documentary as well
-          as his first novella, all of which are inspired by fragments of his past.
+          as his first novella; all of which are inspired by fragments of his past.
         `
       ]
     };
