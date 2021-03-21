@@ -39,7 +39,7 @@ export default Vue.extend({
           the feelings that he has felt during his life until now.
           `,
           accolades: [
-            "Editor’s Choice at bukuindie.com",
+            "Editors' Choice at bukuindie.com",
             "Book Review Talks at “Bedah Buku Madania“"
           ],
           orderLink: "https://linktr.ee/EndIsBeginning"
