@@ -25,7 +25,7 @@ export default Vue.extend({
           <span class="">the meaning of human beings.</span>
         `,
         `
-          Currently, Dito is completing his undergraduate thesis at the Faculty
+          Currently, Dito has completed his undergraduate study at the Faculty
           of Psychology, Gadjah Mada University.
         `
       ]
