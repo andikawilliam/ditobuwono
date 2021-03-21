@@ -25,8 +25,8 @@ export default Vue.extend({
           <span class="">the meaning of human beings.</span>
         `,
         `
-          Currently, Dito is working on his second short documentary as well
-          as his first novella, all of which are inspired by fragments of his past.
+          Currently, Dito is working on his second short documentary film as well
+          as his first novella book, all of which are inspired by fragments of his past.
         `
       ]
     };
