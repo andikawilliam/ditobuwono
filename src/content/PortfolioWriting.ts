@@ -19,7 +19,7 @@ export default Vue.extend({
         his college friend to become a contributor for his campus independent 
         zine, 
         <span class="italic">Mati Lampu</span>. 
-        In 2021, he published his first book called
+        On the 20th of January 2021, he published his first book called
         <span class="italic">Because the End Is Really the Beginning</span>.
       `,
       publications: [
