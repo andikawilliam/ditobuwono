@@ -21,7 +21,7 @@ export default Vue.extend({
         <span class="">collective</span> 
         and as a 
         <span class="">solo.</span> 
-        Currently, Dito likes to explore and experiment with various music 
+        Nowadays, Dito likes to explore and experiment with various music 
         genres through his mixtape choices.
       `,
       mixtapes: [
