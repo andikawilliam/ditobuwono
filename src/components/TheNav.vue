@@ -37,7 +37,7 @@
             class="navline ml-8 my-4 sm:my-0"
             v-on:click="goTo('#filmography')"
           >
-            Film
+            Films
           </p>
           <p
             class="navline ml-8 my-4 sm:my-0"
