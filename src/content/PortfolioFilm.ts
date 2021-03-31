@@ -23,9 +23,9 @@ export default Vue.extend({
         by his father.
         He started by making short films with his friends when 
         he was in high school.
-        <span class="italic"> Terbelenggu (2014) </span>
+        <span class="italic"> Terbelenggu </span> (2014)
         and 
-        <span class="italic"> Menyusulmu Bisa Menunggu (2015) </span>
+        <span class="italic"> Menyusulmu Bisa Menunggu </span> (2015)
         are short films that he has starred in. After a long time, on the 1st September of 2020, 
         <span class="italic">Belrusak</span> will be premiered as
         Dito's directorial debut in the form of a short documentary.
