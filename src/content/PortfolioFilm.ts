@@ -51,7 +51,7 @@ export default Vue.extend({
             "Best Documentary October Edition Feel The Reel International Film Festival 2020",
             "Official Selection Feel The Reel International Film Festival 2020",
             "Official Selection Lift-Off Global Network First-Time Filmmaker Sessions 2020",
-            "Offical Selection Lift-Off Global Network Lift-Off Sessions 2020",
+            "Official Selection Lift-Off Global Network Lift-Off Sessions 2020",
             "Official Selection Viddsee Juree Awards Indonesia 2020"
           ],
           href: "https://www.viddsee.com/video/belrusak/ywxkh"
