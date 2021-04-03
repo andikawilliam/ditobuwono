@@ -3,6 +3,7 @@ import App from "./App.vue";
 import "@/assets/css/tailwind.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
 import {
   faChevronDown,
   faChevronLeft,
@@ -14,6 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
   faInstagram,
   faLinkedin,
+  faTimesCircle,
   faChevronDown,
   faChevronLeft,
   faChevronRight,

@@ -8,7 +8,7 @@
         class="portfolios-main text-current text-center lg:text-left mx-auto"
       >
         <div class="font-playfair-display">
-          <p class="main-text cursor">
+          <p class="main-text">
             Hanindito Buwono is a
             <span class="text-typed text-black"> </span>
           </p>
@@ -147,7 +147,7 @@ export default Vue.extend({
   }
 }
 
-.textAnimated::after {
+.text-animated::after {
   content: "|";
   margin-left: 0.2em;
   animation: blinkCursor 1.2s linear infinite;

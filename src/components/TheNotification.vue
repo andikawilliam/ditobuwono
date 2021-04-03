@@ -5,15 +5,15 @@
     v-show="notifState && notifText"
   >
     <div
-      class="relative grid grid-cols-12 my-2 font-cormorant sm:text-center text-notif lg:text-lg"
+      class="relative grid grid-cols-12 my-2 font-cormorant font-semibold sm:text-center lg:text-lg"
     >
-      <p class="col-span-11 lg:col-span-12">
-        <a :href="notifLink">
+      <a :href="notifLink" class="col-span-11 lg:col-span-12">
+        <p>
           {{ this.notifText }}
-        </a>
-      </p>
+        </p>
+      </a>
       <button class="md:absolute md:right-0" v-on:click="closeNotification">
-        ⓧ
+        <font-awesome-icon :icon="['far', 'times-circle']" />
       </button>
     </div>
   </div>
