@@ -3,7 +3,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
     defaultLineHeights: true,
-    standardFontWeights: true
+    standardFontWeights: true,
   },
   purge: {
     content: ["./public/**/*.html", "./src/**/*.html", "./src/**/*.vue"],
@@ -19,36 +19,38 @@ module.exports = {
         "md:col-span-2",
         "md:col-span-3",
         "md:col-span-4",
-        "md:col-span-5"
-      ]
-    }
+        "md:col-span-5",
+      ],
+    },
   },
   theme: {
     extend: {
       colors: {
+        "brown-ivory": "#f0f0f0",
         "gray-ivory": "#e7e7e7",
         "dark-gray-ivory": "#e9e9e9",
         "black-onyx": "#0f0f0f",
         "gray-background": "#121217",
+        "light-gray-dito": "#393939",
         "gray-dito": "#262626",
-        "gray-dito-text": "#767676"
+        "gray-dito-text": "#767676",
       },
       fontFamily: {
         cormorant: ["Cormorant", "serif"],
         "roboto-slab": ['"Roboto Slab"', "serif"],
         "playfair-display": ['"Playfair Display"', "serif"],
-        "open-sans": ['"Open Sans"', "sans-serif"]
+        "open-sans": ['"Open Sans"', "sans-serif"],
       },
       fontSize: {
         "1.7vh": "1.7vh",
-        "1.8vh": "1.8vh"
+        "1.8vh": "1.8vh",
       },
       padding: {
         "20vh": "20vh",
-        "30vh": "30vh"
-      }
-    }
+        "30vh": "30vh",
+      },
+    },
   },
   variants: {},
-  plugins: []
+  plugins: [],
 };
