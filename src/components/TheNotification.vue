@@ -26,7 +26,7 @@
               />
             </svg>
           </span>
-          <p class="ml-3 font-medium text-white truncate">
+          <p class="ml-3 font-medium text-white">
             <span class="md:hidden">
               <a :href="notifLink">
                 {{ this.notifText }}
