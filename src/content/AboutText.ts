@@ -13,8 +13,8 @@ export default Vue.extend({
       picture: PersonalPhoto,
       texts: [
         `
-          In the course of his creative process, Dito always raises a theme of
-          <span class="">the meaning of honesty</span>
+          In the course of his creative process, Dito always raises
+          <span class="">the meaning of honesty and hope</span>
           from a sense of loss, where according to him that feeling is a
           <span class="">depiction of a complete human figure.</span>
         `,
