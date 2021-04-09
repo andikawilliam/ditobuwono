@@ -25,8 +25,8 @@ export default Vue.extend({
           <span class="">the meaning of human beings.</span>
         `,
         `
-          Currently, Dito is working on his second short documentary film as well
-          as his first novella.</span>
+          Completed his psychology education at Gadjah Mada University, currently Dito is
+          interested in working and developing more in the creative and research fields.</span>
         `
       ]
     };
