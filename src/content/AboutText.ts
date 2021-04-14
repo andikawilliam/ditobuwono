@@ -15,7 +15,7 @@ export default Vue.extend({
         `
           In the course of his creative process, Dito always raises
           <span class="">the meaning of honesty and hope</span>
-          from a sense of loss, where according to him those feeling is a
+          from a sense of loss. Because according to him, those feeling is a
           <span class="">depiction of a complete human figure.</span>
         `,
         `
