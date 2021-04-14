@@ -39,7 +39,6 @@ export default Vue.extend({
           the feelings that he has felt during his life until now.
           `,
           accolades: [
-            "Indie Book Corner Best Sellers List",
             "Editors' Choice at bukuindie.com",
             "Book Talks at “Bedah Buku Madania“"
           ],
