@@ -33,7 +33,7 @@ export default Vue.extend({
           Where according to him, a mistake will remain forever
           and it is part of our life. <br>
           It cannot be forced to
-          be erased or transferred, we must embraced it in
+          be erased, we must embraced it in
           our body and soul. With the illustration and audio
           in this book, Dito hopes that his readers can feel
           the feelings that he has felt during his life until now.
