@@ -6,6 +6,7 @@ module.exports = {
     standardFontWeights: true,
   },
   purge: {
+    enable: false,
     content: ["./public/**/*.html", "./src/**/*.html", "./src/**/*.vue"],
     // These options are passed through directly to PurgeCSS
     options: {

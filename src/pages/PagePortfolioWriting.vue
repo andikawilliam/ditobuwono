@@ -2,7 +2,7 @@
   <div class="relative px-8 md:px-16 pb-12 lg:px-20 py-32 sm:py-20 lg:py-40">
     <PortfolioHeading :title="title" :description="description" />
     <div
-      class="mx-auto sm:grid sm:grid-cols-3 lg:w-4/5 md:gap-12 lg:gap-16 xl:gap-24"
+      class="mx-auto sm:grid sm:grid-cols-3 lg:w-4/5 sm:gap-2 md:gap-12 lg:gap-16 xl:gap-24"
     >
       <div
         class="lg:row-span-1 lg:col-span-1 px-0 mb-32 sm:my-0"
@@ -10,7 +10,7 @@
         :key="publication.id"
       >
         <a :href="publication.src">
-          <div class="cover-container relative grayscale lg:px-4">
+          <div class="cover-container relative grayscale mx-auto lg:px-4">
             <img
               :src="publication.cover"
               class="mx-auto publication-cover w-full grayscale"
@@ -61,7 +61,6 @@
 }
 
 .cover-container {
-  width: 240px;
   transition: transform 0.5s;
 }
 .cover-container:hover {
@@ -116,7 +115,7 @@
     width: 600px;
   }
   .cover-container {
-    width: 160px;
+    width: 150px;
   }
 }
 
