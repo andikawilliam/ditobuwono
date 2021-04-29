@@ -1,7 +1,7 @@
 import Vue from "vue";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import PersonalPhoto from "../assets/dito-picture.webp";
+import PersonalPhoto from "../assets/dito-picture-2.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
