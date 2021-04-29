@@ -70,9 +70,9 @@ p {
   }
 
   .about-text {
-    font-size: 4.4vw;
+    font-size: 4.3vw;
     letter-spacing: 0.03em;
-    line-height: 1.6em;
+    line-height: 1.5em;
   }
   .about-line {
     border-top: 3.5px solid currentColor;
