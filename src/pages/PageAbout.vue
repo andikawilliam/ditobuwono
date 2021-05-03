@@ -7,7 +7,7 @@
     >
       <img class="w-2/3 md:w-1/2 lg:w-3/5 xl:w-1/2 mx-auto" :src="picture" />
       <div class="font-cormorant mt-2 text-sm text-center lg:text-base">
-        Hanindito Buwono.
+        Photo by: Novianti N.
       </div>
     </div>
     <div class="about-content about-container mx-auto text-center lg:text-left">
