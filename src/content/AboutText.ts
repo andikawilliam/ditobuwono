@@ -26,7 +26,7 @@ export default Vue.extend({
         `,
         `
           Completed his psychology study at Gadjah Mada University, currently Dito are
-          interested in working and developing more in the creative and research fields.</span>
+          interested in working as well as developing more in the creative and research fields.</span>
         `
       ]
     };
